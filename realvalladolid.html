@@ -8,7 +8,15 @@
 </head>
 <body>
 <div id="main-title-container">
-  <div id="main-title-content">
+
+  <div id="left-section" class="header-section">
+    <a href="remember.html" id="logo-link">
+      <img src="logo3.png" alt="Logo" id="logo-img" />
+      <span id="remember-text">Remember<br />the player</span>
+    </a>
+  </div>
+
+  <div id="center-right-section">
     <h1 id="main-title">pucela.le</h1>
     <button id="info-button" title="Información">i</button>
     <button id="hint-button" title="Pista" aria-label="Pista" style="background:transparent;border:none;cursor:pointer;padding:0 0 0 10px;">
@@ -18,9 +26,11 @@
         <path d="M10 22h4"/>
       </svg>
     </button>
-    <div id="hint-bubble" style="display:none;" class="hint-bubble"></div>
+    <div id="hint-bubble" class="hint-bubble" style="display:none;">Aquí va la pista</div>
   </div>
+
 </div>
+
   
 <!-- Modal de información -->
 <div id="info-modal" class="modal">
