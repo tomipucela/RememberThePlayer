@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="../../logo4.ico" />
+  <link rel="icon" type="image/png" href="../..img/logo4.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
   <title>RTP Real Valladolid</title>
   <link rel="stylesheet" href="style.css" />
@@ -12,7 +12,7 @@
 
   <div id="left-section" class="header-section">
     <a href="../../index.html" id="logo-link">
-      <img src="../../logo3.png" alt="Logo" id="logo-img" />
+      <img src="../../img/logo3.png" alt="Logo" id="logo-img" />
       <span id="remember-text">Remember<br />the player</span>
     </a>
   </div>
@@ -32,24 +32,25 @@
 
 </div>
 
-  <div id="info-modal" class="modal">
+<div id="info-modal" class="modal">
   <div class="modal-content">
     <span id="close-info" class="close">&times;</span>
-    <h2>¿Cómo se juega a pucela.le?</h2>
-    <p>Tu objetivo es adivinar un jugador de las últimas 15 temporadas (entre la 2010-11 y la 2024-25). Tienes 6 intentos.</p>
+    <h2>¿Cómo se juega a Remember The Player?</h2>
+    <p>Tu objetivo es adivinar un jugador de las últimas temporadas que jugó en el equipo que hayas seleccionado. Tienes 6 intentos.</p>
     <h2>¿Qué significan las columnas?</h2>
     <ul>
       <li><strong>Jugador</strong>: jugador predicho</li>
       <li><strong>Nacionalidad</strong>: nacionalidad del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
       <li><strong>Posición</strong>: posición del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
-      <li><strong>Dorsal</strong>: último dorsal que vistió el jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
-      <li><strong>Primera temporada</strong>: primera temporada del jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
-      <li><strong>Última temporada</strong>: última temporada del jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
+      <li><strong>Dorsal</strong>: último dorsal que vistió el jugador predicho en el equipo seleccionado. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(<span style="color:#8a070d;">▲</span>) si el número correcto es superior y una flecha hacia abajo(<span style="color:#8a070d;">▼</span>) si es inferior.</li>
+      <li><strong>Primera temporada</strong>: primera temporada del jugador predicho en el equipo seleccionado. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(<span style="color:#8a070d;">▲</span>) si el número correcto es superior y una flecha hacia abajo(<span style="color:#8a070d;">▼</span>) si es inferior.</li>
+      <li><strong>Última temporada</strong>: última temporada del jugador predicho en el equipo seleccionado. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(<span style="color:#8a070d;">▲</span>) si el número correcto es superior y una flecha hacia abajo(<span style="color:#8a070d;">▼</span>) si es inferior.</li>
     </ul>
     <p> Si se te complica demasiado, no te preocupes, te ofrecemos una pista. Solo clica el boton de pista situado arriba y elige la columna cuyo valor quieras desvelar</p>
-    <p>¡Buena suerte y Aupa Pucela!</p>
+    <p>¡Buena suerte!</p>
   </div>
 </div>
+
 
 <div id="hint-modal" class="modal">
   <div class="modal-content">
@@ -63,6 +64,7 @@
     <input type="text" id="guessName" placeholder="Nombre del jugador..." autocomplete="off" />
     <button onclick="submitGuess()" id="try-button">Intentar</button>
     <div id="suggestions" class="suggestions-box"></div>
+    <button id="restart-btn" style="display:none;" onclick="reiniciarJuego()">Continuar Jugando</button>
   </div>
   
 
@@ -131,8 +133,6 @@
         </tr>
       </tbody>
     </table>
-
-    <button id="restart-btn" style="display:none;" onclick="reiniciarJuego()">Continuar Jugando</button>
 
     <div id="history"></div>
 

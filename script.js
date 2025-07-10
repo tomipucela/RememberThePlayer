@@ -59,16 +59,23 @@ function submitGuess() {
   mostrarComparacion(jugador);
   intentos++;
 
-  if (jugador.nombre === elegido.nombre) {
-    mostrarMensaje('¡Correcto! 🎉', 3000, '#6aaa64');
-    juegoTerminado = true;
-    desactivarInput();
-    mostrarBotonReinicio();
-  } else if (intentos >= maxIntentos) {
+if (jugador.nombre === elegido.nombre) {
+  mostrarMensaje('¡Correcto! 🎉', 3000, '#6aaa64');
+  juegoTerminado = true;
+  desactivarInput();
+  // Oculta el input y el botón de intentar
+  document.getElementById("guessName").style.display = "none";
+  document.getElementById("try-button").style.display = "none";
+  mostrarBotonReinicio();
+}
+
+  else if (intentos >= maxIntentos) {
     mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
     juegoTerminado = true;
     desactivarInput();
-    mostrarBotonReinicio();
+      document.getElementById("guessName").style.display = "none";
+      document.getElementById("try-button").style.display = "none";
+      mostrarBotonReinicio();
   }
 
   inputElem.value = "";
@@ -115,6 +122,9 @@ function reiniciarJuego() {
   // Ocultar botón reinicio
   const restartBtn = document.getElementById("restart-btn");
   restartBtn.style.display = "none";
+  document.getElementById("guessName").style.display = "inline-block";
+document.getElementById("try-button").style.display = "inline-block";
+
 
   // Limpiar sugerencias
   const suggestionsBox = document.getElementById("suggestions");
