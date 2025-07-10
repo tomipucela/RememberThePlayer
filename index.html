@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+  <title>Pucelale Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="main-title-container">
+  <div id="main-title-content">
+    <h1 id="main-title">pucela.le</h1>
+    <button id="info-button" title="Información">i</button>
+    <button id="hint-button" title="Pista" aria-label="Pista" style="background:transparent;border:none;cursor:pointer;padding:0 0 0 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="11" r="6"/>
+        <path d="M9 18h6"/>
+        <path d="M10 22h4"/>
+      </svg>
+    </button>
+    <div id="hint-bubble" style="display:none;" class="hint-bubble"></div>
+  </div>
+</div>
+  
+<!-- Modal de información -->
+<div id="info-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-info" class="close">&times;</span>
+    <h2>¿Cómo se juega a pucela.le?</h2>
+    <p>Tu objetivo es adivinar un jugador de las últimas 15 temporadas (entre la 2010-11 y la 2024-25). Tienes 6 intentos.</p>
+    <h2>¿Qué significan las columnas?</h2>
+    <ul>
+      <li><strong>Jugador</strong>: jugador predicho</li>
+      <li><strong>Nacionalidad</strong>: nacionalidad del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
+      <li><strong>Posición</strong>: posición del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
+      <li><strong>Dorsal</strong>: último dorsal que vistió el jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
+      <li><strong>Primera temporada</strong>: primera temporada del jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
+      <li><strong>Última temporada</strong>: última temporada del jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
+    </ul>
+    <p> Si se te complica demasiado, no te preocupes, te ofrecemos una pista. Solo clica el boton de pista situado arriba y elige la columna cuyo valor quieras desvelar</p>
+    <p>¡Buena suerte y Aupa Pucela!</p>
+  </div>
+</div>
+
+<!-- Modal de pista -->
+<div id="hint-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-hint" class="close">&times;</span>
+    <h2>Pista</h2>
+    <p id="hint-text">Aquí aparecerá la pista del jugador.</p>
+  </div>
+</div>
+
+  <div id="input-container">
+    <input type="text" id="guessName" placeholder="Nombre del jugador..." autocomplete="off" />
+    <button onclick="submitGuess()" id="try-button">Intentar</button>
+    <div id="suggestions" class="suggestions-box"></div>
+  </div>
+  
+
+  <div id="game-area">
+
+    <div id="feedback"></div>
+
+    <table id="guess-table">
+      <thead>
+  <tr>
+    <th>Jugador</th>
+    <th id="th-nacionalidad" class="pista-clicable">Nacionalidad</th>
+    <th id="th-posicion" class="pista-clicable">Posición</th>
+    <th id="th-dorsal" class="pista-clicable">Dorsal</th>
+    <th id="th-primera" class="pista-clicable">Primera Temporada</th>
+    <th id="th-ultima" class="pista-clicable">Última Temporada</th>  </tr>
+</thead>
+      <tbody>
+        <tr id="row-1">
+          <td id="r1-c1"></td>
+          <td id="r1-c2"></td>
+          <td id="r1-c3"></td>
+          <td id="r1-c4"></td>
+          <td id="r1-c5"></td>
+          <td id="r1-c6"></td>
+        </tr>
+        <tr id="row-2">
+          <td id="r2-c1"></td>
+          <td id="r2-c2"></td>
+          <td id="r2-c3"></td>
+          <td id="r2-c4"></td>
+          <td id="r2-c5"></td>
+          <td id="r2-c6"></td>
+        </tr>
+        <tr id="row-3">
+          <td id="r3-c1"></td>
+          <td id="r3-c2"></td>
+          <td id="r3-c3"></td>
+          <td id="r3-c4"></td>
+          <td id="r3-c5"></td>
+          <td id="r3-c6"></td>
+        </tr>
+        <tr id="row-4">
+          <td id="r4-c1"></td>
+          <td id="r4-c2"></td>
+          <td id="r4-c3"></td>
+          <td id="r4-c4"></td>
+          <td id="r4-c5"></td>
+          <td id="r4-c6"></td>
+        </tr>
+        <tr id="row-5">
+          <td id="r5-c1"></td>
+          <td id="r5-c2"></td>
+          <td id="r5-c3"></td>
+          <td id="r5-c4"></td>
+          <td id="r5-c5"></td>
+          <td id="r5-c6"></td>
+        </tr>
+        <tr id="row-6">
+          <td id="r6-c1"></td>
+          <td id="r6-c2"></td>
+          <td id="r6-c3"></td>
+          <td id="r6-c4"></td>
+          <td id="r6-c5"></td>
+          <td id="r6-c6"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="restart-btn" style="display:none;" onclick="reiniciarJuego()">Continuar Jugando</button>
+
+    <div id="history"></div>
+
+    <div id="message-box"></div>
+
+  </div>
+
+<script src="jugadores.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
