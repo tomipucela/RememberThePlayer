@@ -1,124 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="icon" type="image/png" href="logo4.ico" />
   <meta charset="UTF-8" />
-  <title>Inicio | pucela.le</title>
+  <title>Remember The Player</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto Slab', serif;
-      background-color: #000; /* Fondo oscuro general */
-      color: white;
-      min-height: 100vh;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: transparent;
-      padding: 20px 40px;
-    }
-
-    #logo-link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: white;
-    }
-
-    #logo-img {
-      width: 150px;
-      height: auto;
-      margin-right: 15px;
-    }
-
-    #remember-text {
-      font-size: 2.5rem;
-      color: #eee;
-    }
-
-    #main-title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      text-align: center;
-      flex-grow: 1;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 40px 20px;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      width: 100%;
-      max-width: 1000px;
-      margin-top: 40px;
-    }
-
-    .grid-item {
-      background-color: #9602d1;
-      border-radius: 12px;
-      padding: 30px 20px;
-      color: white;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: transform 0.2s, background-color 0.3s;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .grid-item[href="realvalladolid.html"] {
-        background: repeating-linear-gradient(
-            45deg,
-            #9602d1,
-            #9602d1 10px,
-            white 10px,
-            white 20px
-        );
-        color: black;
-        font-weight: bold;
-        transition: background-position 0.5s ease;
-        background-size: 40px 40px;
-        background-position: 0 0;
-        }
-
-        .grid-item[href="realvalladolid.html"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #4b1a9c; /* Mantiene color morado más oscuro al hover */
-        color: white;
-        }
-
-
-    .grid-item:hover {
-      transform: translateY(-5px);
-      background-color: #4b1a9c;
-    }
-
-    .grid-item.disabled {
-      background-color: #555;
-      cursor: not-allowed;
-    }
-
-    .grid-item.disabled:hover {
-      transform: none;
-      background-color: #555;
-    }
-  </style>
 </head>
 <body>
 
@@ -126,13 +13,14 @@
     <a href="#" id="logo-link">
       <img src="logo3.png" alt="Logo" id="logo-img" />
       <span id="remember-text">Remember<br />the player</span>
+      <button id="info-button" title="Información" aria-label="Abrir información del juego">i</button>
     </a>
   </header>
 
   <main>
     <div class="grid-container">
-      <a class="grid-item" href="realvalladolid.html">
-        Real Valladolid - Adivina al jugador
+      <a class="grid-item" href="laliga2/realvalladolid/realvalladolid.html">
+        Real Valladolid
       </a>
       <div class="grid-item disabled">Sección 2 (Próximamente)</div>
       <div class="grid-item disabled">Sección 3 (Próximamente)</div>
@@ -145,5 +33,50 @@
     </div>
   </main>
 
+</div>
+
+
+<div id="info-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-info" class="close">&times;</span>
+    <h2>¿Cómo se juega a pucela.le?</h2>
+    <p>Tu objetivo es adivinar un jugador de las últimas 15 temporadas (entre la 2010-11 y la 2024-25). Tienes 6 intentos.</p>
+    <h2>¿Qué significan las columnas?</h2>
+    <ul>
+      <li><strong>Jugador</strong>: jugador predicho</li>
+      <li><strong>Nacionalidad</strong>: nacionalidad del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
+      <li><strong>Posición</strong>: posición del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
+      <li><strong>Dorsal</strong>: último dorsal que vistió el jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
+      <li><strong>Primera temporada</strong>: primera temporada del jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
+      <li><strong>Última temporada</strong>: última temporada del jugador predicho en el Real Valladolid. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(🔼) si el número correcto es superior y una flecha hacia abajo(🔽) si es inferior.</li>
+    </ul>
+    <p> Si se te complica demasiado, no te preocupes, te ofrecemos una pista. Solo clica el boton de pista situado arriba y elige la columna cuyo valor quieras desvelar</p>
+    <p>¡Buena suerte y Aupa Pucela!</p>
+  </div>
+</div>
+
+
+
 </body>
+<script>
+    const modal = document.getElementById("info-modal");
+    const modalContent = modal.querySelector(".modal-content");
+
+    document.getElementById("info-button").onclick = () => {
+      modal.style.display = "block";
+    };
+
+    document.getElementById("close-info").onclick = () => {
+      modal.style.display = "none";
+    };
+
+    // Cerrar modal si se clickea fuera del contenido
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+
+</script>
+
 </html>

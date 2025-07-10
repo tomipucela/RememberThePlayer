@@ -1,16 +1,127 @@
-/* General Body Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
-  color: #fff !important;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* General Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+      color: #fff !important;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+
+    
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: transparent;
+      padding: 20px 40px;
+    }
+
+    #logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    #logo-img {
+      width: 150px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    #remember-text {
+      font-size: 2.5rem;
+      color: #eee;
+    }
+
+    #main-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      margin-top: 40px;
+    }
+
+    .grid-item {
+      background-color: #9602d1;
+      border-radius: 12px;
+      padding: 30px 20px;
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: transform 0.2s, background-color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .grid-item[href="laliga2/realvalladolid/realvalladolid.html"] {
+        background: repeating-linear-gradient(
+            90deg,
+            #9602d1,
+            #9602d1 10px,
+            white 10px,
+            white 20px
+        );
+        color: black;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="laliga2/realvalladolid/realvalladolid.html"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-color: #4b1a9c; /* Mantiene color morado más oscuro al hover */
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
+
+
+    .grid-item:hover {
+      transform: translateY(-5px);
+      background-color: #4b1a9c;
+    }
+
+    .grid-item.disabled {
+      background-color: #555;
+      cursor: not-allowed;
+    }
+
+    .grid-item.disabled:hover {
+      transform: none;
+      background-color: #555;
+    }
 /* Main Title Container */
 #main-title-container {
   width: 100%;
@@ -78,78 +189,6 @@ body {
   position: relative;
 }
 
-#hint-button {
-  position: relative; /* Contenedor posicionado para posicionar la burbuja respecto a este botón */
-}
-
-.hint-bubble {
-  position: absolute;
-  top: 50%;
-  left: 100%; /* Justo a la derecha del botón */
-  transform: translate(8px, -50%);
-  display: none; /* Oculto por defecto */
-  background: #ffe066 ;
-  color: #222;
-  padding: 6px 12px;
-  border-radius: 6px;
-  white-space: nowrap;
-  font-size: 1.2rem;
-  z-index: 10;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  font-family: 'Roboto', sans-serif;
-
-}
-
-/* Mostrar la burbuja cuando se haga hover sobre el botón */
-#hint-button:hover .hint-bubble {
-  display: block;
-}
-
-.pista-clicable {
-  /* Estado normal: sin cursor de clic ni color especial */
-  cursor: default;
-  background: #9602d1;
-  color: white;
-  transition: background 0.3s, color 0.3s;
-}
-
-.pista-clicable-activa {
-  background: #ffe066 !important;
-  color: #222 !important;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-
-.pista-clicable-activa:not(.pista-seleccionada):hover {
-  background: #ffe066 !important;
-  color: #222 !important;
-  cursor: pointer;
-}
-
-.pista-seleccionada,
-.pista-seleccionada:hover {
-  background: #ffe066 !important;
-  color: #222 !important;
-  font-weight: bold;
-  cursor: default;
-}
-.nacionalidad-celda {
-  height: 32px;
-  max-height: 32px;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  overflow: hidden;
-  vertical-align: middle;
-}
-.nacionalidad-celda img {
-  max-height: 28px;
-  max-width: 38px;
-  object-fit: contain;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-
 #main-title {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
@@ -186,128 +225,6 @@ body {
   color: #9602d1;
 }
 
-#game-area {
-  max-width: 800px;
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-
-#input-container {
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-#guessName {
-  flex-grow: 1;
-  padding: 10px 15px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  border: 2px solid #9602d1;
-  border-radius: 6px;
-  font-family: 'Roboto Slab', serif;
-  outline: none;
-}
-
-#try-button {
-  padding: 10px 25px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 1rem;
-  background-color: #9602d1;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  height: 42px;
-}
-
-#try-button:hover {
-  background-color: #9602d1;
-}
-
-.suggestions-box {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #9602d1 !important;
-  border-top: none !important;
-  max-height: 150px;
-  overflow-y: auto;
-  z-index: 10;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  font-family: 'Roboto Slab', serif;
-  color: #fff !important;
-  display: block; 
-
-}
-
-.suggestion-item {
-  padding: 8px 12px;
-  cursor: pointer;
-  color: #fff !important;
-  background: #9602d1 !important;
-}
-
-.suggestion-item:hover {
-  background-color: #fff !important;
-  color: #9602d1 !important;
-}
-
-/* Table Styles */
-#guess-table {
-  max-width: 1000px;
-  margin: 0 auto 30px auto;
-  border-collapse: separate;
-  border-spacing: 8px;
-  width: 100%;
-  font-family: 'Roboto Slab', serif;
-}
-#guess-table thead th {
-  padding: 30px 12px; /* Más bajo que el resto de filas */
-  background-color: #9602d1; /* Morado más claro */
-  color: white;
-  border-radius: 8px;
-}
-
-#guess-table th,
-#guess-table td {
-  padding: 25px 15px;
-  text-align: center;
-  font-weight: bold;
-  white-space: normal;
-  overflow-wrap: break-word;
-  vertical-align: middle;
-  background-color: white;
-  border-radius: 10px;
-}
-
-#guess-table td:first-child,
-#guess-table th:first-child {
-  width: 220px; /* o el tamaño que quieras */
-  max-width: 220px;
-  word-wrap: break-word; /* para que el texto se ajuste si es largo */
-}
-
-/* Ajustar ancho solo para ciertas columnas */
-#guess-table td:nth-child(3),
-#guess-table th:nth-child(3) {
-  width: 140px;
-}
-
-#guess-table td:nth-child(5),
-#guess-table th:nth-child(5),
-#guess-table td:nth-child(6),
-#guess-table th:nth-child(6) {
-  width: 160px;
-}
-
-
 .modal {
   display: none;
   position: fixed;
@@ -318,20 +235,70 @@ body {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 }
-
 .modal-content {
   background-color: #9f18ed;
-  margin: 5% auto;           /* Más arriba (antes era 10%) */
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
+  margin: 3% auto;
+  padding: 40px 35px;
+  border-radius: 12px;
+  width: 95%;
+  max-width: 600px;    /* Aumentado de 420px a 600px */
   position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  max-height: 70vh;          /* Limita la altura máxima */
-  overflow-y: auto;          /* Scroll si el contenido es largo */
-  color: white
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  max-height: 80vh;    /* Aumentado de 70vh a 80vh */
+  overflow-y: auto;
+  color: #f5f5f5;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
+
+
+.modal-content h2, 
+.modal-content h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: left;
+}
+
+.modal-content p,
+.modal-content ul {
+  margin-bottom: 1em;
+  color: #f5f5f5;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.modal-content ul li {
+  margin-bottom: 0.8em;
+  font-weight: 400;
+}
+
+.modal-content ul li strong {
+  font-weight: 700;
+  color: #e4c4ff; /* Un tono lila más claro para resaltar */
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 24px;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #eee;
+}
+
 
 
 .close {
@@ -344,70 +311,4 @@ body {
 }
 .close:hover {
   color: #000;
-}
-
-/* Resultado de celdas */
-.correct {
-  background-color: #6aaa64 !important;
-  color: white;
-}
-
-.partial {
-  background-color: #c9b458 !important;
-  color: white;
-}
-
-.wrong {
-  background-color: #787c7e !important;
-  color: white;
-}
-
-/* Restart Button */
-#restart-btn {
-  display: block;
-  margin: 0 auto 40px auto;
-  padding: 10px 25px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 1rem;
-  background-color: #9602d1;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-#restart-btn:hover {
-  background-color: #4b1a9c;
-}
-
-/* Feedback y mensajes */
-#feedback,
-#history {
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.1rem;
-  text-align: center;
-}
-
-/* Message Box */
-#message-box {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #6aaa64;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 18px;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.autocomplete-active {
-  background-color: #fff !important;
-  color: #9602d1 !important;
 }
