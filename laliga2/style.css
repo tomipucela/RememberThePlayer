@@ -16,27 +16,7 @@
       min-height: 100vh;
       margin: 0;
     }
-#header-right {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* espacio entre botón y texto */
-}
 
-#liga2-text {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #00d4d7; /* color similar al botón o al link de LaLiga2 */
-  user-select: none;
-}
-
-    .flag-icon {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      margin-right: 10px; /* antes era 8px */
-      vertical-align: middle;
-    }
 
     
     header {
@@ -107,10 +87,37 @@
       text-decoration: none;
     }
 
-    .grid-item[href="laliga2/laliga2.html"] {
-        background-color: #00d4d7;
-        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
-        color: white;
+    #liga2-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;            /* tamaño cuadrado fijo */
+  height: 32px;
+  border: 2px solid #00d4d7;  /* borde con el color que tenías */
+  color: #00d4d7;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 6px;     /* bordes redondeados */
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#liga2-text:hover {
+  background-color: #00d4d7;
+  color: #000;
+}
+
+    .grid-item[href="realvalladolid/realvalladolid.html"] {
+        background: repeating-linear-gradient(
+            90deg,
+            #9602d1,
+            #9602d1 10px,
+            white 10px,
+            white 20px
+        );
+        color: black;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
@@ -121,9 +128,9 @@
 
         }
 
-        .grid-item[href="laliga2/laliga2.html"]:hover {
+        .grid-item[href="realvalladolid/realvalladolid.html"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #028f92; /* Mantiene color morado más oscuro al hover */
+        background-color: #4b1a9c; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -196,6 +203,14 @@
   text-align: center;
 }
 
+/* Contenedor alinea botón y texto en línea */
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espacio entre botón y texto */
+}
+
+/* Botón info */
 #info-button {
   background-color: transparent;
   border: 2px solid #f5f5f5;
@@ -211,13 +226,31 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s, color 0.3s;
-  margin-left: 20px;
-  flex-shrink: 0;
+  /* margin-left removido para mejor alineación con el texto */
 }
 
 #info-button:hover {
   background-color: #f5f5f5;
   color: #9602d1;
+}
+
+/* Texto LaLiga 2 - cuadro sin comportamiento botón */
+#liga2-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 32px;
+  border: 2px solid #00d4d7;
+  color: #00d4d7;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  user-select: none;
+  cursor: default;       /* No cambia el cursor */
+  background-color: transparent;
+  transition: none;      /* Sin hover ni transición */
 }
 
 .modal {
