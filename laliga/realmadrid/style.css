@@ -326,7 +326,7 @@ body {
   padding: 10px 15px;
   font-size: 1rem;
   box-sizing: border-box;
-  border: 2px solid #9602d1;
+  border: 2px solid   white;
   border-radius: 6px;
   font-family: 'Roboto Slab', serif;
   outline: none;
@@ -337,7 +337,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1rem;
-  background-color: #9602d1;
+  background-color: rgb(218, 156, 0);;
   color: white;
   border: none;
   border-radius: 6px;
@@ -346,7 +346,8 @@ body {
 }
 
 #try-button:hover {
-  background-color: #9602d1;
+  color: rgb(218, 156, 0);
+  background-color: white;
 }
 
 .suggestions-box {
@@ -354,29 +355,30 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  background: #9602d1 !important;
+  background: rgb(218, 156, 0);
   border-top: none !important;
   max-height: 150px;
   overflow-y: auto;
   z-index: 10;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   font-family: 'Roboto Slab', serif;
-  color: #fff !important;
-  display: block; 
-
+  color: black; /* Texto negro por defecto */
 }
 
 .suggestion-item {
   padding: 8px 12px;
   cursor: pointer;
-  color: #fff !important;
-  background: #9602d1 !important;
+  background: white;
+  color: rgb(218, 156, 0);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .suggestion-item:hover {
-  background-color: #fff !important;
-  color: #9602d1 !important;
+  background-color: rgb(218, 156, 0);
+  color: black;
 }
+
+
 
 /* Table Styles */
 #guess-table {
@@ -389,7 +391,7 @@ body {
 }
 #guess-table thead th {
   padding: 30px 12px; /* Más bajo que el resto de filas */
-  background-color: #9602d1; /* Morado más claro */
+  background-color: rgb(218, 156, 0);;
   color: white;
   border-radius: 8px;
 }
@@ -592,6 +594,6 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 .autocomplete-active {
-  background-color: #fff !important;
-  color: #9602d1 !important;
+  background-color: rgb(218, 156, 0);;
+  color: white;
 }

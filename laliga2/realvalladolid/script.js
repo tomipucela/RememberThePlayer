@@ -11,7 +11,11 @@ window.onload = () => {
   }
 };
 
-const claveEstadisticas = "estadisticas-jugador";
+const idJuego = "real-valladolid"; // Cambia según el juego actual
+
+const claveEstadisticas = `estadisticas-jugador-${idJuego}`;
+const clavePartidaHoy = `partida-${idJuego}-${getFechaHoyUTC()}`;
+
 let estadisticas = {
   jugadasTotales: 0,
   victorias: 0,
@@ -46,11 +50,11 @@ function guardarEstadisticasPartida(acertado) {
 
   localStorage.setItem(claveEstadisticas, JSON.stringify(estadisticas));
 }
-
 function actualizarEstadisticas(intentos) {
   const jugadorDelDia = getJugadorDelDiaLocal();
   if (elegido.nombre !== jugadorDelDia.nombre) return;
-  const key = "estadisticasJugadorDelDia";
+
+  const key = `estadisticas-jugador-del-dia-${idJuego}`;  // Aquí está la clave con idJuego
   const hoy = getFechaHoyUTC();
 
   let stats = JSON.parse(localStorage.getItem(key)) || {
@@ -75,6 +79,7 @@ function actualizarEstadisticas(intentos) {
   localStorage.setItem(key, JSON.stringify(stats));
   mostrarEstadisticas(stats);
 }
+
 
 function mostrarEstadisticas(stats) {
   // No mostrar si todo es 0
@@ -139,10 +144,6 @@ function renderizarHistograma(histograma) {
     contenedor.appendChild(fila);
   }
 }
-
-
-
-const clavePartidaHoy = `partida-${getFechaHoyUTC()}`;
 
 // Guardar partida al finalizar jugador del día
 function guardarProgresoPartida(resultado) {
