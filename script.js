@@ -194,7 +194,7 @@ function cargarPartidaGuardada() {
 
   desactivarInput();
   mostrarBotonReinicio();
-  mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#d9534f");
+  mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#6aaa64");
     document.getElementById("guessName").style.display = "none";
   document.getElementById("try-button").style.display = "none";
 
