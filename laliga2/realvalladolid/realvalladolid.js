@@ -5,7 +5,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2009,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "A"
   },
   {
     "nombre": "Fabio Faria",
@@ -13,7 +14,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 2,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Jordi Figueras",
@@ -21,7 +23,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 3,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "A"
   },
   {
     "nombre": "Tekio",
@@ -29,7 +32,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 29,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "B"
   },
   {
     "nombre": "Marc Valiente",
@@ -37,7 +41,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 4,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "A"
   },
   {
     "nombre": "Cesar Arzo",
@@ -45,7 +50,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2010,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Jesus Rueda",
@@ -53,7 +59,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2009,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "A"
   },
   {
     "nombre": "Ruben Pena",
@@ -61,7 +68,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 28,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2013
+    "temporadaSeg": 2013,
+    "grupo": "B"
   },
   {
     "nombre": "Lolo Pla",
@@ -69,7 +77,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 27,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2013
+    "temporadaSeg": 2013,
+    "grupo": "A"
   },
   {
     "nombre": "Manucho",
@@ -77,7 +86,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "B"
   },
   {
     "nombre": "Alvaro Anton",
@@ -85,7 +95,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2003,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "A"
   },
   {
     "nombre": "Oscar Gonzalez",
@@ -93,7 +104,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2002,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "Mikel Balenziaga",
@@ -101,7 +113,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 24,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2013
+    "temporadaSeg": 2013,
+    "grupo": "A"
   },
   {
     "nombre": "Matabuena",
@@ -109,7 +122,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 12,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Aquino",
@@ -117,7 +131,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Dani Hernandez",
@@ -125,7 +140,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Valdet Rama",
@@ -133,7 +149,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 19,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Guilherme",
@@ -141,7 +158,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 15,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Victor Perez",
@@ -149,7 +167,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 22,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Pedro Lopez",
@@ -157,7 +176,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 16,
     "temporadaPrim": 2006,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Sisi",
@@ -165,7 +185,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 21,
     "temporadaPrim": 2007,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Carlos Pena",
@@ -173,7 +194,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 17,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Alvaro Rubio",
@@ -181,7 +203,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 18,
     "temporadaPrim": 2007,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Patrick Ebert",
@@ -189,7 +212,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 20,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "B"
   },
   {
     "nombre": "Barragan",
@@ -197,7 +221,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 19,
     "temporadaPrim": 2010,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Varela",
@@ -205,7 +230,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 19,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "B"
   },
   {
     "nombre": "Calle",
@@ -213,7 +239,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 22,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "A"
   },
   {
     "nombre": "Nafti",
@@ -221,7 +248,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 16,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "B"
   },
   {
     "nombre": "Keita",
@@ -229,7 +257,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "A"
   },
   {
     "nombre": "Alberto Bueno",
@@ -237,7 +266,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 15,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2013
+    "temporadaSeg": 2013,
+    "grupo": "B"
   },
   {
     "nombre": "Jorge Alonso",
@@ -245,7 +275,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 14,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Jacobo Sanz",
@@ -253,7 +284,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 25,
     "temporadaPrim": 2006,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Sana",
@@ -261,7 +293,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 12,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Raul Navas",
@@ -269,7 +302,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 26,
     "temporadaPrim": 2010,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Quique",
@@ -277,7 +311,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 27,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "A"
   },
   {
     "nombre": "Jofre",
@@ -285,7 +320,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 11,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "B"
   },
   {
     "nombre": "Daniel Larsson",
@@ -293,7 +329,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 11,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Javi Jimenez",
@@ -301,7 +338,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 30,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2011
+    "temporadaSeg": 2011,
+    "grupo": "B"
   },
   {
     "nombre": "Javi Guerra",
@@ -309,7 +347,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Javier Baraja",
@@ -317,7 +356,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2002,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "B"
   },
   {
     "nombre": "Nauzet",
@@ -325,7 +365,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 7,
     "temporadaPrim": 2010,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Omar Ramos",
@@ -333,7 +374,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 14,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Juan Neira",
@@ -341,7 +383,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 7,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Lluis Sastre",
@@ -349,7 +392,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 16,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Juanito",
@@ -357,7 +401,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2011,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Henrique Sereno",
@@ -365,7 +410,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2013
+    "temporadaSeg": 2013,
+    "grupo": "B"
   },
   {
     "nombre": "Marquitos",
@@ -373,7 +419,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 3,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "A"
   },
   {
     "nombre": "Abdul Razak",
@@ -381,7 +428,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 2,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2012
+    "temporadaSeg": 2012,
+    "grupo": "B"
   },
   {
     "nombre": "Rukavina",
@@ -389,7 +437,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 2,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Jaime Jimenez",
@@ -397,7 +446,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2012,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "B"
   },
   {
     "nombre": "Diego Marino",
@@ -405,7 +455,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Fausto Rossi",
@@ -413,7 +464,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 5,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "B"
   },
   {
     "nombre": "Zakarya Bergdich",
@@ -421,7 +473,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 21,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "A"
   },
   {
     "nombre": "Stefan Mitrovic",
@@ -429,7 +482,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "B"
   },
   {
     "nombre": "Humberto Osorio",
@@ -437,7 +491,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 7,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Jeffren",
@@ -445,7 +500,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 11,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Gilberto Alcatraz",
@@ -453,7 +509,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 24,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "A"
   },
   {
     "nombre": "Heinz Bartmettler",
@@ -461,7 +518,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 3,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2014
+    "temporadaSeg": 2014,
+    "grupo": "B"
   },
   {
     "nombre": "Javi Varas",
@@ -469,7 +527,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "A"
   },
   {
     "nombre": "Javi Chica",
@@ -477,7 +536,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 2,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Andre Leao",
@@ -485,7 +545,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "A"
   },
   {
     "nombre": "Johan Mojica",
@@ -493,7 +554,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "David Timor",
@@ -501,7 +563,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 22,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Oscar Diaz",
@@ -509,7 +572,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 7,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Samuel Llorca",
@@ -517,7 +581,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Chus Herrero",
@@ -525,7 +590,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Raul Fernandez",
@@ -533,7 +599,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "A"
   },
   {
     "nombre": "Jonathan Pereira",
@@ -541,7 +608,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 24,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Roger Marti",
@@ -549,7 +617,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Hernan Perez",
@@ -557,7 +626,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 20,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "B"
   },
   {
     "nombre": "Tulio de Melo",
@@ -565,7 +635,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 19,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "A"
   },
   {
     "nombre": "Alejandro Alfaro",
@@ -573,7 +644,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 11,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "Brian Olivan",
@@ -581,7 +653,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 33,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2015
+    "temporadaSeg": 2015,
+    "grupo": "A"
   },
   {
     "nombre": "Julio Iricibar",
@@ -589,7 +662,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 26,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "Kepa Arrizabalaga",
@@ -597,7 +671,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Javi Moyano",
@@ -605,7 +680,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 17,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2021
+    "temporadaSeg": 2021,
+    "grupo": "B"
   },
   {
     "nombre": "Mario Hermoso",
@@ -613,7 +689,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 36,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Juanpe",
@@ -621,7 +698,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 14,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "Marcelo Silva",
@@ -629,7 +707,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 4,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Juan Villar",
@@ -637,7 +716,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 7,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "B"
   },
   {
     "nombre": "Rodri Rios",
@@ -645,7 +725,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Pedro Tiba",
@@ -653,7 +734,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 25,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "Manu del Moral",
@@ -661,7 +743,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 20,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Bruno Varela",
@@ -669,7 +752,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "Guzman Casaseca",
@@ -677,7 +761,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 21,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "A"
   },
   {
     "nombre": "Borja Fernandez",
@@ -685,7 +770,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2007,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Vicenzo Renella",
@@ -693,7 +779,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 24,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Nikos Karabelas",
@@ -701,7 +788,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 15,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "B"
   },
   {
     "nombre": "Diego Rubio",
@@ -709,7 +797,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 19,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Angel Garcia",
@@ -717,7 +806,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Jose Arnaiz",
@@ -725,7 +815,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 7,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Andre Ferreira",
@@ -733,7 +824,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Erick Moreno",
@@ -741,7 +833,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 15,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016
+    "temporadaSeg": 2016,
+    "grupo": "A"
   },
   {
     "nombre": "Isaac Becerra",
@@ -749,7 +842,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Luciano Balbi",
@@ -757,7 +851,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 6,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "A"
   },
   {
     "nombre": "Alex Perez",
@@ -765,7 +860,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 24,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "B"
   },
   {
     "nombre": "Alberto Guitian",
@@ -773,7 +869,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "A"
   },
   {
     "nombre": "Michel Herrero",
@@ -781,7 +878,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 21,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2021
+    "temporadaSeg": 2021,
+    "grupo": "B"
   },
   {
     "nombre": "Joan Jordan",
@@ -789,7 +887,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 19,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "A"
   },
   {
     "nombre": "Alex Lopez",
@@ -797,7 +896,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 4,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "B"
   },
   {
     "nombre": "Pau Torres",
@@ -805,7 +905,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "A"
   },
   {
     "nombre": "Raul De Tomas",
@@ -813,7 +914,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 47,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "B"
   },
   {
     "nombre": "Jaime Mata",
@@ -821,7 +923,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Rafa Lopez",
@@ -829,7 +932,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2005,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "B"
   },
   {
     "nombre": "Igor Lichnovsky",
@@ -837,7 +941,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "A"
   },
   {
     "nombre": "Sergio Marcos",
@@ -845,7 +950,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Cristian Espinoza",
@@ -853,7 +959,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 18,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "A"
   },
   {
     "nombre": "Dejan Drazic",
@@ -861,7 +968,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 23,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "B"
   },
   {
     "nombre": "Iban Salvador",
@@ -869,7 +977,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 24,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Markel Etxeberria",
@@ -877,7 +986,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 22,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2017
+    "temporadaSeg": 2017,
+    "grupo": "B"
   },
   {
     "nombre": "Luismi Sanchez",
@@ -885,7 +995,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 15,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2021
+    "temporadaSeg": 2021,
+    "grupo": "A"
   },
   {
     "nombre": "David Mayoral",
@@ -893,7 +1004,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 42,
     "temporadaPrim": 2017,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Jordi Masip",
@@ -901,7 +1013,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Antonito Regal",
@@ -909,7 +1022,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 18,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "B"
   },
   {
     "nombre": "Kiko Olivas",
@@ -917,7 +1031,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 4,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Deivid",
@@ -925,7 +1040,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Pablo Hervias",
@@ -933,7 +1049,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 11,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Oscar Plano",
@@ -941,7 +1058,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Toni Villa",
@@ -949,7 +1067,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 19,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "A"
   },
   {
     "nombre": "Fernando Calero",
@@ -957,7 +1076,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Nacho Martinez",
@@ -965,7 +1085,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 22,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Giannis Gianniotas",
@@ -973,7 +1094,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 7,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Javier Ontiveros",
@@ -981,7 +1103,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 10,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Antonio Cotan",
@@ -989,7 +1112,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 16,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Asier Villalibre",
@@ -997,7 +1121,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 2,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Toni Martinez",
@@ -1005,7 +1130,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 14,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Borja Herrera",
@@ -1013,7 +1139,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Chris Ramos",
@@ -1021,7 +1148,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 12,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Lukas Rotpuller",
@@ -1029,7 +1157,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 20,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Sulayman Marreh",
@@ -1037,7 +1166,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 14,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "B"
   },
   {
     "nombre": "Nooh Al Mousa",
@@ -1045,7 +1175,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 25,
     "temporadaPrim": 2018,
-    "temporadaSeg": 2018
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Ruben Alcaraz",
@@ -1053,7 +1184,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 14,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "B"
   },
   {
     "nombre": "Enes Unal",
@@ -1061,7 +1193,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "A"
   },
   {
     "nombre": "Sergi Guardiola",
@@ -1069,7 +1202,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 16,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Yoel Rodriguez",
@@ -1077,7 +1211,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "A"
   },
   {
     "nombre": "Keko Gontan",
@@ -1085,7 +1220,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 24,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Daniele Verde",
@@ -1093,7 +1229,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 11,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "A"
   },
   {
     "nombre": "Duje Cop",
@@ -1101,7 +1238,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 20,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Joaquin Fernandez",
@@ -1109,7 +1247,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 24,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "A"
   },
   {
     "nombre": "Leo Suarez",
@@ -1117,7 +1256,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 32,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Waldo Rubio",
@@ -1125,7 +1265,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 23,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2021
+    "temporadaSeg": 2021,
+    "grupo": "A"
   },
   {
     "nombre": "Moi Delgado",
@@ -1133,7 +1274,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "B"
   },
   {
     "nombre": "Ivi Lopez",
@@ -1141,7 +1283,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 7,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "A"
   },
   {
     "nombre": "Miguel de la Fuente",
@@ -1149,7 +1292,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 29,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "B"
   },
   {
     "nombre": "Stiven Plaza",
@@ -1157,7 +1301,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 42,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2019
+    "temporadaSeg": 2019,
+    "grupo": "A"
   },
   {
     "nombre": "Mohammed Salisu",
@@ -1165,7 +1310,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 27,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "B"
   },
   {
     "nombre": "Sandro Ramirez",
@@ -1173,7 +1319,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 20,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "A"
   },
   {
     "nombre": "Jose Antonio Caro",
@@ -1181,7 +1328,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "B"
   },
   {
     "nombre": "Fede San Emeterio",
@@ -1189,7 +1337,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 20,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Raul Carnero",
@@ -1197,7 +1346,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "B"
   },
   {
     "nombre": "Pedro Porro",
@@ -1205,7 +1355,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 2,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "A"
   },
   {
     "nombre": "Luis Perez",
@@ -1213,7 +1364,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 2,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Fede Barba",
@@ -1221,7 +1373,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 3,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "A"
   },
   {
     "nombre": "David Torres",
@@ -1229,7 +1382,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 3,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Hatem Ben Arfa",
@@ -1237,7 +1391,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 3,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "A"
   },
   {
     "nombre": "Matheus Fernandes",
@@ -1245,7 +1400,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "B"
   },
   {
     "nombre": "Andrey Lunin",
@@ -1253,7 +1409,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "A"
   },
   {
     "nombre": "Jorge de Frutos",
@@ -1261,7 +1418,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 12,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2020
+    "temporadaSeg": 2020,
+    "grupo": "B"
   },
   {
     "nombre": "Victor Meseguer",
@@ -1269,7 +1427,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 4,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Bruno Gonzalez",
@@ -1277,7 +1436,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "B"
   },
   {
     "nombre": "Fabian Orellana",
@@ -1285,7 +1445,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 12,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2021
+    "temporadaSeg": 2021,
+    "grupo": "A"
   },
   {
     "nombre": "Roque Mesa",
@@ -1293,7 +1454,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 17,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Shon Weissman",
@@ -1301,7 +1463,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "A"
   },
   {
     "nombre": "Roberto Fernandez",
@@ -1309,7 +1472,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "B"
   },
   {
     "nombre": "Jawad El Yamiq",
@@ -1317,7 +1481,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "A"
   },
   {
     "nombre": "Javi Sanchez",
@@ -1325,7 +1490,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Saidy Janko",
@@ -1333,7 +1499,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 18,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Lucas Olaza",
@@ -1341,7 +1508,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 12,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Jota",
@@ -1349,7 +1517,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 40,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2021
+    "temporadaSeg": 2021,
+    "grupo": "A"
   },
   {
     "nombre": "Kenan Kodro",
@@ -1357,7 +1526,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 3,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2021
+    "temporadaSeg": 2021,
+    "grupo": "B"
   },
   {
     "nombre": "Alvaro Aguado",
@@ -1365,7 +1535,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 6,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "A"
   },
   {
     "nombre": "Gonzalo Plata",
@@ -1373,7 +1544,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 11,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Sergio Leon",
@@ -1381,7 +1553,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 7,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Cristo Gonzalez",
@@ -1389,7 +1562,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "B"
   },
   {
     "nombre": "Monchu",
@@ -1397,7 +1571,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Enzi Boyomo",
@@ -1405,7 +1580,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Jon Morcillo",
@@ -1413,7 +1589,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 20,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Diogo Queiros",
@@ -1421,7 +1598,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "B"
   },
   {
     "nombre": "Josema",
@@ -1429,7 +1607,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 6,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Ivan Fresneda",
@@ -1437,7 +1616,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 27,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Hugo Vallejo",
@@ -1445,7 +1625,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 27,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2022
+    "temporadaSeg": 2022,
+    "grupo": "A"
   },
   {
     "nombre": "Sekou Gassama",
@@ -1453,7 +1634,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 22,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Sergio Asenjo",
@@ -1461,7 +1643,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2008,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "A"
   },
   {
     "nombre": "Sergio Escudero",
@@ -1469,7 +1652,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 18,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "B"
   },
   {
     "nombre": "Mamadou Sylla",
@@ -1477,7 +1661,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 7,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Cyle Larin",
@@ -1485,7 +1670,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 25,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Kike Perez",
@@ -1493,7 +1679,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 8,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Martin Hongla",
@@ -1501,7 +1688,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 20,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Ivan Sanchez",
@@ -1509,7 +1697,8 @@ const jugadores = [
     "posicion": "ED",
     "dorsal": 10,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Raul Moro",
@@ -1517,7 +1706,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 11,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Marcos Andre",
@@ -1525,7 +1715,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2021,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Zouhair Feddal",
@@ -1533,7 +1724,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 3,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Cesar de la Hoz",
@@ -1541,7 +1733,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 16,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Juanjo Narvaez",
@@ -1549,7 +1742,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 20,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2023
+    "temporadaSeg": 2023,
+    "grupo": "B"
   },
   {
     "nombre": "Mickael Malsa",
@@ -1557,7 +1751,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 14,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Tunde Akinsola",
@@ -1565,7 +1760,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 36,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "B"
   },
   {
     "nombre": "Darwin Machis",
@@ -1573,7 +1769,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 18,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Amath Ndiaye",
@@ -1581,7 +1778,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 19,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Stanko Juric",
@@ -1589,7 +1787,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 20,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Selim Amallah",
@@ -1597,7 +1796,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 21,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Lucas Rosa",
@@ -1605,7 +1805,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 22,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "John Victor",
@@ -1613,7 +1814,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 25,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "B"
   },
   {
     "nombre": "Anuar Tuhami",
@@ -1621,7 +1823,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 23,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Kenedy",
@@ -1629,7 +1832,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 24,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Alvaro Aceves",
@@ -1637,7 +1841,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 31,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Gustavo Henrique",
@@ -1645,7 +1850,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "B"
   },
   {
     "nombre": "Lucas Oliveira",
@@ -1653,7 +1859,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 12,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Alvaro Negredo",
@@ -1661,7 +1868,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 21,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "B"
   },
   {
     "nombre": "Isra Salazar",
@@ -1669,7 +1877,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 38,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Cedric",
@@ -1677,7 +1886,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 35,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "B"
   },
   {
     "nombre": "Stipe Biuk",
@@ -1685,7 +1895,8 @@ const jugadores = [
     "posicion": "EI",
     "dorsal": 17,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Cesar Tarrega",
@@ -1693,7 +1904,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 34,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Joni Montiel",
@@ -1701,7 +1913,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 21,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Arnu",
@@ -1709,7 +1922,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 29,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Ivan Garriel",
@@ -1717,7 +1931,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 29,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024
+    "temporadaSeg": 2024,
+    "grupo": "A"
   },
   {
     "nombre": "Karl Hein",
@@ -1725,7 +1940,8 @@ const jugadores = [
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Eray Comert",
@@ -1733,7 +1949,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Mario Martin",
@@ -1741,7 +1958,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 12,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Juanmi Latasa",
@@ -1749,7 +1967,8 @@ const jugadores = [
     "posicion": "DC",
     "dorsal": 14,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Chuki",
@@ -1757,7 +1976,8 @@ const jugadores = [
     "posicion": "MP",
     "dorsal": 28,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Antonio Candela",
@@ -1765,7 +1985,8 @@ const jugadores = [
     "posicion": "LD",
     "dorsal": 22,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Adam Aznou",
@@ -1773,7 +1994,8 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 39,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Tamas Nikitscher",
@@ -1781,7 +2003,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 4,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Juma Bah",
@@ -1789,7 +2012,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 35,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Cenk Ozkacar",
@@ -1797,7 +2021,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Florian Grillitsch",
@@ -1805,7 +2030,8 @@ const jugadores = [
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   },
   {
     "nombre": "Joseph Aidoo",
@@ -1813,7 +2039,8 @@ const jugadores = [
     "posicion": "DFC",
     "dorsal": 16,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Henrique Silva",
@@ -1821,6 +2048,7 @@ const jugadores = [
     "posicion": "LI",
     "dorsal": 17,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025
+    "temporadaSeg": 2025,
+    "grupo": "B"
   }
 ];

@@ -181,6 +181,12 @@ function cargarPartidaGuardada() {
   if (!guardado) return false;
 
   const datos = JSON.parse(guardado);
+  const jugadorHoy = getJugadorDelDiaLocal();
+  if (datos.elegido.nombre !== jugadorHoy.nombre) {
+    // Si no es el mismo jugador, es una partida de otro día: ignórala
+    localStorage.removeItem(clavePartidaHoy);
+    return false;
+  }
   elegido = datos.elegido;
   juegoTerminado = true;
   intentos = datos.intentos;
@@ -223,12 +229,23 @@ function cerrarPopupResultado() {
 
 
 function getJugadorDelDiaLocal() {
-  const hoy = new Date().toISOString().slice(0, 10); // "YYYY-MM-DD"
-  // Semilla simple sumando partes de la fecha
-  const seed = hoy.split("-").reduce((acc, val) => acc + parseInt(val, 10), 0);
-  // Índice basado en la semilla y cantidad de jugadores
-  const index = seed % jugadores.length;
-  return jugadores[index];
+  const hoy = new Date();
+  const milisegundosPorDia = 1000 * 60 * 60 * 24;
+  const diasDesdeEpoch = Math.floor(hoy.getTime() / milisegundosPorDia);
+
+  const grupoDeseado = (diasDesdeEpoch % 2 === 0) ? "A" : "B";
+
+  // Filtrar jugadores del grupo correspondiente
+  const jugadoresDelGrupo = jugadores.filter(j => j.grupo === grupoDeseado);
+
+  // Crear semilla basada en diasDesdeEpoch para que sea reproducible
+  // Ejemplo simple: usar el mismo diasDesdeEpoch para indexar en el grupo
+  const seed = diasDesdeEpoch;
+
+  // Índice basado en la semilla y cantidad de jugadores del grupo
+  const index = seed % jugadoresDelGrupo.length;
+
+  return jugadoresDelGrupo[index];
 }
 
 
