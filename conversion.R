@@ -1,30 +1,14 @@
 library(readxl)
 
 # Leer archivo Excel
-datos <- read_excel("C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.xlsx", sheet = 1)
-
-# Función para reemplazar tildes y ñ
-limpiar_texto <- function(x) {
-  x <- iconv(x, from = "UTF-8", to = "ASCII//TRANSLIT")  # Elimina tildes
-  x <- gsub("ñ", "n", x, ignore.case = FALSE)             # Reemplaza ñ
-  return(x)
-}
-
-# Aplicar la función a todas las columnas de tipo texto
-datos[] <- lapply(datos, function(col) {
-  if (is.character(col)) {
-    limpiar_texto(col)
-  } else {
-    col
-  }
-})
+datos <- read_excel("C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.local/laliga2/realvalladolid/realvalladolid.xlsx", sheet = 1)
 
 # Guardar como archivo .txt con tabulaciones
 write.table(datos, file = "C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.txt", sep = "\t", row.names = FALSE, quote = FALSE)
 
 # Ruta al archivo original
 input_file <- "C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.txt"  # Cambia por tu ruta real
-output_file <- "C:/Users/tomip/OneDrive/Documentos/pucelale/parteweb/jugadores.js"
+output_file <- "C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.local/laliga2/realvalladolid/realvalladolid.js"
 
 # Leer el archivo con encabezados, separado por tabuladores
 df <- read.delim(input_file, header = TRUE, stringsAsFactors = FALSE, encoding = "UTF-8")

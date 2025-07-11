@@ -535,7 +535,7 @@ function banderaDePaisImg(pais) {
 
 function obtenerCodigoISO(pais) {
   const mapa = {
-    espana: "es",
+    españa: "es",
     francia: "fr",
     brasil: "br",
     argentina: "ar",

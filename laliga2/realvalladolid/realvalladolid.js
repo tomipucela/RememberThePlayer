@@ -9,7 +9,7 @@ const jugadores = [
   },
   {
     "nombre": "Fabio Faria",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 2,
     "temporadaPrim": 2011,
@@ -17,7 +17,7 @@ const jugadores = [
   },
   {
     "nombre": "Jordi Figueras",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 3,
     "temporadaPrim": 2011,
@@ -25,7 +25,7 @@ const jugadores = [
   },
   {
     "nombre": "Tekio",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 29,
     "temporadaPrim": 2012,
@@ -33,7 +33,7 @@ const jugadores = [
   },
   {
     "nombre": "Marc Valiente",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 4,
     "temporadaPrim": 2011,
@@ -41,7 +41,7 @@ const jugadores = [
   },
   {
     "nombre": "Cesar Arzo",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2010,
@@ -49,23 +49,23 @@ const jugadores = [
   },
   {
     "nombre": "Jesus Rueda",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2009,
     "temporadaSeg": 2015
   },
   {
-    "nombre": "Ruben Pena",
-    "nacionalidad": "Espana",
+    "nombre": "Ruben Peña",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 28,
     "temporadaPrim": 2013,
     "temporadaSeg": 2013
   },
   {
-    "nombre": "Lolo Pla",
-    "nacionalidad": "Espana",
+    "nombre": "Lolo Plá",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 27,
     "temporadaPrim": 2013,
@@ -81,7 +81,7 @@ const jugadores = [
   },
   {
     "nombre": "Alvaro Anton",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2003,
@@ -89,7 +89,7 @@ const jugadores = [
   },
   {
     "nombre": "Oscar Gonzalez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2002,
@@ -97,7 +97,7 @@ const jugadores = [
   },
   {
     "nombre": "Mikel Balenziaga",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 24,
     "temporadaPrim": 2012,
@@ -105,7 +105,7 @@ const jugadores = [
   },
   {
     "nombre": "Matabuena",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 12,
     "temporadaPrim": 2011,
@@ -113,14 +113,14 @@ const jugadores = [
   },
   {
     "nombre": "Aquino",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2012,
     "temporadaSeg": 2012
   },
   {
-    "nombre": "Dani Hernandez",
+    "nombre": "Dani Hernández",
     "nacionalidad": "Venezuela",
     "posicion": "PT",
     "dorsal": 13,
@@ -144,16 +144,16 @@ const jugadores = [
     "temporadaSeg": 2011
   },
   {
-    "nombre": "Victor Perez",
-    "nacionalidad": "Espana",
+    "nombre": "Victor Pérez",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 22,
     "temporadaPrim": 2012,
     "temporadaSeg": 2014
   },
   {
-    "nombre": "Pedro Lopez",
-    "nacionalidad": "Espana",
+    "nombre": "Pedro López",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 16,
     "temporadaPrim": 2006,
@@ -161,15 +161,15 @@ const jugadores = [
   },
   {
     "nombre": "Sisi",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 21,
     "temporadaPrim": 2007,
     "temporadaSeg": 2012
   },
   {
-    "nombre": "Carlos Pena",
-    "nacionalidad": "Espana",
+    "nombre": "Carlos Peña",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 17,
     "temporadaPrim": 2011,
@@ -177,7 +177,7 @@ const jugadores = [
   },
   {
     "nombre": "Alvaro Rubio",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 18,
     "temporadaPrim": 2007,
@@ -193,7 +193,7 @@ const jugadores = [
   },
   {
     "nombre": "Barragan",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 19,
     "temporadaPrim": 2010,
@@ -201,7 +201,7 @@ const jugadores = [
   },
   {
     "nombre": "Varela",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 19,
     "temporadaPrim": 2012,
@@ -209,7 +209,7 @@ const jugadores = [
   },
   {
     "nombre": "Calle",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 22,
     "temporadaPrim": 2011,
@@ -233,7 +233,7 @@ const jugadores = [
   },
   {
     "nombre": "Alberto Bueno",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 15,
     "temporadaPrim": 2012,
@@ -241,7 +241,7 @@ const jugadores = [
   },
   {
     "nombre": "Jorge Alonso",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 14,
     "temporadaPrim": 2011,
@@ -249,7 +249,7 @@ const jugadores = [
   },
   {
     "nombre": "Jacobo Sanz",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 25,
     "temporadaPrim": 2006,
@@ -265,7 +265,7 @@ const jugadores = [
   },
   {
     "nombre": "Raul Navas",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 26,
     "temporadaPrim": 2010,
@@ -273,7 +273,7 @@ const jugadores = [
   },
   {
     "nombre": "Quique",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 27,
     "temporadaPrim": 2011,
@@ -281,7 +281,7 @@ const jugadores = [
   },
   {
     "nombre": "Jofre",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 11,
     "temporadaPrim": 2011,
@@ -297,7 +297,7 @@ const jugadores = [
   },
   {
     "nombre": "Javi Jimenez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 30,
     "temporadaPrim": 2011,
@@ -305,7 +305,7 @@ const jugadores = [
   },
   {
     "nombre": "Javi Guerra",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2011,
@@ -313,7 +313,7 @@ const jugadores = [
   },
   {
     "nombre": "Javier Baraja",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2002,
@@ -321,7 +321,7 @@ const jugadores = [
   },
   {
     "nombre": "Nauzet",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 7,
     "temporadaPrim": 2010,
@@ -329,7 +329,7 @@ const jugadores = [
   },
   {
     "nombre": "Omar Ramos",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 14,
     "temporadaPrim": 2013,
@@ -345,7 +345,7 @@ const jugadores = [
   },
   {
     "nombre": "Lluis Sastre",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 16,
     "temporadaPrim": 2013,
@@ -353,7 +353,7 @@ const jugadores = [
   },
   {
     "nombre": "Juanito",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2011,
@@ -369,7 +369,7 @@ const jugadores = [
   },
   {
     "nombre": "Marquitos",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 3,
     "temporadaPrim": 2012,
@@ -393,15 +393,15 @@ const jugadores = [
   },
   {
     "nombre": "Jaime Jimenez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2012,
     "temporadaSeg": 2014
   },
   {
-    "nombre": "Diego Marino",
-    "nacionalidad": "Espana",
+    "nombre": "Diego Mariño",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2014,
@@ -465,7 +465,7 @@ const jugadores = [
   },
   {
     "nombre": "Javi Varas",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2015,
@@ -473,14 +473,14 @@ const jugadores = [
   },
   {
     "nombre": "Javi Chica",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 2,
     "temporadaPrim": 2015,
     "temporadaSeg": 2015
   },
   {
-    "nombre": "Andre Leao",
+    "nombre": "André Leao",
     "nacionalidad": "Portugal",
     "posicion": "MCD",
     "dorsal": 8,
@@ -489,7 +489,7 @@ const jugadores = [
   },
   {
     "nombre": "Johan Mojica",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2015,
@@ -497,7 +497,7 @@ const jugadores = [
   },
   {
     "nombre": "David Timor",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 22,
     "temporadaPrim": 2015,
@@ -505,7 +505,7 @@ const jugadores = [
   },
   {
     "nombre": "Oscar Diaz",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 7,
     "temporadaPrim": 2015,
@@ -513,7 +513,7 @@ const jugadores = [
   },
   {
     "nombre": "Samuel Llorca",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2015,
@@ -521,7 +521,7 @@ const jugadores = [
   },
   {
     "nombre": "Chus Herrero",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2015,
@@ -529,7 +529,7 @@ const jugadores = [
   },
   {
     "nombre": "Raul Fernandez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2015,
@@ -537,15 +537,15 @@ const jugadores = [
   },
   {
     "nombre": "Jonathan Pereira",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 24,
     "temporadaPrim": 2015,
     "temporadaSeg": 2015
   },
   {
-    "nombre": "Roger Marti",
-    "nacionalidad": "Espana",
+    "nombre": "Roger Martí",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2015,
@@ -569,7 +569,7 @@ const jugadores = [
   },
   {
     "nombre": "Alejandro Alfaro",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 11,
     "temporadaPrim": 2015,
@@ -577,7 +577,7 @@ const jugadores = [
   },
   {
     "nombre": "Brian Olivan",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 33,
     "temporadaPrim": 2015,
@@ -585,7 +585,7 @@ const jugadores = [
   },
   {
     "nombre": "Julio Iricibar",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 26,
     "temporadaPrim": 2015,
@@ -593,7 +593,7 @@ const jugadores = [
   },
   {
     "nombre": "Kepa Arrizabalaga",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2016,
@@ -601,7 +601,7 @@ const jugadores = [
   },
   {
     "nombre": "Javi Moyano",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 17,
     "temporadaPrim": 2016,
@@ -609,7 +609,7 @@ const jugadores = [
   },
   {
     "nombre": "Mario Hermoso",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 36,
     "temporadaPrim": 2016,
@@ -617,7 +617,7 @@ const jugadores = [
   },
   {
     "nombre": "Juanpe",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 14,
     "temporadaPrim": 2016,
@@ -633,15 +633,15 @@ const jugadores = [
   },
   {
     "nombre": "Juan Villar",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 7,
     "temporadaPrim": 2016,
     "temporadaSeg": 2017
   },
   {
-    "nombre": "Rodri Rios",
-    "nacionalidad": "Espana",
+    "nombre": "Rodri Ríos",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2016,
@@ -657,7 +657,7 @@ const jugadores = [
   },
   {
     "nombre": "Manu del Moral",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 20,
     "temporadaPrim": 2016,
@@ -673,7 +673,7 @@ const jugadores = [
   },
   {
     "nombre": "Guzman Casaseca",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 21,
     "temporadaPrim": 2016,
@@ -681,7 +681,7 @@ const jugadores = [
   },
   {
     "nombre": "Borja Fernandez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2007,
@@ -712,8 +712,8 @@ const jugadores = [
     "temporadaSeg": 2016
   },
   {
-    "nombre": "Angel Garcia",
-    "nacionalidad": "Espana",
+    "nombre": "Angel García",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2016,
@@ -721,14 +721,14 @@ const jugadores = [
   },
   {
     "nombre": "Jose Arnaiz",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 7,
     "temporadaPrim": 2016,
     "temporadaSeg": 2018
   },
   {
-    "nombre": "Andre Ferreira",
+    "nombre": "André Ferreira",
     "nacionalidad": "Portugal",
     "posicion": "PT",
     "dorsal": 1,
@@ -745,7 +745,7 @@ const jugadores = [
   },
   {
     "nombre": "Isaac Becerra",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2017,
@@ -761,7 +761,7 @@ const jugadores = [
   },
   {
     "nombre": "Alex Perez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 24,
     "temporadaPrim": 2017,
@@ -769,7 +769,7 @@ const jugadores = [
   },
   {
     "nombre": "Alberto Guitian",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2017,
@@ -777,7 +777,7 @@ const jugadores = [
   },
   {
     "nombre": "Michel Herrero",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 21,
     "temporadaPrim": 2017,
@@ -785,7 +785,7 @@ const jugadores = [
   },
   {
     "nombre": "Joan Jordan",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 19,
     "temporadaPrim": 2017,
@@ -793,7 +793,7 @@ const jugadores = [
   },
   {
     "nombre": "Alex Lopez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 4,
     "temporadaPrim": 2017,
@@ -801,15 +801,15 @@ const jugadores = [
   },
   {
     "nombre": "Pau Torres",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2017,
     "temporadaSeg": 2017
   },
   {
-    "nombre": "Raul De Tomas",
-    "nacionalidad": "Espana",
+    "nombre": "Raul De Tomás",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 47,
     "temporadaPrim": 2017,
@@ -817,15 +817,15 @@ const jugadores = [
   },
   {
     "nombre": "Jaime Mata",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 9,
     "temporadaPrim": 2017,
     "temporadaSeg": 2018
   },
   {
-    "nombre": "Rafa Lopez",
-    "nacionalidad": "Espana",
+    "nombre": "Rafa López",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2005,
@@ -841,7 +841,7 @@ const jugadores = [
   },
   {
     "nombre": "Sergio Marcos",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2017,
@@ -873,15 +873,15 @@ const jugadores = [
   },
   {
     "nombre": "Markel Etxeberria",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 22,
     "temporadaPrim": 2017,
     "temporadaSeg": 2017
   },
   {
-    "nombre": "Luismi Sanchez",
-    "nacionalidad": "Espana",
+    "nombre": "Luismi Sánchez",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 15,
     "temporadaPrim": 2017,
@@ -889,7 +889,7 @@ const jugadores = [
   },
   {
     "nombre": "David Mayoral",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 42,
     "temporadaPrim": 2017,
@@ -897,15 +897,15 @@ const jugadores = [
   },
   {
     "nombre": "Jordi Masip",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 1,
     "temporadaPrim": 2018,
     "temporadaSeg": 2024
   },
   {
-    "nombre": "Antonito Regal",
-    "nacionalidad": "Espana",
+    "nombre": "Antoñito Regal",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 18,
     "temporadaPrim": 2018,
@@ -913,7 +913,7 @@ const jugadores = [
   },
   {
     "nombre": "Kiko Olivas",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 4,
     "temporadaPrim": 2018,
@@ -921,15 +921,15 @@ const jugadores = [
   },
   {
     "nombre": "Deivid",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 15,
     "temporadaPrim": 2018,
     "temporadaSeg": 2018
   },
   {
-    "nombre": "Pablo Hervias",
-    "nacionalidad": "Espana",
+    "nombre": "Pablo Hervías",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 11,
     "temporadaPrim": 2018,
@@ -937,7 +937,7 @@ const jugadores = [
   },
   {
     "nombre": "Oscar Plano",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 10,
     "temporadaPrim": 2018,
@@ -945,7 +945,7 @@ const jugadores = [
   },
   {
     "nombre": "Toni Villa",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 19,
     "temporadaPrim": 2018,
@@ -953,15 +953,15 @@ const jugadores = [
   },
   {
     "nombre": "Fernando Calero",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2018,
     "temporadaSeg": 2019
   },
   {
-    "nombre": "Nacho Martinez",
-    "nacionalidad": "Espana",
+    "nombre": "Nacho Martínez",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 22,
     "temporadaPrim": 2018,
@@ -977,15 +977,15 @@ const jugadores = [
   },
   {
     "nombre": "Javier Ontiveros",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 10,
     "temporadaPrim": 2018,
     "temporadaSeg": 2018
   },
   {
-    "nombre": "Antonio Cotan",
-    "nacionalidad": "Espana",
+    "nombre": "Antonio Cotán",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 16,
     "temporadaPrim": 2018,
@@ -993,7 +993,7 @@ const jugadores = [
   },
   {
     "nombre": "Asier Villalibre",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 2,
     "temporadaPrim": 2018,
@@ -1001,7 +1001,7 @@ const jugadores = [
   },
   {
     "nombre": "Toni Martinez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 14,
     "temporadaPrim": 2018,
@@ -1009,7 +1009,7 @@ const jugadores = [
   },
   {
     "nombre": "Borja Herrera",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2018,
@@ -1017,7 +1017,7 @@ const jugadores = [
   },
   {
     "nombre": "Chris Ramos",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 12,
     "temporadaPrim": 2018,
@@ -1041,7 +1041,7 @@ const jugadores = [
   },
   {
     "nombre": "Nooh Al Mousa",
-    "nacionalidad": "Arabia Saudi",
+    "nacionalidad": "Arabia Saudí",
     "posicion": "MCD",
     "dorsal": 25,
     "temporadaPrim": 2018,
@@ -1049,14 +1049,14 @@ const jugadores = [
   },
   {
     "nombre": "Ruben Alcaraz",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 14,
     "temporadaPrim": 2019,
     "temporadaSeg": 2022
   },
   {
-    "nombre": "Enes Unal",
+    "nombre": "Enes Ünal",
     "nacionalidad": "Turquia",
     "posicion": "DC",
     "dorsal": 9,
@@ -1065,15 +1065,15 @@ const jugadores = [
   },
   {
     "nombre": "Sergi Guardiola",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 16,
     "temporadaPrim": 2019,
     "temporadaSeg": 2023
   },
   {
-    "nombre": "Yoel Rodriguez",
-    "nacionalidad": "Espana",
+    "nombre": "Yoel Rodríguez",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2019,
@@ -1081,7 +1081,7 @@ const jugadores = [
   },
   {
     "nombre": "Keko Gontan",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 24,
     "temporadaPrim": 2019,
@@ -1105,7 +1105,7 @@ const jugadores = [
   },
   {
     "nombre": "Joaquin Fernandez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 24,
     "temporadaPrim": 2019,
@@ -1121,7 +1121,7 @@ const jugadores = [
   },
   {
     "nombre": "Waldo Rubio",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 23,
     "temporadaPrim": 2019,
@@ -1129,15 +1129,15 @@ const jugadores = [
   },
   {
     "nombre": "Moi Delgado",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2019,
     "temporadaSeg": 2019
   },
   {
-    "nombre": "Ivi Lopez",
-    "nacionalidad": "Espana",
+    "nombre": "Ivi López",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 7,
     "temporadaPrim": 2019,
@@ -1145,7 +1145,7 @@ const jugadores = [
   },
   {
     "nombre": "Miguel de la Fuente",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 29,
     "temporadaPrim": 2019,
@@ -1168,8 +1168,8 @@ const jugadores = [
     "temporadaSeg": 2020
   },
   {
-    "nombre": "Sandro Ramirez",
-    "nacionalidad": "Espana",
+    "nombre": "Sandro Ramírez",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 20,
     "temporadaPrim": 2020,
@@ -1177,7 +1177,7 @@ const jugadores = [
   },
   {
     "nombre": "Jose Antonio Caro",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2020,
@@ -1185,7 +1185,7 @@ const jugadores = [
   },
   {
     "nombre": "Fede San Emeterio",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 20,
     "temporadaPrim": 2020,
@@ -1193,7 +1193,7 @@ const jugadores = [
   },
   {
     "nombre": "Raul Carnero",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 3,
     "temporadaPrim": 2020,
@@ -1201,7 +1201,7 @@ const jugadores = [
   },
   {
     "nombre": "Pedro Porro",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 2,
     "temporadaPrim": 2020,
@@ -1209,7 +1209,7 @@ const jugadores = [
   },
   {
     "nombre": "Luis Perez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 2,
     "temporadaPrim": 2021,
@@ -1225,7 +1225,7 @@ const jugadores = [
   },
   {
     "nombre": "David Torres",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 3,
     "temporadaPrim": 2023,
@@ -1257,7 +1257,7 @@ const jugadores = [
   },
   {
     "nombre": "Jorge de Frutos",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 12,
     "temporadaPrim": 2020,
@@ -1265,15 +1265,15 @@ const jugadores = [
   },
   {
     "nombre": "Victor Meseguer",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 4,
     "temporadaPrim": 2024,
     "temporadaSeg": 2025
   },
   {
-    "nombre": "Bruno Gonzalez",
-    "nacionalidad": "Espana",
+    "nombre": "Bruno González",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2021,
@@ -1289,7 +1289,7 @@ const jugadores = [
   },
   {
     "nombre": "Roque Mesa",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 17,
     "temporadaPrim": 2021,
@@ -1304,8 +1304,8 @@ const jugadores = [
     "temporadaSeg": 2023
   },
   {
-    "nombre": "Roberto Fernandez",
-    "nacionalidad": "Espana",
+    "nombre": "Roberto Fernández",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2021,
@@ -1321,7 +1321,7 @@ const jugadores = [
   },
   {
     "nombre": "Javi Sanchez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 5,
     "temporadaPrim": 2020,
@@ -1361,7 +1361,7 @@ const jugadores = [
   },
   {
     "nombre": "Alvaro Aguado",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 6,
     "temporadaPrim": 2022,
@@ -1376,8 +1376,8 @@ const jugadores = [
     "temporadaSeg": 2023
   },
   {
-    "nombre": "Sergio Leon",
-    "nacionalidad": "Espana",
+    "nombre": "Sergio León",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 7,
     "temporadaPrim": 2022,
@@ -1385,7 +1385,7 @@ const jugadores = [
   },
   {
     "nombre": "Cristo Gonzalez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 23,
     "temporadaPrim": 2022,
@@ -1393,7 +1393,7 @@ const jugadores = [
   },
   {
     "nombre": "Monchu",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 8,
     "temporadaPrim": 2022,
@@ -1401,7 +1401,7 @@ const jugadores = [
   },
   {
     "nombre": "Enzi Boyomo",
-    "nacionalidad": "Camerun",
+    "nacionalidad": "Camerún",
     "posicion": "DFC",
     "dorsal": 6,
     "temporadaPrim": 2024,
@@ -1409,14 +1409,14 @@ const jugadores = [
   },
   {
     "nombre": "Jon Morcillo",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 20,
     "temporadaPrim": 2022,
     "temporadaSeg": 2022
   },
   {
-    "nombre": "Diogo Queiros",
+    "nombre": "Diogo Queirós",
     "nacionalidad": "Portugal",
     "posicion": "DFC",
     "dorsal": 6,
@@ -1425,7 +1425,7 @@ const jugadores = [
   },
   {
     "nombre": "Josema",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 6,
     "temporadaPrim": 2022,
@@ -1433,7 +1433,7 @@ const jugadores = [
   },
   {
     "nombre": "Ivan Fresneda",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LD",
     "dorsal": 27,
     "temporadaPrim": 2022,
@@ -1441,7 +1441,7 @@ const jugadores = [
   },
   {
     "nombre": "Hugo Vallejo",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 27,
     "temporadaPrim": 2022,
@@ -1457,7 +1457,7 @@ const jugadores = [
   },
   {
     "nombre": "Sergio Asenjo",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 13,
     "temporadaPrim": 2008,
@@ -1465,7 +1465,7 @@ const jugadores = [
   },
   {
     "nombre": "Sergio Escudero",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 18,
     "temporadaPrim": 2023,
@@ -1481,7 +1481,7 @@ const jugadores = [
   },
   {
     "nombre": "Cyle Larin",
-    "nacionalidad": "Canada",
+    "nacionalidad": "Canadá",
     "posicion": "DC",
     "dorsal": 25,
     "temporadaPrim": 2023,
@@ -1489,7 +1489,7 @@ const jugadores = [
   },
   {
     "nombre": "Kike Perez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 8,
     "temporadaPrim": 2020,
@@ -1497,7 +1497,7 @@ const jugadores = [
   },
   {
     "nombre": "Martin Hongla",
-    "nacionalidad": "Camerun",
+    "nacionalidad": "Camerún",
     "posicion": "MCD",
     "dorsal": 20,
     "temporadaPrim": 2023,
@@ -1505,7 +1505,7 @@ const jugadores = [
   },
   {
     "nombre": "Ivan Sanchez",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "ED",
     "dorsal": 10,
     "temporadaPrim": 2022,
@@ -1513,14 +1513,14 @@ const jugadores = [
   },
   {
     "nombre": "Raul Moro",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "EI",
     "dorsal": 11,
     "temporadaPrim": 2024,
     "temporadaSeg": 2025
   },
   {
-    "nombre": "Marcos Andre",
+    "nombre": "Marcos André",
     "nacionalidad": "Brasil",
     "posicion": "DC",
     "dorsal": 9,
@@ -1537,7 +1537,7 @@ const jugadores = [
   },
   {
     "nombre": "Cesar de la Hoz",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 16,
     "temporadaPrim": 2024,
@@ -1632,8 +1632,8 @@ const jugadores = [
     "temporadaSeg": 2025
   },
   {
-    "nombre": "Alvaro Aceves",
-    "nacionalidad": "Espana",
+    "nombre": "Álvaro Aceves",
+    "nacionalidad": "España",
     "posicion": "PT",
     "dorsal": 31,
     "temporadaPrim": 2023,
@@ -1656,8 +1656,8 @@ const jugadores = [
     "temporadaSeg": 2024
   },
   {
-    "nombre": "Alvaro Negredo",
-    "nacionalidad": "Espana",
+    "nombre": "Álvaro Negredo",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 21,
     "temporadaPrim": 2024,
@@ -1665,15 +1665,15 @@ const jugadores = [
   },
   {
     "nombre": "Isra Salazar",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 38,
     "temporadaPrim": 2024,
     "temporadaSeg": 2024
   },
   {
-    "nombre": "Cedric",
-    "nacionalidad": "Camerun",
+    "nombre": "Cédric",
+    "nacionalidad": "Camerún",
     "posicion": "DC",
     "dorsal": 35,
     "temporadaPrim": 2024,
@@ -1688,8 +1688,8 @@ const jugadores = [
     "temporadaSeg": 2024
   },
   {
-    "nombre": "Cesar Tarrega",
-    "nacionalidad": "Espana",
+    "nombre": "César Tárrega",
+    "nacionalidad": "España",
     "posicion": "DFC",
     "dorsal": 34,
     "temporadaPrim": 2024,
@@ -1697,7 +1697,7 @@ const jugadores = [
   },
   {
     "nombre": "Joni Montiel",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 21,
     "temporadaPrim": 2024,
@@ -1705,7 +1705,7 @@ const jugadores = [
   },
   {
     "nombre": "Arnu",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 29,
     "temporadaPrim": 2024,
@@ -1713,7 +1713,7 @@ const jugadores = [
   },
   {
     "nombre": "Ivan Garriel",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "LI",
     "dorsal": 29,
     "temporadaPrim": 2024,
@@ -1737,7 +1737,7 @@ const jugadores = [
   },
   {
     "nombre": "Mario Martin",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MCD",
     "dorsal": 12,
     "temporadaPrim": 2025,
@@ -1745,7 +1745,7 @@ const jugadores = [
   },
   {
     "nombre": "Juanmi Latasa",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "DC",
     "dorsal": 14,
     "temporadaPrim": 2025,
@@ -1753,7 +1753,7 @@ const jugadores = [
   },
   {
     "nombre": "Chuki",
-    "nacionalidad": "Espana",
+    "nacionalidad": "España",
     "posicion": "MP",
     "dorsal": 28,
     "temporadaPrim": 2025,
