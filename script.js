@@ -6,8 +6,90 @@ let juegoTerminado = false;
 window.onload = () => {
   elegido = getJugadorDelDiaLocal();
   console.log("Jugador del día (local):", elegido);
-  document.getElementById("guessName").focus();
+  if (!cargarPartidaGuardada()) {
+    document.getElementById("guessName").focus();
+  }
 };
+
+
+const clavePartidaHoy = `partida-${getFechaHoyUTC()}`;
+
+// Guardar partida al finalizar jugador del día
+function guardarProgresoPartida(resultado) {
+  // No guardar si el jugador actual no es el del día
+  const jugadorDelDia = getJugadorDelDiaLocal();
+  if (elegido.nombre !== jugadorDelDia.nombre) return;
+
+  const datos = {
+    intentos,
+    resultado,
+    jugadas: [],
+    elegido
+  };
+
+  for (let i = 1; i <= intentos; i++) {
+    const fila = [];
+    for (let j = 1; j <= 6; j++) {
+      const celda = document.getElementById(`r${i}-c${j}`);
+      fila.push({
+        texto: celda.textContent,
+        clase: celda.className,
+        html: celda.innerHTML
+      });
+    }
+    datos.jugadas.push(fila);
+  }
+
+  localStorage.setItem(clavePartidaHoy, JSON.stringify(datos));
+}
+
+
+// Cargar progreso si ya jugó
+function cargarPartidaGuardada() {
+  const guardado = localStorage.getItem(clavePartidaHoy);
+  if (!guardado) return false;
+
+  const datos = JSON.parse(guardado);
+  elegido = datos.elegido;
+  juegoTerminado = true;
+  intentos = datos.intentos;
+
+  datos.jugadas.forEach((fila, i) => {
+    fila.forEach((celda, j) => {
+      const celdaDom = document.getElementById(`r${i + 1}-c${j + 1}`);
+      celdaDom.innerHTML = celda.html;
+      celdaDom.className = celda.clase;
+    });
+  });
+
+  desactivarInput();
+  mostrarBotonReinicio();
+  mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#d9534f");
+    document.getElementById("guessName").style.display = "none";
+  document.getElementById("try-button").style.display = "none";
+
+  return true;
+}
+
+// Mostrar ventana emergente final
+function mostrarPopupFinal(texto, correcto = true) {
+  const modal = document.createElement("div");
+  modal.className = "modal-resultado";
+  modal.innerHTML = `
+    <div class="modal-content-resultado">
+      <h2>${correcto ? "¡Felicidades!" : "Fin del juego"}</h2>
+      <p>${texto}</p>
+      <button onclick="cerrarPopupResultado()">Aceptar</button>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+
+function cerrarPopupResultado() {
+  const modal = document.querySelector(".modal-resultado");
+  if (modal) modal.remove();
+}
+
 
 function getJugadorDelDiaLocal() {
   const hoy = new Date().toISOString().slice(0, 10); // "YYYY-MM-DD"
@@ -63,20 +145,24 @@ if (jugador.nombre === elegido.nombre) {
   mostrarMensaje('¡Correcto! 🎉', 3000, '#6aaa64');
   juegoTerminado = true;
   desactivarInput();
-  // Oculta el input y el botón de intentar
+  guardarProgresoPartida("acertado");
+  mostrarPopupFinal(`Acertaste en ${intentos} intento${intentos > 1 ? "s" : ""} 🎉`);
   document.getElementById("guessName").style.display = "none";
   document.getElementById("try-button").style.display = "none";
   mostrarBotonReinicio();
 }
 
-  else if (intentos >= maxIntentos) {
-    mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
-    juegoTerminado = true;
-    desactivarInput();
-      document.getElementById("guessName").style.display = "none";
-      document.getElementById("try-button").style.display = "none";
-      mostrarBotonReinicio();
-  }
+else if (intentos >= maxIntentos) {
+  mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
+  juegoTerminado = true;
+  desactivarInput();
+  guardarProgresoPartida("fallado");
+  mostrarPopupFinal(`El jugador era: ${elegido.nombre}`);
+  document.getElementById("guessName").style.display = "none";
+  document.getElementById("try-button").style.display = "none";
+  mostrarBotonReinicio();
+}
+
 
   inputElem.value = "";
 }
