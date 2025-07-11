@@ -11,6 +11,130 @@ window.onload = () => {
   }
 };
 
+const claveEstadisticas = "estadisticas-jugador";
+let estadisticas = {
+  jugadasTotales: 0,
+  victorias: 0,
+  rachaActual: 0,
+  histogramaIntentos: [0, 0, 0, 0, 0, 0]
+};
+
+// Cargar estadísticas si existen
+function cargarEstadisticas() {
+  const guardado = localStorage.getItem(claveEstadisticas);
+  if (guardado) {
+    estadisticas = JSON.parse(guardado);
+  }
+}
+
+function guardarEstadisticasPartida(acertado) {
+  // Solo registrar si es partida del día
+  const jugadorDelDia = getJugadorDelDiaLocal();
+  if (elegido.nombre !== jugadorDelDia.nombre) return;
+
+  estadisticas.jugadasTotales++;
+
+  if (acertado) {
+    estadisticas.victorias++;
+    estadisticas.rachaActual++;
+    if (intentos >= 1 && intentos <= 6) {
+      estadisticas.histogramaIntentos[intentos - 1]++;
+    }
+  } else {
+    estadisticas.rachaActual = 0;
+  }
+
+  localStorage.setItem(claveEstadisticas, JSON.stringify(estadisticas));
+}
+
+function actualizarEstadisticas(intentos) {
+  const jugadorDelDia = getJugadorDelDiaLocal();
+  if (elegido.nombre !== jugadorDelDia.nombre) return;
+  const key = "estadisticasJugadorDelDia";
+  const hoy = getFechaHoyUTC();
+
+  let stats = JSON.parse(localStorage.getItem(key)) || {
+    jugadasTotales: 0,
+    victorias: 0,
+    racha: 0,
+    ultimaFecha: null,
+    histograma: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 }
+  };
+
+  stats.jugadasTotales += 1;
+
+  if (intentos <= maxIntentos) {
+    stats.victorias += 1;
+    stats.racha = (stats.ultimaFecha !== hoy) ? stats.racha + 1 : stats.racha;
+    stats.histograma[intentos] += 1;
+  } else {
+    stats.racha = 0;
+  }
+
+  stats.ultimaFecha = hoy;
+  localStorage.setItem(key, JSON.stringify(stats));
+  mostrarEstadisticas(stats);
+}
+
+function mostrarEstadisticas(stats) {
+  // Si todo es 0, no mostrar
+  if (
+    stats.jugadasTotales === 0 &&
+    stats.victorias === 0 &&
+    stats.racha === 0 &&
+    Object.values(stats.histograma).every(v => v === 0)
+  ) return;
+
+  const modal = document.createElement("div");
+  modal.className = "modal-resultado";
+
+  modal.innerHTML = `
+    <div class="modal-content-resultado">
+      <h2>Estadísticas</h2>
+      ${stats.jugadasTotales ? `<p>Jugadas totales: ${stats.jugadasTotales}</p>` : ""}
+      ${stats.victorias ? `<p>Victorias: ${stats.victorias}</p>` : ""}
+      ${stats.racha ? `<p>Racha actual: ${stats.racha}</p>` : ""}
+      <div id="estadisticas-histograma"></div>
+      <button onclick="cerrarPopupResultado()">Cerrar</button>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+  renderizarHistograma(stats.histograma);
+}
+
+
+
+function renderizarHistograma(histograma) {
+  const contenedor = document.getElementById("estadisticas-histograma");
+  contenedor.className = "contenedor-histograma";
+  contenedor.innerHTML = "";
+
+  const valores = Object.values(histograma);
+  const maxValor = Math.max(...valores);
+
+  Object.entries(histograma).forEach(([intento, valor]) => {
+    if (valor === 0) return; // No renderiza barras vacías
+
+    const fila = document.createElement("div");
+    fila.className = "fila-histograma";
+
+    const label = document.createElement("div");
+    label.className = "label-histograma";
+    label.textContent = intento;
+
+    const barra = document.createElement("div");
+    barra.className = "barra-histograma";
+    barra.style.width = maxValor > 0 ? `${(valor / maxValor) * 100}%` : "0%";
+    barra.textContent = valor;
+
+    fila.appendChild(label);
+    fila.appendChild(barra);
+    contenedor.appendChild(fila);
+  });
+}
+
+
 
 const clavePartidaHoy = `partida-${getFechaHoyUTC()}`;
 
@@ -142,11 +266,12 @@ function submitGuess() {
   intentos++;
 
 if (jugador.nombre === elegido.nombre) {
-  mostrarMensaje('¡Correcto! 🎉', 3000, '#6aaa64');
+  mostrarMensaje(`¡Correcto! 🎉 Acertaste en ${intentos} intento${intentos > 1 ? "s" : ""}`, 4000, '#6aaa64');
   juegoTerminado = true;
   desactivarInput();
   guardarProgresoPartida("acertado");
-  mostrarPopupFinal(`Acertaste en ${intentos} intento${intentos > 1 ? "s" : ""} 🎉`);
+  actualizarEstadisticas(intentos); // solo en la primera partida del día
+  guardarEstadisticasPartida(true);
   document.getElementById("guessName").style.display = "none";
   document.getElementById("try-button").style.display = "none";
   mostrarBotonReinicio();
@@ -157,7 +282,7 @@ else if (intentos >= maxIntentos) {
   juegoTerminado = true;
   desactivarInput();
   guardarProgresoPartida("fallado");
-  mostrarPopupFinal(`El jugador era: ${elegido.nombre}`);
+  guardarEstadisticasPartida(false);
   document.getElementById("guessName").style.display = "none";
   document.getElementById("try-button").style.display = "none";
   mostrarBotonReinicio();

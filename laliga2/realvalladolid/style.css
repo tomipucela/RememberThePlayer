@@ -22,6 +22,79 @@ body {
   gap: 30px; /* espacio entre secciones */
 }
 
+.modal-resultado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content-resultado {
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content-resultado h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.contenedor-histograma {
+  margin-top: 10px;
+}
+
+.fila-histograma {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.label-histograma {
+  width: 30px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.barra-histograma {
+  background-color: #8a070d;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: right;
+  min-width: 30px;
+}
+
+.modal-content-resultado button {
+  margin-top: 16px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #8a070d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.modal-content-resultado button:hover {
+  background-color: #a10c16;
+}
 
 
 .header-section {
