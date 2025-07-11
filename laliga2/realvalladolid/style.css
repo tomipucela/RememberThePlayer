@@ -22,6 +22,14 @@ body {
   gap: 30px; /* espacio entre secciones */
 }
 
+.titulo-juego {
+  background-color: #14532d; /* verde oscuro */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
 
 .animar-celda {
   animation: popIn 0.4s ease;
@@ -68,8 +76,8 @@ body {
 }
 
 .modal-content-resultado {
-  background:linear-gradient(325deg, black, #2a2a2a);
-  background-color: linear-gradient(135deg, black, #2a2a2a);
+  background-color: #9fff96;
+  background-image: url("https://www.transparenttextures.com/patterns/circles.png");
   padding: 24px 32px;
   border-radius: 12px;
   max-width: 700px;
@@ -79,8 +87,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color:rgb(24, 178, 73);
+  color:rgb(0,0,0);
 }
+.modal-content-resultado .tabla-superior {
+  font-size: 1.4rem; /* Ajustá según lo que necesites */
+}
+
 
 .modal-content-resultado h2 {
   text-align: center;
@@ -106,7 +118,7 @@ body {
 }
 
 .barra-histograma {
-  background-color: rgb(24, 178, 73);
+  background-color: rgb(12, 111, 44);
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
@@ -118,7 +130,7 @@ body {
   margin-top: 16px;
   padding: 10px;
   font-size: 16px;
-  background-color: rgb(24, 178, 73);
+  background-color: rgb(12, 111, 44);
   color: white;
   border: none;
   border-radius: 6px;
@@ -127,7 +139,7 @@ body {
 }
 
 .modal-content-resultado button:hover {
-  background-color: rgb(24, 178, 73);
+  background-color: rgb(12, 111, 44);
 }
 
 
@@ -427,19 +439,11 @@ body {
   z-index: 999;
 }
 
-.modal-content-resultado {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-  max-width: 400px;
-}
 
 .modal-content-resultado button {
   margin-top: 20px;
   padding: 8px 16px;
-  background-color: #6aaa64;
+  background-color: rgb(12, 111, 44);
   color: white;
   border: none;
   border-radius: 5px;

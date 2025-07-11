@@ -90,11 +90,11 @@ function mostrarEstadisticas(stats) {
 
   modal.innerHTML = `
     <div class="modal-content-resultado">
-      <h2>Estadísticas</h2>
+      <h2><span class="titulo-juego">Estadísticas Remember The Footballer Real Valladolid</span></h2>
       <div class="tabla-superior">
-        <div><strong>Jugadas</strong><br>${stats.jugadasTotales}</div>
-        <div><strong>Victorias</strong><br>${stats.victorias}</div>
-        <div><strong>Racha</strong><br>${stats.racha}</div>
+        <div><strong>Partidas Jugadas</strong><br>${stats.jugadasTotales}</div>
+        <div><strong>Victorias Totales</strong><br>${stats.victorias}</div>
+        <div><strong>Racha Actual</strong><br>${stats.racha}</div>
       </div>
       <div id="estadisticas-histograma"></div>
       <button onclick="cerrarPopupResultado()">Cerrar</button>
