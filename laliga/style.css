@@ -87,52 +87,29 @@
       text-decoration: none;
     }
 
-    #liga2-text {
+#liga2-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;            /* tamaño cuadrado fijo */
+  width: 80px;
   height: 32px;
-  border: 2px solid #00d4d7;  /* borde con el color que tenías */
-  color: #00d4d7;
+  border: 2px solid #ec5a4d; /* borde rojo */
+  color: #ec5a4d; /* texto rojo */
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1.2rem;
-  border-radius: 6px;     /* bordes redondeados */
+  border-radius: 6px;
   cursor: pointer;
   user-select: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* agrega border-color */
+  background-color: transparent; /* fondo inicial transparente */
 }
 
 #liga2-text:hover {
-  background-color: #00d4d7;
-  color: #000;
+  background-color: #ec5a4d; /* fondo rojo */
+  color: #000;               /* texto negro */
+  border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
 }
-
-    .grid-item[href="realvalladolid/realvalladolid.html"] {
-        background: repeating-linear-gradient(
-            90deg,
-            #9602d1,
-            #9602d1 10px,
-            white 10px,
-            white 20px
-        );
-        color: black;
-        font-weight: bold;
-        font-size: 1.75rem;
-        transition: background-position 0.5s ease;
-        background-size: 40px 40px;
-        background-position: 0 0;
-          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
-            font-family: 'Roboto Slab', serif;
-
-        }
-
-        .grid-item[href="realvalladolid/realvalladolid.html"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #4b1a9c; /* Mantiene color morado más oscuro al hover */
-          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
-        }
 
 
     .grid-item:hover {
