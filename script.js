@@ -275,13 +275,26 @@ if (jugador.nombre === elegido.nombre) {
   mostrarMensaje(`¡Correcto! 🎉 Acertaste en ${intentos} intento${intentos > 1 ? "s" : ""}`, 4000, '#6aaa64');
   juegoTerminado = true;
   desactivarInput();
-  guardarProgresoPartida("acertado");
-  actualizarEstadisticas(intentos); // solo en la primera partida del día
-  guardarEstadisticasPartida(true);
-  document.getElementById("guessName").style.display = "none";
-  document.getElementById("try-button").style.display = "none";
-  mostrarBotonReinicio();
+
+  let timeout;  // Declarás aquí la variable
+
+  if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
+    timeout = 2000;
+  } else {
+    timeout = 1000;
+  }
+
+  setTimeout(() => {
+    guardarProgresoPartida("acertado");
+    actualizarEstadisticas(intentos); // solo en la primera partida del día
+    guardarEstadisticasPartida(true);
+    document.getElementById("guessName").style.display = "none";
+    document.getElementById("try-button").style.display = "none";
+    mostrarBotonReinicio();
+  }, timeout);
 }
+
+
 
 else if (intentos >= maxIntentos) {
   mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
@@ -357,7 +370,6 @@ document.getElementById("try-button").style.display = "inline-block";
     if (th) th.classList.remove("pista-clicable-activa", "pista-seleccionada");
   });
 }
-
 function mostrarComparacion(j) {
   const fila = intentos;
 
@@ -387,12 +399,20 @@ function mostrarComparacion(j) {
     const valor = valoresJugador[col];
     const correcto = valoresCorrectos[col];
 
+    // Añadir animación y eliminarla al terminar
+    celda.classList.add("animar-celda");
+    celda.addEventListener("animationend", () => {
+      celda.classList.remove("animar-celda");
+    }, { once: true });
+
+    // Agregar clase correcta o incorrecta sin sobrescribir animación
     if (valor === correcto) {
-      celda.className = "correct";
+      celda.classList.add("correct");
     } else {
-      celda.className = "wrong";
+      celda.classList.add("wrong");
     }
 
+    // Mostrar contenido según tipo de propiedad
     if (prop === "nacionalidad") {
       celda.innerHTML = banderaDePaisImg(j.nacionalidad);
     } else if (prop === "dorsal" || prop === "temporadaPrim" || prop === "temporadaSeg") {
