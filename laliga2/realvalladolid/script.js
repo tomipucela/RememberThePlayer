@@ -250,7 +250,9 @@ function mostrarMensaje(mensaje, duracion = 3000, colorFondo = '#6aaa64') {
 }
 
 function formatearTemporada(temporadaSeg) {
-  if (temporadaSeg < 2010) {
+  if (temporadaSeg <2000){
+    return (temporadaSeg - 1) + "-" + (temporadaSeg - 1900);
+  }else  if (temporadaSeg < 2010) {
     return (temporadaSeg - 1) + "-0" + (temporadaSeg - 2000);
   } else {
     return (temporadaSeg - 1) + "-" + (temporadaSeg - 2000);
