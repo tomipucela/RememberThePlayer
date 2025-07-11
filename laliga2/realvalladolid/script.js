@@ -537,6 +537,7 @@ function banderaDePaisImg(pais) {
 
 function obtenerCodigoISO(pais) {
   const mapa = {
+    espana: "es",
     españa: "es",
     francia: "fr",
     brasil: "br",
@@ -583,8 +584,16 @@ function obtenerCodigoISO(pais) {
     ecuador: "ec",
     nigeria: "ng",
     senegal: "sn",
-    ghana: "gh"
-    // Puedes añadir más si aparecen nuevos países
+    ghana: "gh",
+        // Nuevos países agregados:
+    "costa rica": "cr",
+    costa_rica: "cr",
+    mali: "ml",
+    belgica: "be",
+    polonia: "pl",
+    holanda: "nl",
+    inglaterra: "gb",
+    togo: "tg"
   };
   // Normaliza el nombre para buscarlo en el mapa
   let key = pais.trim().toLowerCase()

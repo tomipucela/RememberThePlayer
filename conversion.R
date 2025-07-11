@@ -1,7 +1,7 @@
 library(readxl)
 
 # Leer archivo Excel
-datos <- read_excel("C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.local/laliga2/realvalladolid/realvalladolid.xlsx", sheet = 1)
+datos <- read_excel("C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.local/laliga/realmadrid/realmadrid.xlsx", sheet = 1)
 
 # Función para reemplazar tildes y ñ
 limpiar_texto <- function(x) {
@@ -24,7 +24,7 @@ write.table(datos, file = "C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.
 
 # Ruta al archivo original
 input_file <- "C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.txt"  # Cambia por tu ruta real
-output_file <- "C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.local/laliga2/realvalladolid/realvalladolid.js"
+output_file <- "C:/Users/tomip/OneDrive/Documentos/pucelale/pucelale.local/laliga/realmadrid/realmadrid.js"
 
 # Leer el archivo con encabezados, separado por tabuladores
 df <- read.delim(input_file, header = TRUE, stringsAsFactors = FALSE, encoding = "UTF-8")
