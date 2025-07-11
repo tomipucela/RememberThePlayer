@@ -77,7 +77,7 @@ function actualizarEstadisticas(intentos) {
 }
 
 function mostrarEstadisticas(stats) {
-  // Si todo es 0, no mostrar
+  // No mostrar si todo es 0
   if (
     stats.jugadasTotales === 0 &&
     stats.victorias === 0 &&
@@ -91,14 +91,15 @@ function mostrarEstadisticas(stats) {
   modal.innerHTML = `
     <div class="modal-content-resultado">
       <h2>Estadísticas</h2>
-      ${stats.jugadasTotales ? `<p>Jugadas totales: ${stats.jugadasTotales}</p>` : ""}
-      ${stats.victorias ? `<p>Victorias: ${stats.victorias}</p>` : ""}
-      ${stats.racha ? `<p>Racha actual: ${stats.racha}</p>` : ""}
+      <div class="tabla-superior">
+        <div><strong>Jugadas</strong><br>${stats.jugadasTotales}</div>
+        <div><strong>Victorias</strong><br>${stats.victorias}</div>
+        <div><strong>Racha</strong><br>${stats.racha}</div>
+      </div>
       <div id="estadisticas-histograma"></div>
       <button onclick="cerrarPopupResultado()">Cerrar</button>
     </div>
   `;
-
   document.body.appendChild(modal);
   renderizarHistograma(stats.histograma);
 }
@@ -111,10 +112,10 @@ function renderizarHistograma(histograma) {
   contenedor.innerHTML = "";
 
   const valores = Object.values(histograma);
-  const maxValor = Math.max(...valores);
+  const maxValor = Math.max(...valores, 1); // Evitar división por 0
 
-  Object.entries(histograma).forEach(([intento, valor]) => {
-    if (valor === 0) return; // No renderiza barras vacías
+  for (let intento = 1; intento <= 6; intento++) {
+    const valor = histograma[intento] || 0;
 
     const fila = document.createElement("div");
     fila.className = "fila-histograma";
@@ -125,13 +126,18 @@ function renderizarHistograma(histograma) {
 
     const barra = document.createElement("div");
     barra.className = "barra-histograma";
-    barra.style.width = maxValor > 0 ? `${(valor / maxValor) * 100}%` : "0%";
+    barra.style.width = `${(valor / maxValor) * 100}%`;
     barra.textContent = valor;
+
+    if (valor === 0) {
+      barra.style.backgroundColor = "#ccc";
+      barra.style.color = "#999";
+    }
 
     fila.appendChild(label);
     fila.appendChild(barra);
     contenedor.appendChild(fila);
-  });
+  }
 }
 
 
