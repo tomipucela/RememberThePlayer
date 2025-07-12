@@ -622,3 +622,55 @@ body {
   color: #000;               /* texto negro */
   border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
 }
+
+@media (max-width: 768px) {
+  #main-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  #left-section, #center-right-section {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #center-right-section {
+    transform: none;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #main-title {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  #logo-img {
+    width: 60px;
+    height: auto;
+  }
+
+  #remember-text {
+    font-size: 18px;
+  }
+
+  #liga2-text {
+    font-size: 1rem;
+    height: auto;
+  }
+
+  #info-button,
+  #hint-button {
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  #hint-button svg {
+    width: 22px;
+    height: 22px;
+  }
+}
