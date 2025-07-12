@@ -11,7 +11,7 @@ window.onload = () => {
   }
 };
 
-const idJuego = "real-madrid"; // Cambia según el juego actual
+const idJuego = "fc-barcelona"; // Cambia según el juego actual
 
 const claveEstadisticas = `estadisticas-jugador-${idJuego}`;
 const clavePartidaHoy = `partida-${idJuego}-${getFechaHoyUTC()}`;
@@ -95,7 +95,7 @@ function mostrarEstadisticas(stats) {
 
   modal.innerHTML = `
     <div class="modal-content-resultado">
-      <h2><span class="titulo-juego">Estadísticas Remember The Footballer Real Madrid</span></h2>
+      <h2><span class="titulo-juego">Estadísticas Remember The Footballer FC Barcelona</span></h2>
       <div class="tabla-superior">
         <div><strong>Partidas Jugadas</strong><br>${stats.jugadasTotales}</div>
         <div><strong>Victorias Totales</strong><br>${stats.victorias}</div>

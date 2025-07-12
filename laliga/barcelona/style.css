@@ -620,16 +620,15 @@ body {
   color: #000;               /* texto negro */
   border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
 }
-
-
-@media (max-width: 768px) {
+@media (max-width: 1070px) {
   #main-title-container {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
 
-  #left-section, #center-right-section {
+  #left-section,
+  #center-right-section {
     position: static;
     justify-content: center;
     flex-wrap: wrap;
@@ -642,10 +641,20 @@ body {
     justify-content: center;
   }
 
+  /* ORDEN EN MÓVIL */
+  #left-section {
+    order: 1;
+  }
+
   #main-title {
+    order: 2;
     text-align: center;
     font-size: 1.5rem;
     width: 100%;
+  }
+
+  #center-right-section {
+    order: 3;
   }
 
   #logo-img {
