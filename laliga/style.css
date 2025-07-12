@@ -334,3 +334,26 @@
         background-color: #b1b0b0; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
+
+.grid-item[href="barcelona/barcelona.html"] {
+        background: repeating-linear-gradient(
+            90deg,
+            #00209b,
+            #00209b 10px,
+            #a01d48 10px,
+            #a01d48 20px
+        );
+        color: #edb700;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="barcelona/barcelona.html"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-color: #4b1a9c; /* Mantiene color morado más oscuro al hover */
+        }
