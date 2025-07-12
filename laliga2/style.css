@@ -88,21 +88,22 @@
     }
 
     #liga2-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;            /* tamaño cuadrado fijo */
-  height: 32px;
-  border: 2px solid #00d4d7;  /* borde con el color que tenías */
-  color: #00d4d7;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  border-radius: 6px;     /* bordes redondeados */
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 0.3s, color 0.3s;
-}
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;            /* tamaño cuadrado fijo */
+      height: 32px;
+      border: 2px solid #00d4d7;  /* borde con el color que tenías */
+      color: #00d4d7;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      border-radius: 6px;     /* bordes redondeados */
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
 #liga2-text:hover {
   background-color: #00d4d7;

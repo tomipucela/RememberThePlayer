@@ -597,3 +597,28 @@ body {
   background-color: rgb(218, 156, 0);;
   color: white;
 }
+
+#liga2-text {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 32px;
+  border: 2px solid #ec5a4d; /* borde rojo */
+  color: #ec5a4d; /* texto rojo */
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* agrega border-color */
+  background-color: transparent; /* fondo inicial transparente */
+}
+
+#liga2-text:hover {
+  background-color: #ec5a4d; /* fondo rojo */
+  color: #000;               /* texto negro */
+  border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
+}
