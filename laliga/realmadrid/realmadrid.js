@@ -2,7 +2,7 @@ const jugadores = [
   {
     "nombre": "Iker Casillas",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 1,
     "temporadaPrim": 2000,
     "temporadaSeg": 2015,
@@ -11,7 +11,7 @@ const jugadores = [
   {
     "nombre": "Ricardo Carvalho",
     "nacionalidad": "Portugal",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 11,
     "temporadaPrim": 2011,
     "temporadaSeg": 2013,
@@ -20,7 +20,7 @@ const jugadores = [
   {
     "nombre": "Keylor Navas",
     "nacionalidad": "Costa Rica",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 1,
     "temporadaPrim": 2015,
     "temporadaSeg": 2019,
@@ -29,7 +29,7 @@ const jugadores = [
   {
     "nombre": "Fernando Gago",
     "nacionalidad": "Argentina",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 5,
     "temporadaPrim": 2007,
     "temporadaSeg": 2011,
@@ -38,7 +38,7 @@ const jugadores = [
   {
     "nombre": "Mahamadou Diarra",
     "nacionalidad": "Mali",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 6,
     "temporadaPrim": 2007,
     "temporadaSeg": 2011,
@@ -47,7 +47,7 @@ const jugadores = [
   {
     "nombre": "Thibaur Courtois",
     "nacionalidad": "Belgica",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 1,
     "temporadaPrim": 2019,
     "temporadaSeg": 2025,
@@ -56,7 +56,7 @@ const jugadores = [
   {
     "nombre": "Pepe",
     "nacionalidad": "Portugal",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 3,
     "temporadaPrim": 2008,
     "temporadaSeg": 2017,
@@ -65,7 +65,7 @@ const jugadores = [
   {
     "nombre": "Fabio Coentrao",
     "nacionalidad": "Portugal",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 15,
     "temporadaPrim": 2012,
     "temporadaSeg": 2017,
@@ -74,7 +74,7 @@ const jugadores = [
   {
     "nombre": "Sami Khedira",
     "nacionalidad": "Alemania",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 6,
     "temporadaPrim": 2011,
     "temporadaSeg": 2015,
@@ -83,7 +83,7 @@ const jugadores = [
   {
     "nombre": "Daniel Carvajal",
     "nacionalidad": "Espana",
-    "posicion": "LD",
+    "posicion": "Defensa",
     "dorsal": 2,
     "temporadaPrim": 2014,
     "temporadaSeg": 2025,
@@ -92,7 +92,7 @@ const jugadores = [
   {
     "nombre": "Jerzy Dudek",
     "nacionalidad": "Polonia",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 25,
     "temporadaPrim": 2008,
     "temporadaSeg": 2011,
@@ -101,7 +101,7 @@ const jugadores = [
   {
     "nombre": "Eder Militao",
     "nacionalidad": "Brasil",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 3,
     "temporadaPrim": 2020,
     "temporadaSeg": 2025,
@@ -110,7 +110,7 @@ const jugadores = [
   {
     "nombre": "Kaka",
     "nacionalidad": "Brasil",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 8,
     "temporadaPrim": 2010,
     "temporadaSeg": 2013,
@@ -119,7 +119,7 @@ const jugadores = [
   {
     "nombre": "Rafael van der Vaart",
     "nacionalidad": "Holanda",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 23,
     "temporadaPrim": 2009,
     "temporadaSeg": 2010,
@@ -128,7 +128,7 @@ const jugadores = [
   {
     "nombre": "Esteban Granero",
     "nacionalidad": "Espana",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 11,
     "temporadaPrim": 2010,
     "temporadaSeg": 2012,
@@ -137,7 +137,7 @@ const jugadores = [
   {
     "nombre": "Raul Gonzalez",
     "nacionalidad": "Espana",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 7,
     "temporadaPrim": 1995,
     "temporadaSeg": 2010,
@@ -146,7 +146,7 @@ const jugadores = [
   {
     "nombre": "Guti",
     "nacionalidad": "Espana",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 14,
     "temporadaPrim": 1996,
     "temporadaSeg": 2010,
@@ -155,7 +155,7 @@ const jugadores = [
   {
     "nombre": "Ezequiel Garay",
     "nacionalidad": "Argentina",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 19,
     "temporadaPrim": 2010,
     "temporadaSeg": 2011,
@@ -164,7 +164,7 @@ const jugadores = [
   {
     "nombre": "David Alaba",
     "nacionalidad": "Austria",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 4,
     "temporadaPrim": 2022,
     "temporadaSeg": 2025,
@@ -173,7 +173,7 @@ const jugadores = [
   {
     "nombre": "Mesut Ozil",
     "nacionalidad": "Alemania",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 10,
     "temporadaPrim": 2011,
     "temporadaSeg": 2014,
@@ -182,7 +182,7 @@ const jugadores = [
   {
     "nombre": "Royston Drenthe",
     "nacionalidad": "Holanda",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 15,
     "temporadaPrim": 2008,
     "temporadaSeg": 2010,
@@ -191,7 +191,7 @@ const jugadores = [
   {
     "nombre": "Cristoph Metzelder",
     "nacionalidad": "Alemania",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 21,
     "temporadaPrim": 2008,
     "temporadaSeg": 2010,
@@ -200,7 +200,7 @@ const jugadores = [
   {
     "nombre": "Ruud Van Nistelrooy",
     "nacionalidad": "Holanda",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 17,
     "temporadaPrim": 2007,
     "temporadaSeg": 2010,
@@ -209,7 +209,7 @@ const jugadores = [
   {
     "nombre": "Sergio Ramos",
     "nacionalidad": "Espana",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 4,
     "temporadaPrim": 2006,
     "temporadaSeg": 2021,
@@ -218,7 +218,7 @@ const jugadores = [
   {
     "nombre": "Antonio Adan",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 13,
     "temporadaPrim": 2011,
     "temporadaSeg": 2013,
@@ -227,7 +227,7 @@ const jugadores = [
   {
     "nombre": "Raphael Varane",
     "nacionalidad": "Francia",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 5,
     "temporadaPrim": 2012,
     "temporadaSeg": 2021,
@@ -236,7 +236,7 @@ const jugadores = [
   {
     "nombre": "Jude Bellingham",
     "nacionalidad": "Inglaterra",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 5,
     "temporadaPrim": 2024,
     "temporadaSeg": 2025,
@@ -245,7 +245,7 @@ const jugadores = [
   {
     "nombre": "Raul Albiol",
     "nacionalidad": "Espana",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 18,
     "temporadaPrim": 2009,
     "temporadaSeg": 2013,
@@ -254,7 +254,7 @@ const jugadores = [
   {
     "nombre": "Emmanuel Adebayor",
     "nacionalidad": "Togo",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 6,
     "temporadaPrim": 2011,
     "temporadaSeg": 2011,
@@ -263,7 +263,7 @@ const jugadores = [
   {
     "nombre": "Sergio Canales",
     "nacionalidad": "Espana",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 16,
     "temporadaPrim": 2011,
     "temporadaSeg": 2011,
@@ -272,7 +272,7 @@ const jugadores = [
   {
     "nombre": "Pedro Leon",
     "nacionalidad": "Espana",
-    "posicion": "ED",
+    "posicion": "Atacante",
     "dorsal": 21,
     "temporadaPrim": 2011,
     "temporadaSeg": 2011,
@@ -281,7 +281,7 @@ const jugadores = [
   {
     "nombre": "Gonzalo Higuain",
     "nacionalidad": "Argentina",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 20,
     "temporadaPrim": 2007,
     "temporadaSeg": 2013,
@@ -290,7 +290,7 @@ const jugadores = [
   {
     "nombre": "Xabi Alonso",
     "nacionalidad": "Espana",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 14,
     "temporadaPrim": 2010,
     "temporadaSeg": 2015,
@@ -299,7 +299,7 @@ const jugadores = [
   {
     "nombre": "Jose Callejon",
     "nacionalidad": "Espana",
-    "posicion": "ED",
+    "posicion": "Atacante",
     "dorsal": 21,
     "temporadaPrim": 2012,
     "temporadaSeg": 2013,
@@ -308,7 +308,7 @@ const jugadores = [
   {
     "nombre": "Cristiano Ronaldo",
     "nacionalidad": "Portugal",
-    "posicion": "EI",
+    "posicion": "Atacante",
     "dorsal": 7,
     "temporadaPrim": 2010,
     "temporadaSeg": 2019,
@@ -317,7 +317,7 @@ const jugadores = [
   {
     "nombre": "Lass Diarra",
     "nacionalidad": "Francia",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 24,
     "temporadaPrim": 2009,
     "temporadaSeg": 2013,
@@ -326,7 +326,7 @@ const jugadores = [
   {
     "nombre": "Nacho Fernandez",
     "nacionalidad": "Espana",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 6,
     "temporadaPrim": 2011,
     "temporadaSeg": 2024,
@@ -335,7 +335,7 @@ const jugadores = [
   {
     "nombre": "Nuri Sahin",
     "nacionalidad": "Turquia",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 5,
     "temporadaPrim": 2012,
     "temporadaSeg": 2012,
@@ -344,7 +344,7 @@ const jugadores = [
   {
     "nombre": "Hamit Altintop",
     "nacionalidad": "Turquia",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 16,
     "temporadaPrim": 2012,
     "temporadaSeg": 2012,
@@ -353,7 +353,7 @@ const jugadores = [
   {
     "nombre": "Eduardo Camavinga",
     "nacionalidad": "Francia",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 6,
     "temporadaPrim": 2022,
     "temporadaSeg": 2025,
@@ -362,7 +362,7 @@ const jugadores = [
   {
     "nombre": "Diego Lopez",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 25,
     "temporadaPrim": 2006,
     "temporadaSeg": 2014,
@@ -371,7 +371,7 @@ const jugadores = [
   {
     "nombre": "Vinicius Junior",
     "nacionalidad": "Brasil",
-    "posicion": "EI",
+    "posicion": "Atacante",
     "dorsal": 7,
     "temporadaPrim": 2019,
     "temporadaSeg": 2025,
@@ -380,7 +380,7 @@ const jugadores = [
   {
     "nombre": "Michael Essien",
     "nacionalidad": "Ghana",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 15,
     "temporadaPrim": 2013,
     "temporadaSeg": 2013,
@@ -389,7 +389,7 @@ const jugadores = [
   {
     "nombre": "Eden Hazard",
     "nacionalidad": "Belgica",
-    "posicion": "EI",
+    "posicion": "Atacante",
     "dorsal": 7,
     "temporadaPrim": 2020,
     "temporadaSeg": 2023,
@@ -398,7 +398,7 @@ const jugadores = [
   {
     "nombre": "Angel Di Maria",
     "nacionalidad": "Argentina",
-    "posicion": "ED",
+    "posicion": "Atacante",
     "dorsal": 22,
     "temporadaPrim": 2011,
     "temporadaSeg": 2015,
@@ -407,7 +407,7 @@ const jugadores = [
   {
     "nombre": "Alvaro Arbeloa",
     "nacionalidad": "Espana",
-    "posicion": "LD",
+    "posicion": "Defensa",
     "dorsal": 17,
     "temporadaPrim": 2004,
     "temporadaSeg": 2016,
@@ -416,7 +416,7 @@ const jugadores = [
   {
     "nombre": "Asier Illarramendi",
     "nacionalidad": "Espana",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 24,
     "temporadaPrim": 2014,
     "temporadaSeg": 2015,
@@ -425,7 +425,7 @@ const jugadores = [
   {
     "nombre": "Jese Rodriguez",
     "nacionalidad": "Espana",
-    "posicion": "EI",
+    "posicion": "Atacante",
     "dorsal": 20,
     "temporadaPrim": 2012,
     "temporadaSeg": 2016,
@@ -434,7 +434,7 @@ const jugadores = [
   {
     "nombre": "Jesus Fernandez",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 13,
     "temporadaPrim": 2011,
     "temporadaSeg": 2014,
@@ -443,7 +443,7 @@ const jugadores = [
   {
     "nombre": "Toni Kroos",
     "nacionalidad": "Alemania",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 8,
     "temporadaPrim": 2015,
     "temporadaSeg": 2024,
@@ -452,7 +452,7 @@ const jugadores = [
   {
     "nombre": "Mateo Kovacic",
     "nacionalidad": "Croacia",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 23,
     "temporadaPrim": 2016,
     "temporadaSeg": 2018,
@@ -461,7 +461,7 @@ const jugadores = [
   {
     "nombre": "Fede Valverde",
     "nacionalidad": "Uruguay",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 8,
     "temporadaPrim": 2019,
     "temporadaSeg": 2025,
@@ -470,7 +470,7 @@ const jugadores = [
   {
     "nombre": "Chicharito Hernandez",
     "nacionalidad": "Mexico",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 14,
     "temporadaPrim": 2015,
     "temporadaSeg": 2015,
@@ -479,7 +479,7 @@ const jugadores = [
   {
     "nombre": "Fernando Pacheco",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 25,
     "temporadaPrim": 2015,
     "temporadaSeg": 2015,
@@ -488,7 +488,7 @@ const jugadores = [
   {
     "nombre": "Lucas Silva",
     "nacionalidad": "Brasil",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 16,
     "temporadaPrim": 2015,
     "temporadaSeg": 2015,
@@ -497,7 +497,7 @@ const jugadores = [
   {
     "nombre": "Alvaro Morata",
     "nacionalidad": "Espana",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 21,
     "temporadaPrim": 2011,
     "temporadaSeg": 2017,
@@ -506,7 +506,7 @@ const jugadores = [
   {
     "nombre": "Karim Benzema",
     "nacionalidad": "Francia",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 9,
     "temporadaPrim": 2010,
     "temporadaSeg": 2023,
@@ -515,7 +515,7 @@ const jugadores = [
   {
     "nombre": "Danilo",
     "nacionalidad": "Brasil",
-    "posicion": "LD",
+    "posicion": "Defensa",
     "dorsal": 23,
     "temporadaPrim": 2016,
     "temporadaSeg": 2017,
@@ -524,7 +524,7 @@ const jugadores = [
   {
     "nombre": "Kylian Mbappe",
     "nacionalidad": "Francia",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 9,
     "temporadaPrim": 2025,
     "temporadaSeg": 2025,
@@ -533,7 +533,7 @@ const jugadores = [
   {
     "nombre": "Marcelo",
     "nacionalidad": "Brasil",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 12,
     "temporadaPrim": 2007,
     "temporadaSeg": 2022,
@@ -542,7 +542,7 @@ const jugadores = [
   {
     "nombre": "James Rodriguez",
     "nacionalidad": "Colombia",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 16,
     "temporadaPrim": 2015,
     "temporadaSeg": 2020,
@@ -551,7 +551,7 @@ const jugadores = [
   {
     "nombre": "Denis Cheryshev",
     "nacionalidad": "Rusia",
-    "posicion": "EI",
+    "posicion": "Atacante",
     "dorsal": 21,
     "temporadaPrim": 2016,
     "temporadaSeg": 2016,
@@ -560,7 +560,7 @@ const jugadores = [
   {
     "nombre": "Borja Mayoral",
     "nacionalidad": "Espana",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 16,
     "temporadaPrim": 2016,
     "temporadaSeg": 2021,
@@ -569,7 +569,7 @@ const jugadores = [
   {
     "nombre": "Ruben Yanez",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 25,
     "temporadaPrim": 2017,
     "temporadaSeg": 2017,
@@ -578,7 +578,7 @@ const jugadores = [
   {
     "nombre": "Kiko Casilla",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 13,
     "temporadaPrim": 2016,
     "temporadaSeg": 2019,
@@ -587,7 +587,7 @@ const jugadores = [
   {
     "nombre": "Luka Modric",
     "nacionalidad": "Croacia",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 10,
     "temporadaPrim": 2013,
     "temporadaSeg": 2025,
@@ -596,7 +596,7 @@ const jugadores = [
   {
     "nombre": "Theo Hernandez",
     "nacionalidad": "Francia",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 15,
     "temporadaPrim": 2018,
     "temporadaSeg": 2018,
@@ -605,7 +605,7 @@ const jugadores = [
   {
     "nombre": "Achraf Hakimi",
     "nacionalidad": "Marruecos",
-    "posicion": "LD",
+    "posicion": "Defensa",
     "dorsal": 19,
     "temporadaPrim": 2018,
     "temporadaSeg": 2018,
@@ -614,7 +614,7 @@ const jugadores = [
   {
     "nombre": "Marco Asensio",
     "nacionalidad": "Espana",
-    "posicion": "ED",
+    "posicion": "Atacante",
     "dorsal": 11,
     "temporadaPrim": 2017,
     "temporadaSeg": 2023,
@@ -623,7 +623,7 @@ const jugadores = [
   {
     "nombre": "Marcos Llorente",
     "nacionalidad": "Espana",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 18,
     "temporadaPrim": 2016,
     "temporadaSeg": 2019,
@@ -632,7 +632,7 @@ const jugadores = [
   {
     "nombre": "Rodrygo Goes",
     "nacionalidad": "Brasil",
-    "posicion": "ED",
+    "posicion": "Atacante",
     "dorsal": 11,
     "temporadaPrim": 2020,
     "temporadaSeg": 2025,
@@ -641,7 +641,7 @@ const jugadores = [
   {
     "nombre": "Gareth Bale",
     "nacionalidad": "Gales",
-    "posicion": "ED",
+    "posicion": "Atacante",
     "dorsal": 18,
     "temporadaPrim": 2014,
     "temporadaSeg": 2022,
@@ -650,7 +650,7 @@ const jugadores = [
   {
     "nombre": "Luca Jovic",
     "nacionalidad": "Serbia",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 16,
     "temporadaPrim": 2020,
     "temporadaSeg": 2022,
@@ -659,7 +659,7 @@ const jugadores = [
   {
     "nombre": "Casemiro",
     "nacionalidad": "Brasil",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 14,
     "temporadaPrim": 2013,
     "temporadaSeg": 2023,
@@ -668,7 +668,7 @@ const jugadores = [
   {
     "nombre": "Martin Odegaard",
     "nacionalidad": "Noruega",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 21,
     "temporadaPrim": 2015,
     "temporadaSeg": 2021,
@@ -677,7 +677,7 @@ const jugadores = [
   {
     "nombre": "Joselu Mato",
     "nacionalidad": "Espana",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 14,
     "temporadaPrim": 2011,
     "temporadaSeg": 2024,
@@ -686,7 +686,7 @@ const jugadores = [
   {
     "nombre": "Sergio Reguilon",
     "nacionalidad": "Espana",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 23,
     "temporadaPrim": 2019,
     "temporadaSeg": 2019,
@@ -695,7 +695,7 @@ const jugadores = [
   {
     "nombre": "Isco Alarcon",
     "nacionalidad": "Espana",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 22,
     "temporadaPrim": 2014,
     "temporadaSeg": 2022,
@@ -704,7 +704,7 @@ const jugadores = [
   {
     "nombre": "Alvaro Odriozola",
     "nacionalidad": "Espana",
-    "posicion": "LD",
+    "posicion": "Defensa",
     "dorsal": 16,
     "temporadaPrim": 2019,
     "temporadaSeg": 2024,
@@ -713,7 +713,7 @@ const jugadores = [
   {
     "nombre": "Alphonse Areola",
     "nacionalidad": "Francia",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 1,
     "temporadaPrim": 2020,
     "temporadaSeg": 2020,
@@ -722,7 +722,7 @@ const jugadores = [
   {
     "nombre": "Andriy Lunin",
     "nacionalidad": "Ucrania",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 13,
     "temporadaPrim": 2021,
     "temporadaSeg": 2025,
@@ -731,7 +731,7 @@ const jugadores = [
   {
     "nombre": "Luca Zidane",
     "nacionalidad": "Francia",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 30,
     "temporadaPrim": 2018,
     "temporadaSeg": 2019,
@@ -740,7 +740,7 @@ const jugadores = [
   {
     "nombre": "Aurelien Tchouameni",
     "nacionalidad": "Francia",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 14,
     "temporadaPrim": 2023,
     "temporadaSeg": 2025,
@@ -749,7 +749,7 @@ const jugadores = [
   {
     "nombre": "Arda Guler",
     "nacionalidad": "Turquia",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 15,
     "temporadaPrim": 2024,
     "temporadaSeg": 2025,
@@ -758,7 +758,7 @@ const jugadores = [
   {
     "nombre": "Miguel Gutierrez",
     "nacionalidad": "Espana",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 35,
     "temporadaPrim": 2021,
     "temporadaSeg": 2022,
@@ -767,7 +767,7 @@ const jugadores = [
   {
     "nombre": "Mariano Diaz",
     "nacionalidad": "Republica Dominicana",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 24,
     "temporadaPrim": 2017,
     "temporadaSeg": 2023,
@@ -776,7 +776,7 @@ const jugadores = [
   {
     "nombre": "Sergio Arribas",
     "nacionalidad": "Espana",
-    "posicion": "MCD",
+    "posicion": "Centrocampista",
     "dorsal": 30,
     "temporadaPrim": 2021,
     "temporadaSeg": 2023,
@@ -785,7 +785,7 @@ const jugadores = [
   {
     "nombre": "Endrick",
     "nacionalidad": "Brasil",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 16,
     "temporadaPrim": 2025,
     "temporadaSeg": 2025,
@@ -794,7 +794,7 @@ const jugadores = [
   {
     "nombre": "Lucas Vazquez",
     "nacionalidad": "Espana",
-    "posicion": "LD",
+    "posicion": "Defensa",
     "dorsal": 17,
     "temporadaPrim": 2016,
     "temporadaSeg": 2025,
@@ -803,7 +803,7 @@ const jugadores = [
   {
     "nombre": "Jesus Vallejo",
     "nacionalidad": "Espana",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 18,
     "temporadaPrim": 2018,
     "temporadaSeg": 2025,
@@ -812,7 +812,7 @@ const jugadores = [
   {
     "nombre": "Alvaro Rodriguez",
     "nacionalidad": "Uruguay",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 29,
     "temporadaPrim": 2023,
     "temporadaSeg": 2024,
@@ -821,7 +821,7 @@ const jugadores = [
   {
     "nombre": "Dani Ceballos",
     "nacionalidad": "Espana",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 19,
     "temporadaPrim": 2018,
     "temporadaSeg": 2025,
@@ -830,7 +830,7 @@ const jugadores = [
   {
     "nombre": "Kepa Arrizabalaga",
     "nacionalidad": "Espana",
-    "posicion": "PT",
+    "posicion": "Portero",
     "dorsal": 25,
     "temporadaPrim": 2024,
     "temporadaSeg": 2024,
@@ -839,7 +839,7 @@ const jugadores = [
   {
     "nombre": "Fran Garcia",
     "nacionalidad": "Espana",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 20,
     "temporadaPrim": 2024,
     "temporadaSeg": 2025,
@@ -848,7 +848,7 @@ const jugadores = [
   {
     "nombre": "Brahim Diaz",
     "nacionalidad": "Marruecos",
-    "posicion": "MP",
+    "posicion": "Centrocampista",
     "dorsal": 21,
     "temporadaPrim": 2019,
     "temporadaSeg": 2025,
@@ -857,7 +857,7 @@ const jugadores = [
   {
     "nombre": "Antonio Rudiger",
     "nacionalidad": "Alemania",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 22,
     "temporadaPrim": 2023,
     "temporadaSeg": 2025,
@@ -866,7 +866,7 @@ const jugadores = [
   {
     "nombre": "Ferland Mendy",
     "nacionalidad": "Francia",
-    "posicion": "LI",
+    "posicion": "Defensa",
     "dorsal": 23,
     "temporadaPrim": 2020,
     "temporadaSeg": 2025,
@@ -875,7 +875,7 @@ const jugadores = [
   {
     "nombre": "Jacobo Ramon",
     "nacionalidad": "Espana",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 31,
     "temporadaPrim": 2025,
     "temporadaSeg": 2025,
@@ -884,7 +884,7 @@ const jugadores = [
   {
     "nombre": "Raul Asencio",
     "nacionalidad": "Espana",
-    "posicion": "DFC",
+    "posicion": "Defensa",
     "dorsal": 35,
     "temporadaPrim": 2025,
     "temporadaSeg": 2025,
@@ -893,7 +893,7 @@ const jugadores = [
   {
     "nombre": "Gonzalo Garcia",
     "nacionalidad": "Espana",
-    "posicion": "DC",
+    "posicion": "Atacante",
     "dorsal": 30,
     "temporadaPrim": 2024,
     "temporadaSeg": 2025,

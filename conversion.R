@@ -53,3 +53,4 @@ js_content <- paste0("const jugadores = ", json_data, ";")
 # Escribir el archivo JS
 write(js_content, file = output_file)
 
+
