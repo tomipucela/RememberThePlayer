@@ -681,4 +681,29 @@ body {
     width: 22px;
     height: 22px;
   }
+    .hint-bubble {
+    top: 50%;
+    left: 100%; /* justo a la derecha del botón */
+    max-width: 600px; /* limita el ancho para que no sea demasiado ancho */
+    white-space: pre-line		; /* para que pueda hacer wrap en vez de crecer horizontalmente */
+    padding: 8px 12px;
+    transform: translate(8px, -50%);
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    background: #ffe066;
+    color: #222;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    z-index: 20;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    overflow-wrap: break-word;
+  }
+
+  /* Mostrar la burbuja al hacer hover */
+  #hint-button:hover .hint-bubble {
+    display: block;
+  }
+
 }

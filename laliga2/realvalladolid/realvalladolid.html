@@ -19,17 +19,24 @@
 </div>
 
   <div id="center-right-section">
-    <h1 id="main-title">Real Valladolid</h1>
-    <button id="info-button" title="Información" aria-label="Abrir información del juego">i</button>
-    <button id="hint-button" title="Pista" aria-label="Pista" style="background:transparent;border:none;cursor:pointer;padding:0 0 0 10px;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="11" r="6"/>
-        <path d="M9 18h6"/>
-        <path d="M10 22h4"/>
-      </svg>
-    </button>
-    <div id="hint-bubble" class="hint-bubble" style="display:none;">Aquí va la pista</div>
-  </div>
+  <h1 id="main-title">Real Valladolid</h1>
+  <button id="info-button" title="Información" aria-label="Abrir información del juego">i</button>
+
+  <!-- Agrupa el botón y el bubble juntos -->
+  <div id="hint-wrapper" style="position: relative; display: inline-block;">
+  <button id="hint-button" title="Pista" aria-label="Pista" style="background:transparent;border:none;cursor:pointer;padding:0 0 0 10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="11" r="6"/>
+      <path d="M9 18h6"/>
+      <path d="M10 22h4"/>
+    </svg>
+  </button>
+
+  <div id="hint-bubble" class="hint-bubble"></div>
+</div>
+
+</div>
+
 
 </div>
 
