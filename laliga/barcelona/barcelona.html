@@ -71,7 +71,7 @@
     <input type="text" id="guessName" placeholder="Nombre del jugador..." autocomplete="off" />
     <button onclick="submitGuess()" id="try-button">Intentar</button>
     <div id="suggestions" class="suggestions-box"></div>
-    <button id="restart-btn" style="display:none;" onclick="reiniciarJuego()">Continuar Jugando</button>
+    <button id="restart-btn" style="display:none;">Continuar Jugando</button>
   </div>
   
 
@@ -147,7 +147,15 @@
 
   </div>
 
-<script src="barcelona.js"></script>
-<script src="script.js"></script>
+<script>
+    // Define variables globales para usarlas en otros scripts
+    const idJuego = "fc-barcelona"; // Cambia según el juego actual
+    const claveEstadisticas = `estadisticas-jugador-${idJuego}`;
+    const clavePartidaHoy = `partida-${idJuego}-${new Date().toISOString().slice(0, 10)}`;
+  </script>
+
+  <script src="barcelona.js"></script>
+  <script type="module" src="../../utils/funciones.js"></script>
+  <script type="module" src="../../utils/teclado.js"></script>
 </body>
 </html>

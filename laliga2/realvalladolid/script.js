@@ -23,14 +23,6 @@ let estadisticas = {
   histogramaIntentos: [0, 0, 0, 0, 0, 0]
 };
 
-// Cargar estadísticas si existen
-function cargarEstadisticas() {
-  const guardado = localStorage.getItem(claveEstadisticas);
-  if (guardado) {
-    estadisticas = JSON.parse(guardado);
-  }
-}
-
 function guardarEstadisticasPartida(acertado) {
   // Solo registrar si es partida del día
   const jugadorDelDia = getJugadorDelDiaLocal();
