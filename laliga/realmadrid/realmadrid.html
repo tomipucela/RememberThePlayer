@@ -39,26 +39,7 @@
 
 
 </div>
-
-<div id="info-modal" class="modal">
-  <div class="modal-content">
-    <span id="close-info" class="close">&times;</span>
-    <h2>¿Cómo se juega a Remember The Player?</h2>
-    <p>Tu objetivo es adivinar un jugador de las últimas temporadas que jugó en el equipo que hayas seleccionado. Tienes 6 intentos.</p>
-    <h2>¿Qué significan las columnas?</h2>
-    <ul>
-      <li><strong>Jugador</strong>: jugador predicho</li>
-      <li><strong>Nacionalidad</strong>: nacionalidad del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
-      <li><strong>Posición</strong>: posición del jugador predicho. Aparecerá en verde si se ha acertado y en gris si no se ha acertado.</li>
-      <li><strong>Dorsal</strong>: último dorsal que vistió el jugador predicho en el equipo seleccionado. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(<span style="color:#8a070d;">▲</span>) si el número correcto es superior y una flecha hacia abajo(<span style="color:#8a070d;">▼</span>) si es inferior.</li>
-      <li><strong>Primera temporada</strong>: primera temporada del jugador predicho en el equipo seleccionado. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(<span style="color:#8a070d;">▲</span>) si el número correcto es superior y una flecha hacia abajo(<span style="color:#8a070d;">▼</span>) si es inferior.</li>
-      <li><strong>Última temporada</strong>: última temporada del jugador predicho en el equipo seleccionado. Aparecerá en verde si se ha acertado y en gris si no se ha acertado, añadiendose una flecha hacia arriba(<span style="color:#8a070d;">▲</span>) si el número correcto es superior y una flecha hacia abajo(<span style="color:#8a070d;">▼</span>) si es inferior.</li>
-    </ul>
-    <p> Si se te complica demasiado, no te preocupes, te ofrecemos una pista. Solo clica el boton de pista situado arriba y elige la columna cuyo valor quieras desvelar</p>
-    <p>¡Buena suerte!</p>
-  </div>
-</div>
-
+<div id="modal-container"></div>
 
 <div id="hint-modal" class="modal">
   <div class="modal-content">
@@ -159,5 +140,28 @@
   <script src="realmadrid.js"></script>
   <script type="module" src="../../utils/funciones.js"></script>
   <script type="module" src="../../utils/teclado.js"></script>
+  <script>
+    fetch("../../utils/infomodal.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("modal-container").innerHTML = html;
+
+        // Asignar eventos DESPUÉS de insertar el HTML
+        const closeBtn = document.getElementById("close-info");
+        const modal = document.getElementById("info-modal");
+
+        closeBtn.onclick = () => {
+          modal.style.display = "none";
+        };
+
+        window.onclick = (e) => {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
+        };
+      });
+  </script>
+
+
 </body>
 </html>
