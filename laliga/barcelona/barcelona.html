@@ -39,8 +39,7 @@
 
 
 </div>
-
-
+<div id="modal-container"></div>
 
 <div id="hint-modal" class="modal">
   <div class="modal-content">
@@ -55,6 +54,7 @@
     <button onclick="submitGuess()" id="try-button">Intentar</button>
     <div id="suggestions" class="suggestions-box"></div>
     <button id="restart-btn" style="display:none;">Continuar Jugando</button>
+
   </div>
   
 
@@ -132,15 +132,15 @@
 
 <script>
     // Define variables globales para usarlas en otros scripts
-    const idJuego = "fc-barcelona"; // Cambia según el juego actual
-    const claveEstadisticas = `estadisticas-jugador-${idJuego}`;
-    const clavePartidaHoy = `partida-${idJuego}-${new Date().toISOString().slice(0, 10)}`;
+    window.idJuego = "barcelona";
+    window.claveEstadisticas = `estadisticas-jugador-${window.idJuego}`;
+    window.clavePartidaHoy = `partida-${window.idJuego}-${new Date().toISOString().slice(0, 10)}`;
   </script>
 
   <script src="barcelona.js"></script>
   <script type="module" src="../../utils/funciones.js"></script>
-  <script src="../../utils/teclado.js"></script>
-    <script>
+  <script type="module" src="../../utils/teclado.js"></script>
+  <script>
     fetch("../../utils/infomodal.html")
       .then(response => response.text())
       .then(html => {
@@ -161,5 +161,7 @@
         };
       });
   </script>
+
+
 </body>
 </html>

@@ -190,6 +190,7 @@ document.getElementById("hint-button").onclick = () => {
           th.classList.add("pista-seleccionada");
           bubble.innerHTML = `<span style="font-weight:bold;">${col.texto}:</span> ${col.valor()}`;
           pistaMostrada = true;
+          document.getElementById("hint-button").disabled = true;
         }
       };
     }
@@ -211,6 +212,7 @@ restartBtn.addEventListener("click", () => {
   intentos = 0;
   juegoTerminado = false;
   pistaMostrada = false;
+  document.getElementById("hint-button").disabled = false;
 
   const hintBubble = document.getElementById("hint-bubble");
   hintBubble.style.display = "none";
@@ -231,33 +233,6 @@ restartBtn.addEventListener("click", () => {
     else if (col.id === "th-dorsal") col.valor = () => elegido.dorsal;
     else if (col.id === "th-primera") col.valor = () => formatearTemporada(elegido.temporadaPrim);
     else if (col.id === "th-ultima") col.valor = () => formatearTemporada(elegido.temporadaSeg);
-  });
-
-  // **Eliminar event listeners antiguos**
-  columnasPista.forEach(col => {
-    const th = document.getElementById(col.id);
-    if (th) {
-      th.replaceWith(th.cloneNode(true));
-    }
-  });
-
-  // **Volver a asignar eventos a las columnas con el nuevo elegido**
-  columnasPista.forEach(col => {
-    const th = document.getElementById(col.id);
-    if (th) {
-      th.onclick = () => {
-        const bubble = document.getElementById("hint-bubble");
-        if (!pistaMostrada && bubble.style.display === "flex") {
-          columnasPista.forEach(c2 => {
-            const th2 = document.getElementById(c2.id);
-            if (th2) th2.classList.remove("pista-clicable-activa", "pista-seleccionada");
-          });
-          th.classList.add("pista-seleccionada");
-          bubble.innerHTML = `<span style="font-weight:bold;">${col.texto}:</span> ${col.valor()}`;
-          pistaMostrada = true;
-        }
-      };
-    }
   });
 
   // Limpiar input y poner foco
