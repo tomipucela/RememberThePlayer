@@ -130,6 +130,87 @@
 
   </div>
 
+
+  <script>
+  // Traducciones para español e inglés
+  const translations = {
+    es: {
+      rememberText: "Remember<br />the player", // Si quieres traducirlo, pon aquí el texto en español
+      liga2Text: "LaLiga2",
+      infoTitle: "Información",
+      hintTitle: "Pista",
+      hintText: "Aquí aparecerá la pista del jugador.",
+      guessPlaceholder: "Nombre del jugador...",
+      tryButton: "Intentar",
+      restartButton: "Continuar Jugando",
+      tableHeaders: {
+        jugador: "Jugador",
+        nacionalidad: "Nacionalidad",
+        posicion: "Posición",
+        dorsal: "Dorsal",
+        primera: "Primera Temporada",
+        ultima: "Última Temporada"
+      },
+      infoAriaLabel: "Abrir información del juego",
+      hintAriaLabel: "Pista"
+    },
+    en: {
+      rememberText: "Remember<br />the player",
+      liga2Text: "LaLiga2",
+      infoTitle: "Information",
+      hintTitle: "Hint",
+      hintText: "The player's hint will appear here.",
+      guessPlaceholder: "Player's name...",
+      tryButton: "Submit Guess",
+      restartButton: "Continue Playing",
+      tableHeaders: {
+        jugador: "Player",
+        nacionalidad: "Nationality",
+        posicion: "Position",
+        dorsal: "Number",
+        primera: "First Season",
+        ultima: "Last Season"
+      },
+      infoAriaLabel: "Open game information",
+      hintAriaLabel: "Hint"
+    }
+  };
+
+  // Detectar idioma del navegador (solo español o inglés)
+  const userLang = navigator.language || navigator.userLanguage;
+  const lang = userLang.startsWith('en') ? 'en' : 'es';
+
+  // Función para actualizar textos
+  function applyTranslations() {
+    const t = translations[lang];
+
+    // Cambiar texto en el DOM
+    document.getElementById('remember-text').innerHTML = t.rememberText;
+    document.getElementById('liga2-text').textContent = t.liga2Text;
+    document.getElementById('info-button').title = t.infoTitle;
+    document.getElementById('info-button').setAttribute('aria-label', t.infoAriaLabel);
+    document.getElementById('hint-button').title = t.hintTitle;
+    document.getElementById('hint-button').setAttribute('aria-label', t.hintAriaLabel);
+    document.querySelector('#hint-modal h2').textContent = t.hintTitle;
+    document.getElementById('hint-text').textContent = t.hintText;
+    document.getElementById('guessName').placeholder = t.guessPlaceholder;
+    document.getElementById('try-button').textContent = t.tryButton;
+    document.getElementById('restart-btn').textContent = t.restartButton;
+
+    // Cambiar encabezados de tabla
+    document.querySelector('th:nth-child(1)').textContent = t.tableHeaders.jugador;
+    document.getElementById('th-nacionalidad').textContent = t.tableHeaders.nacionalidad;
+    document.getElementById('th-posicion').textContent = t.tableHeaders.posicion;
+    document.getElementById('th-dorsal').textContent = t.tableHeaders.dorsal;
+    document.getElementById('th-primera').textContent = t.tableHeaders.primera;
+    document.getElementById('th-ultima').textContent = t.tableHeaders.ultima;
+  }
+
+  // Ejecutar la traducción al cargar
+  applyTranslations();
+</script>
+
+
 <script>
     // Define variables globales para usarlas en otros scripts
     window.idJuego = "real-valladolid";
@@ -141,25 +222,47 @@
   <script type="module" src="../../utils/funciones.js"></script>
   <script type="module" src="../../utils/teclado.js"></script>
   <script>
-    fetch("../../utils/infomodal.html")
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById("modal-container").innerHTML = html;
+  fetch("../../utils/infomodal.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("modal-container").innerHTML = html;
 
-        // Asignar eventos DESPUÉS de insertar el HTML
-        const closeBtn = document.getElementById("close-info");
-        const modal = document.getElementById("info-modal");
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('en') ? 'en' : 'es';
 
-        closeBtn.onclick = () => {
-          modal.style.display = "none";
-        };
+    if(lang === 'en') {
+      document.querySelector('#info-modal .modal-content').innerHTML = `
+        <span id="close-info" class="close">&times;</span>
+        <h2>How to play Remember The Player?</h2>
+        <p>Your goal is to guess a player from a recent season who played in the selected team. You have 6 attempts.</p>
+        <h2>What do the columns mean?</h2>
+        <ul>
+          <li><strong>Player</strong>: guessed player</li>
+          <li><strong>Nationality</strong>: nationality of the guessed player. Will appear green if correct, gray if not.</li>
+          <li><strong>Position</strong>: position of the guessed player. Will appear green if correct, gray if not.</li>
+          <li><strong>Number</strong>: last number worn by the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+          <li><strong>First Season</strong>: first season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+          <li><strong>Last Season</strong>: last season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+        </ul>
+        <p>If it gets too hard, don't worry, we offer you a hint. Just click the hint button above and choose the column whose value you want to reveal.</p>
+        <p>Good luck!</p>
+      `;
+    }
 
-        window.onclick = (e) => {
-          if (e.target === modal) {
-            modal.style.display = "none";
-          }
-        };
-      });
+    // Re-assign close button events after changing content
+    const closeBtn = document.getElementById("close-info");
+    const modal = document.getElementById("info-modal");
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    window.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
   </script>
 
 
