@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
           juegoTerminado = true;
         }
 
-        console.log("Valor de acierto:", acierto);
       };
 
       suggestionsBox.appendChild(div);
@@ -115,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
           juegoTerminado = true;
         }
 
-        console.log("Valor de acierto:", acierto);
       }
       currentFocus = -1;
     }
