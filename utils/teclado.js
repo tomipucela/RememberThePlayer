@@ -62,9 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
           alert("Jugador no encontrado.");
         } else if (acierto === 0) {
           intentos++;
-        } else {
+        } else if (acierto === 1){
           juegoTerminado = true;
         }
+
+        console.log("Valor de acierto:", acierto);
       };
 
       suggestionsBox.appendChild(div);
@@ -109,9 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
           alert("Jugador no encontrado.");
         } else if (acierto === 0) {
           intentos++;
-        } else {
+        } else if (acierto === 1){
           juegoTerminado = true;
         }
+
+        console.log("Valor de acierto:", acierto);
       }
       currentFocus = -1;
     }
