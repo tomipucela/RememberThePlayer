@@ -203,7 +203,6 @@ export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado
     mostrarMensaje("You already played today's player. But you can keep playing!", 4000, "#6aaa64");
   }
     document.getElementById("guessName").style.display = "none";
-  document.getElementById("try-button").style.display = "none";
 
   return true;
 }
@@ -211,9 +210,7 @@ export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado
 
 export function desactivarInput() {
   const inputElem = document.getElementById("guessName");
-  const btn = document.querySelector("button[onclick='submitGuess()']");
   inputElem.disabled = true;
-  btn.disabled = true;
 }
 
 export function mostrarBotonReinicio() {
@@ -276,7 +273,6 @@ if (jugador.nombre === elegido.nombre) {
   setTimeout(() => {
     actualizarEstadisticas(intentos,idJuego,elegido); // solo en la primera partida del día
     document.getElementById("guessName").style.display = "none";
-    document.getElementById("try-button").style.display = "none";
     mostrarBotonReinicio();
   }, timeout);
 
@@ -295,7 +291,6 @@ else if (intentos >= maxIntentos-1) {
   guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy);
   guardarEstadisticasPartida(false,intentos, elegido,claveEstadisticas);
   document.getElementById("guessName").style.display = "none";
-  document.getElementById("try-button").style.display = "none";
   mostrarBotonReinicio();
   return 1;
 }
@@ -377,9 +372,7 @@ export function reiniciarJuego() {
 
   // Habilitar input y botón
   const inputElem = document.getElementById("guessName");
-  const btn = document.querySelector("button[onclick='submitGuess()']");
   inputElem.disabled = false;
-  btn.disabled = false;
   inputElem.value = "";
   inputElem.focus();
 
@@ -387,7 +380,6 @@ export function reiniciarJuego() {
   const restartBtn = document.getElementById("restart-btn");
   restartBtn.style.display = "none";
   document.getElementById("guessName").style.display = "inline-block";
-  document.getElementById("try-button").style.display = "inline-block";
 
 
   // Limpiar sugerencias

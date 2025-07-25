@@ -11,7 +11,6 @@ import {
   submitGuess,
   reiniciarJuego
 } from "./funciones.js";
-
 document.addEventListener("DOMContentLoaded", () => {
   let elegido = getJugadorDelDiaLocal();
   console.log("Jugador del día (local):", elegido);
@@ -40,10 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
       .filter(j => j.nombre.toLowerCase().includes(value))
       .slice(0, 10);
 
-    coincidencias.forEach(j => {
+    coincidencias.forEach((j, index) => {
       const div = document.createElement("div");
       div.textContent = j.nombre;
       div.classList.add("suggestion-item");
+      div.dataset.index = index;
 
       div.onclick = () => {
         input.value = j.nombre;
@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos
         );
 
-        if (acierto=== -1) {
+        if (acierto === -1) {
           alert("Jugador no encontrado.");
-        }else if (acierto === 0) {
+        } else if (acierto === 0) {
           intentos++;
         } else {
           juegoTerminado = true;
@@ -79,19 +79,23 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       currentFocus = (currentFocus + 1) % items.length;
       addActive(items);
-
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       currentFocus = (currentFocus - 1 + items.length) % items.length;
       addActive(items);
-
     } else if (e.key === "Enter") {
       e.preventDefault();
-
-      if (currentFocus > -1) {
-        items[currentFocus].click();
-        currentFocus = -1;
+      if (currentFocus > -1 && items[currentFocus]) {
+        items[currentFocus].click();  // ejecuta el mismo código del click
       } else {
+        const nombreIngresado = input.value.trim().toLowerCase();
+        const jugadorValido = jugadores.find(j => j.nombre.toLowerCase() === nombreIngresado);
+
+        if (!jugadorValido) {
+          alert("Jugador no encontrado.");
+          return;
+        }
+
         const acierto = submitGuess(
           clavePartidaHoy,
           claveEstadisticas,
@@ -101,14 +105,15 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos
         );
 
-        if (acierto=== -1) {
+        if (acierto === -1) {
           alert("Jugador no encontrado.");
-        }else if (acierto === 0) {
+        } else if (acierto === 0) {
           intentos++;
         } else {
           juegoTerminado = true;
         }
       }
+      currentFocus = -1;
     }
   });
 

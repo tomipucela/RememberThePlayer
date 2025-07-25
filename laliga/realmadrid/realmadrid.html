@@ -51,7 +51,6 @@
 
   <div id="input-container">
     <input type="text" id="guessName" placeholder="Nombre del jugador..." autocomplete="off" />
-    <button onclick="submitGuess()" id="try-button">Intentar</button>
     <div id="suggestions" class="suggestions-box"></div>
     <button id="restart-btn" style="display:none;">Continuar Jugando</button>
 
@@ -141,7 +140,6 @@
       hintTitle: "Pista",
       hintText: "Aquí aparecerá la pista del jugador.",
       guessPlaceholder: "Nombre del jugador...",
-      tryButton: "Intentar",
       restartButton: "Continuar Jugando",
       tableHeaders: {
         jugador: "Jugador",
@@ -161,7 +159,7 @@
       hintTitle: "Hint",
       hintText: "The player's hint will appear here.",
       guessPlaceholder: "Player's name...",
-      tryButton: "Submit Guess",
+      
       restartButton: "Continue Playing",
       tableHeaders: {
         jugador: "Player",
@@ -194,7 +192,7 @@
     document.querySelector('#hint-modal h2').textContent = t.hintTitle;
     document.getElementById('hint-text').textContent = t.hintText;
     document.getElementById('guessName').placeholder = t.guessPlaceholder;
-    document.getElementById('try-button').textContent = t.tryButton;
+    
     document.getElementById('restart-btn').textContent = t.restartButton;
 
     // Cambiar encabezados de tabla
