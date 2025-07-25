@@ -46,7 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
       div.classList.add("suggestion-item");
 
       div.onclick = () => {
+        input.value = j.nombre;
+        suggestionsBox.innerHTML = "";
+
        manejarIntentoDesdeInput()
+
       };
 
       suggestionsBox.appendChild(div);
