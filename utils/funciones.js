@@ -293,7 +293,7 @@ if (jugador.nombre === elegido.nombre) {
 }
 
 
-
+//añado un cometarioo xq no parece q se suba
 else if (intentos >= maxIntentos-1) {
   if(esEspanol){
     mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
