@@ -332,23 +332,6 @@ body {
   outline: none;
 }
 
-#try-button {
-  padding: 10px 25px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 1rem;
-  background-color: #9602d1;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  height: 42px;
-}
-
-#try-button:hover {
-  background-color: #9602d1;
-}
-
 .suggestions-box {
   position: absolute;
   top: 100%;

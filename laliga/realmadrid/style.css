@@ -332,23 +332,6 @@ body {
   outline: none;
 }
 
-#try-button {
-  padding: 10px 25px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 1rem;
-  background-color: rgb(218, 156, 0);;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  height: 42px;
-}
-
-#try-button:hover {
-  color: rgb(218, 156, 0);
-  background-color: white;
-}
 
 .suggestions-box {
   position: absolute;
