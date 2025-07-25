@@ -11,6 +11,8 @@ import {
   submitGuess,
   reiniciarJuego
 } from "./funciones.js";
+import { banderaDePaisImg } from './paises.js';
+
 
 const idioma = navigator.language || navigator.userLanguage;
 const esEspanol = idioma.startsWith('es');
@@ -22,6 +24,13 @@ const traducciones = {
   "Última Temporada": { en: "Last Season" },
   "Haz clic en una columna para desvelar la pista": { en: "Click a column to reveal the hint" },
 };
+const posicionesTraducidas = {
+  'Portero': 'Goalkeeper',
+  'Defensa': 'Defender',
+  'Centrocampista': 'Midfielder',
+  'Atacante': 'Forward'
+};
+
 function t(texto) {
   if (esEspanol) return texto;
   return traducciones[texto]?.en || texto;
@@ -159,13 +168,39 @@ if (closeInfoBtn) {
 }
 
 
-  const columnasPista = [
-  { id: "th-nacionalidad", texto: t("Nacionalidad"), valor: () => elegido.nacionalidad },
-  { id: "th-posicion", texto: t("Posición"), valor: () => elegido.posicion },
-  { id: "th-dorsal", texto: t("Dorsal"), valor: () => elegido.dorsal },
-  { id: "th-primera", texto: t("Primera Temporada"), valor: () => formatearTemporada(elegido.temporadaPrim) },
-  { id: "th-ultima", texto: t("Última Temporada"), valor: () => formatearTemporada(elegido.temporadaSeg) }
+const columnasPista = [
+  {
+    id: "th-nacionalidad",
+    texto: t("Nacionalidad"),
+    valor: () => {
+      const bandera = banderaDePaisImg(elegido.nacionalidad);
+      return `${bandera}`;
+    }
+  },
+  {
+    id: "th-posicion",
+    texto: t("Posición"),
+    valor: () => {
+      return esEspanol ? elegido.posicion : (posicionesTraducidas[elegido.posicion] || elegido.posicion);
+    }
+  },
+  {
+    id: "th-dorsal",
+    texto: t("Dorsal"),
+    valor: () => elegido.dorsal
+  },
+  {
+    id: "th-primera",
+    texto: t("Primera Temporada"),
+    valor: () => formatearTemporada(elegido.temporadaPrim)
+  },
+  {
+    id: "th-ultima",
+    texto: t("Última Temporada"),
+    valor: () => formatearTemporada(elegido.temporadaSeg)
+  }
 ];
+
 
 
 
