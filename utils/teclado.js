@@ -49,8 +49,20 @@ document.addEventListener("DOMContentLoaded", () => {
         input.value = j.nombre;
         suggestionsBox.innerHTML = "";
 
-       manejarIntentoDesdeInput()
+        const acierto = submitGuess(
+          clavePartidaHoy,
+          claveEstadisticas,
+          idJuego,
+          juegoTerminado,
+          elegido,
+          intentos
+        );
 
+        if (!acierto) {
+          intentos++;
+        } else {
+          juegoTerminado = true;
+        }
       };
 
       suggestionsBox.appendChild(div);
@@ -78,7 +90,20 @@ document.addEventListener("DOMContentLoaded", () => {
         items[currentFocus].click();
         currentFocus = -1;
       } else {
-        manejarIntentoDesdeInput()
+        const acierto = submitGuess(
+          clavePartidaHoy,
+          claveEstadisticas,
+          idJuego,
+          juegoTerminado,
+          elegido,
+          intentos
+        );
+
+        if (!acierto) {
+          intentos++;
+        } else {
+          juegoTerminado = true;
+        }
       }
     }
   });
@@ -217,30 +242,3 @@ restartBtn.addEventListener("click", () => {
 });
 
 });
-
-function manejarIntentoDesdeInput() {
-  const nombreIngresado = input.value.trim().toLowerCase();
-
-  // Validar que el nombre esté en la lista
-  const jugadorValido = jugadores.find(jug => jug.nombre.toLowerCase() === nombreIngresado);
-
-  if (!jugadorValido) {
-    mostrarMensaje("Jugador no válido. Intenta con otro nombre.");
-    return; // 🚫 No se ejecuta submitGuess ni se suma intento
-  }
-
-  const acierto = submitGuess(
-    clavePartidaHoy,
-    claveEstadisticas,
-    idJuego,
-    juegoTerminado,
-    elegido,
-    intentos
-  );
-
-  if (!acierto) {
-    intentos++;
-  } else {
-    juegoTerminado = true;
-  }
-}
