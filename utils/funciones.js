@@ -17,11 +17,22 @@ const posicionesTraducidas = {
 };
 
 
-
-export function guardarEstadisticasPartida(acertado, intentos, elegido,claveEstadisticas) {
-  // Solo registrar si es partida del día
+export function guardarEstadisticasPartida(acertado, intentos, elegido, claveEstadisticas) {
   const jugadorDelDia = getJugadorDelDiaLocal();
-  if (elegido.nombre !== jugadorDelDia.nombre) return;
+  if (!elegido || !jugadorDelDia) return;
+  
+  // Normalizar nombre para evitar problemas de formato
+  const nombreElegido = elegido.nombre.trim().toLowerCase();
+  const nombreDelDia = jugadorDelDia.nombre.trim().toLowerCase();
+  if (nombreElegido !== nombreDelDia) return;
+
+  // Cargar estadísticas actuales o inicializar si no existen
+  const estadisticas = JSON.parse(localStorage.getItem(claveEstadisticas)) || {
+    jugadasTotales: 0,
+    victorias: 0,
+    rachaActual: 0,
+    histogramaIntentos: [0, 0, 0, 0, 0, 0]
+  };
 
   estadisticas.jugadasTotales++;
 
@@ -37,6 +48,7 @@ export function guardarEstadisticasPartida(acertado, intentos, elegido,claveEsta
 
   localStorage.setItem(claveEstadisticas, JSON.stringify(estadisticas));
 }
+
 
 
 export function getJugadorDelDiaLocal() {
@@ -58,12 +70,11 @@ export function getJugadorDelDiaLocal() {
 
   return jugadoresDelGrupo[index];
 }
-
-export function actualizarEstadisticas(intentos,idJuego,elegido) {
+export function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
   const jugadorDelDia = getJugadorDelDiaLocal();
   if (elegido.nombre !== jugadorDelDia.nombre) return;
 
-  const key = `estadisticas-jugador-del-dia-${idJuego}`;  // Aquí está la clave con idJuego
+  const key = `estadisticas-jugador-del-dia-${idJuego}`;
   const hoy = new Date().toISOString().slice(0, 10);
 
   let stats = JSON.parse(localStorage.getItem(key)) || {
@@ -76,10 +87,12 @@ export function actualizarEstadisticas(intentos,idJuego,elegido) {
 
   stats.jugadasTotales += 1;
 
-  if (intentos <= maxIntentos) {
+  if (acertado) {
     stats.victorias += 1;
     stats.racha = (stats.ultimaFecha !== hoy) ? stats.racha + 1 : stats.racha;
-    stats.histograma[intentos+1] += 1;
+    if (intentos >= 0 && intentos < 6) {
+      stats.histograma[intentos + 1] += 1;
+    }
   } else {
     stats.racha = 0;
   }
@@ -271,7 +284,7 @@ if (jugador.nombre === elegido.nombre) {
   }
 
   setTimeout(() => {
-    actualizarEstadisticas(intentos,idJuego,elegido); // solo en la primera partida del día
+    actualizarEstadisticas(intentos,idJuego,elegido,true); // solo en la primera partida del día
     document.getElementById("guessName").style.display = "none";
     mostrarBotonReinicio();
   }, timeout);
@@ -290,8 +303,19 @@ else if (intentos >= maxIntentos-1) {
   desactivarInput();
   guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy);
   guardarEstadisticasPartida(false,intentos, elegido,claveEstadisticas);
-  document.getElementById("guessName").style.display = "none";
-  mostrarBotonReinicio();
+  let timeout;  // Declarás aquí la variable
+
+  if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
+    timeout = 2000;
+  } else {
+    timeout = 1000;
+  }
+
+  setTimeout(() => {
+    actualizarEstadisticas(intentos,idJuego,elegido,false); // solo en la primera partida del día
+    document.getElementById("guessName").style.display = "none";
+    mostrarBotonReinicio();
+  }, timeout);
   return 1;
 }
 

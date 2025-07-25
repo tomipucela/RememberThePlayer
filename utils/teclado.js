@@ -1,12 +1,6 @@
 import { 
-  guardarEstadisticasPartida,
   getJugadorDelDiaLocal,
-  actualizarEstadisticas,
-  guardarProgresoPartida,
   cargarPartidaGuardada,
-  desactivarInput,
-  mostrarBotonReinicio,
-  mostrarMensaje,
   formatearTemporada,
   submitGuess,
   reiniciarJuego
