@@ -11,6 +11,25 @@ import {
   submitGuess,
   reiniciarJuego
 } from "./funciones.js";
+
+const idioma = navigator.language || navigator.userLanguage;
+const esEspanol = idioma.startsWith('es');
+const traducciones = {
+  "Nacionalidad": { en: "Nationality" },
+  "Posición": { en: "Position" },
+  "Dorsal": { en: "Number" },
+  "Primera Temporada": { en: "First Season" },
+  "Última Temporada": { en: "Last Season" },
+  "Haz clic en una columna para desvelar la pista": { en: "Click a column to reveal the hint" },
+};
+function t(texto) {
+  if (esEspanol) return texto;
+  return traducciones[texto]?.en || texto;
+}
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   let elegido = getJugadorDelDiaLocal();
   console.log("Jugador del día (local):", elegido);
@@ -87,14 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (currentFocus > -1 && items[currentFocus]) {
         items[currentFocus].click();  // ejecuta el mismo código del click
       } else {
-        const nombreIngresado = input.value.trim().toLowerCase();
-        const jugadorValido = jugadores.find(j => j.nombre.toLowerCase() === nombreIngresado);
-
-        if (!jugadorValido) {
-          alert("Jugador no encontrado.");
-          return;
-        }
-
         const acierto = submitGuess(
           clavePartidaHoy,
           claveEstadisticas,
@@ -149,12 +160,13 @@ if (closeInfoBtn) {
 
 
   const columnasPista = [
-    { id: "th-nacionalidad", texto: "Nacionalidad", valor: () => elegido.nacionalidad },
-    { id: "th-posicion", texto: "Posición", valor: () => elegido.posicion },
-    { id: "th-dorsal", texto: "Dorsal", valor: () => elegido.dorsal },
-    { id: "th-primera", texto: "Primera Temporada", valor: () => formatearTemporada(elegido.temporadaPrim) },
-    { id: "th-ultima", texto: "Última Temporada", valor: () => formatearTemporada(elegido.temporadaSeg) }
-  ];
+  { id: "th-nacionalidad", texto: t("Nacionalidad"), valor: () => elegido.nacionalidad },
+  { id: "th-posicion", texto: t("Posición"), valor: () => elegido.posicion },
+  { id: "th-dorsal", texto: t("Dorsal"), valor: () => elegido.dorsal },
+  { id: "th-primera", texto: t("Primera Temporada"), valor: () => formatearTemporada(elegido.temporadaPrim) },
+  { id: "th-ultima", texto: t("Última Temporada"), valor: () => formatearTemporada(elegido.temporadaSeg) }
+];
+
 
 
   
@@ -174,7 +186,8 @@ document.getElementById("hint-button").onclick = () => {
 
   } else {
     // Mostrar instrucción para elegir columna
-    bubble.textContent = "Haz clic en una columna para desvelar la pista";
+    bubble.textContent = t("Haz clic en una columna para desvelar la pista");
+
     bubble.style.display = "flex";
 
     columnasPista.forEach(col => {
