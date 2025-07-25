@@ -7,6 +7,14 @@ let estadisticas = {
   rachaActual: 0,
   histogramaIntentos: [0, 0, 0, 0, 0, 0]
 };
+const idioma = navigator.language || navigator.userLanguage;
+const esEspanol = idioma.startsWith('es');
+const posicionesTraducidas = {
+  'Portero': 'Goalkeeper',
+  'Defensa': 'Defender',
+  'Centrocampista': 'Midfielder',
+  'Atacante': 'Forward'
+};
 
 
 
@@ -189,7 +197,11 @@ export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado
 
   desactivarInput();
   mostrarBotonReinicio();
-  mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#6aaa64");
+  if(esEspanol){
+    mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#6aaa64");
+  }else{
+    mostrarMensaje("You already played today's player. But you can keep playing!", 4000, "#6aaa64");
+  }
     document.getElementById("guessName").style.display = "none";
   document.getElementById("try-button").style.display = "none";
 
@@ -246,7 +258,11 @@ export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTe
 mostrarComparacion(jugador, elegido, intentos);
 
 if (jugador.nombre === elegido.nombre) {
-  mostrarMensaje(`¡Correcto! 🎉 Acertaste en ${intentos+1} intento${intentos > 0 ? "s" : ""}`, 4000, '#6aaa64');
+  if(esEspanol){
+    mostrarMensaje(`¡Correcto! 🎉 Acertaste en ${intentos+1} intento${intentos > 0 ? "s" : ""}`, 4000, '#6aaa64');
+  }else{
+    mostrarMensaje(`Correct! 🎉 You guessed it in ${intentos+1} attempt${intentos > 0 ? "s" : ""}`, 4000, '#6aaa64');
+  }
   desactivarInput();
   guardarProgresoPartida("acertado", elegido, intentos, clavePartidaHoy);
   guardarEstadisticasPartida(true,intentos, elegido,claveEstadisticas);
@@ -271,7 +287,11 @@ if (jugador.nombre === elegido.nombre) {
 
 
 else if (intentos >= maxIntentos-1) {
-  mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
+  if(esEspanol){
+    mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
+  }else{
+    mostrarMensaje(`You ran out of attempts! It was: ${elegido.nombre}`, 4000, '#d9534f');
+  }
   desactivarInput();
   guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy);
   guardarEstadisticasPartida(false,intentos, elegido,claveEstadisticas);
@@ -328,7 +348,6 @@ function mostrarComparacion(j,elegido, intentos) {
       celda.classList.add("wrong");
     }
 
-    // Mostrar contenido según tipo de propiedad
     if (prop === "nacionalidad") {
       celda.innerHTML = banderaDePaisImg(j.nacionalidad);
     } else if (prop === "dorsal" || prop === "temporadaPrim" || prop === "temporadaSeg") {
@@ -338,10 +357,13 @@ function mostrarComparacion(j,elegido, intentos) {
         const flecha = j[prop] > elegido[prop] ? "▼" : "▲";
         celda.innerHTML = `${valor} <span style="color:#8a070d;">${flecha}</span>`;
       }
+    } else if (prop === "posicion" && !esEspanol) {
+      celda.innerText = posicionesTraducidas[valor] || valor;
     } else {
       celda.innerText = valor;
     }
-  }
+
+}
 }
 
 export function reiniciarJuego() {
