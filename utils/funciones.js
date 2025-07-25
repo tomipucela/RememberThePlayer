@@ -251,8 +251,7 @@ export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTe
   const jugador = jugadores.find(j => j.nombre.toLowerCase() === input);
 
   if (!jugador) {
-    alert("Jugador no encontrado.");
-    return;
+    return -1;
   }
 
 mostrarComparacion(jugador, elegido, intentos);
@@ -281,7 +280,7 @@ if (jugador.nombre === elegido.nombre) {
     mostrarBotonReinicio();
   }, timeout);
 
-    return true; // Indica que se acertó
+    return 1; // Indica que se acertó
 }
 
 
@@ -298,11 +297,11 @@ else if (intentos >= maxIntentos-1) {
   document.getElementById("guessName").style.display = "none";
   document.getElementById("try-button").style.display = "none";
   mostrarBotonReinicio();
-  return true;
+  return 1;
 }
 
   inputElem.value = "";
-  return false; // Indica que no se acertó
+  return 0; // Indica que no se acertó
 }
 
 

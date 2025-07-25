@@ -58,7 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos
         );
 
-        if (!acierto) {
+        if (acierto=== -1) {
+          alert("Jugador no encontrado.");
+        }else if (acierto === 0) {
           intentos++;
         } else {
           juegoTerminado = true;
@@ -99,7 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos
         );
 
-        if (!acierto) {
+        if (acierto=== -1) {
+          alert("Jugador no encontrado.");
+        }else if (acierto === 0) {
           intentos++;
         } else {
           juegoTerminado = true;
