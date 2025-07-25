@@ -70,7 +70,74 @@ export function getJugadorDelDiaLocal() {
 
   return jugadoresDelGrupo[index];
 }
-export function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
+
+// Función que genera y muestra el modal con las estadísticas pasadas
+export function mostrarModalEstadisticas(stats) {
+  const textos = {
+    titulo: esEspanol ? "Estadísticas Remember The Player" : "Remember The Player Stats",
+    partidasJugadas: esEspanol ? "Partidas Jugadas" : "Games Played",
+    victoriasTotales: esEspanol ? "Victorias Totales" : "Total Wins",
+    rachaActual: esEspanol ? "Racha Actual" : "Current Streak",
+    cerrar: esEspanol ? "Cerrar" : "Close"
+  };
+
+  const modal = document.createElement("div");
+  modal.className = "modal-resultado";
+
+  modal.innerHTML = `
+    <div class="modal-content-resultado">
+      <h2><span class="titulo-juego">${textos.titulo}</span></h2>
+      <div class="tabla-superior">
+        <div><strong>${textos.partidasJugadas}</strong><br>${stats.jugadasTotales}</div>
+        <div><strong>${textos.victoriasTotales}</strong><br>${stats.victorias}</div>
+        <div><strong>${textos.rachaActual}</strong><br>${stats.racha}</div>
+      </div>
+      <div id="estadisticas-histograma"></div>
+      <button id="btn-cerrar-modal">${textos.cerrar}</button>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  document.getElementById("btn-cerrar-modal").addEventListener("click", () => {
+    modal.remove();
+  });
+
+  const contenedor = document.getElementById("estadisticas-histograma");
+  contenedor.className = "contenedor-histograma";
+  contenedor.innerHTML = "";
+
+  const valores = Object.values(stats.histograma);
+  const maxValor = Math.max(...valores, 1); // Evitar división por 0
+
+  for (let intento = 1; intento <= 6; intento++) {
+    const valor = stats.histograma[intento] || 0;
+
+    const fila = document.createElement("div");
+    fila.className = "fila-histograma";
+
+    const label = document.createElement("div");
+    label.className = "label-histograma";
+    label.textContent = intento;
+
+    const barra = document.createElement("div");
+    barra.className = "barra-histograma";
+    barra.style.width = `${(valor / maxValor) * 100}%`;
+    barra.textContent = valor;
+
+    if (valor === 0) {
+      barra.style.backgroundColor = "#ccc";
+      barra.style.color = "#999";
+    }
+
+    fila.appendChild(label);
+    fila.appendChild(barra);
+    contenedor.appendChild(fila);
+  }
+}
+
+// Función que actualiza estadísticas, guarda y muestra modal
+function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
   const jugadorDelDia = getJugadorDelDiaLocal();
   if (elegido.nombre !== jugadorDelDia.nombre) return;
 
@@ -89,6 +156,7 @@ export function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
 
   if (acertado) {
     stats.victorias += 1;
+    // Si la última fecha es diferente a hoy, suma a la racha, si es el mismo día no la incrementa
     stats.racha = (stats.ultimaFecha !== hoy) ? stats.racha + 1 : stats.racha;
     if (intentos >= 0 && intentos < 6) {
       stats.histograma[intentos + 1] += 1;
@@ -99,57 +167,22 @@ export function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
 
   stats.ultimaFecha = hoy;
   localStorage.setItem(key, JSON.stringify(stats));
-  const modal = document.createElement("div");
-  modal.className = "modal-resultado";
 
-  modal.innerHTML = `
-    <div class="modal-content-resultado">
-      <h2><span class="titulo-juego">Estadísticas Remember The Player</span></h2>
-      <div class="tabla-superior">
-        <div><strong>Partidas Jugadas</strong><br>${stats.jugadasTotales}</div>
-        <div><strong>Victorias Totales</strong><br>${stats.victorias}</div>
-        <div><strong>Racha Actual</strong><br>${stats.racha}</div>
-      </div>
-      <div id="estadisticas-histograma"></div>
-      <button id="btn-cerrar-modal">Cerrar</button>
-    </div>
-  `;
-  document.body.appendChild(modal);
-  document.getElementById("btn-cerrar-modal").addEventListener("click", () => {
-  modal.remove();
-});
+  mostrarModalEstadisticas(stats);
+}
 
-  const contenedor = document.getElementById("estadisticas-histograma");
-    contenedor.className = "contenedor-histograma";
-    contenedor.innerHTML = "";
-  
-    const valores = Object.values(stats.histograma);
-    const maxValor = Math.max(...valores, 1); // Evitar división por 0
-  
-    for (let intento = 1; intento <= 6; intento++) {
-      const valor = stats.histograma[intento] || 0;
-  
-      const fila = document.createElement("div");
-      fila.className = "fila-histograma";
-  
-      const label = document.createElement("div");
-      label.className = "label-histograma";
-      label.textContent = intento;
-  
-      const barra = document.createElement("div");
-      barra.className = "barra-histograma";
-      barra.style.width = `${(valor / maxValor) * 100}%`;
-      barra.textContent = valor;
-  
-      if (valor === 0) {
-        barra.style.backgroundColor = "#ccc";
-        barra.style.color = "#999";
-      }
-  
-      fila.appendChild(label);
-      fila.appendChild(barra);
-      contenedor.appendChild(fila);
-    }
+// Función para mostrar estadísticas sin actualizar (para el botón)
+function mostrarEstadisticas(idJuego) {
+  const key = `estadisticas-jugador-del-dia-${idJuego}`;
+  const stats = JSON.parse(localStorage.getItem(key)) || {
+    jugadasTotales: 0,
+    victorias: 0,
+    racha: 0,
+    ultimaFecha: null,
+    histograma: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 }
+  };
+
+  mostrarModalEstadisticas(stats);
 }
 
 
