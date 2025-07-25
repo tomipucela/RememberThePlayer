@@ -148,7 +148,7 @@
     document.getElementById("modal-container").innerHTML = html;
 
     const userLang = navigator.language || navigator.userLanguage;
-    const lang = userLang.startsWith('en') ? 'en' : 'es';
+    const lang = userLang.startsWith('es') ? 'es' : 'en';
 
     if(lang === 'en') {
       document.querySelector('#info-modal .modal-content').innerHTML = `

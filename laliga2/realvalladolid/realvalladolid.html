@@ -150,14 +150,14 @@
   <script src="realvalladolid.js"></script>
   <script type="module" src="../../utils/funciones.js"></script>
   <script type="module" src="../../utils/teclado.js"></script>
-  <script>
-  fetch("../../utils/infomodal.html")
-  .then(response => response.text())
+<script>
+    fetch("../../utils/infomodal.html")
+      .then(response => response.text())
   .then(html => {
     document.getElementById("modal-container").innerHTML = html;
 
     const userLang = navigator.language || navigator.userLanguage;
-    const lang = userLang.startsWith('en') ? 'en' : 'es';
+    const lang = userLang.startsWith('es') ? 'es' : 'en';
 
     if(lang === 'en') {
       document.querySelector('#info-modal .modal-content').innerHTML = `

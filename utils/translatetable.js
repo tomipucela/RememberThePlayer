@@ -42,7 +42,7 @@
 
   // Detectar idioma del navegador (solo español o inglés)
   const userLang = navigator.language || navigator.userLanguage;
-  const lang = userLang.startsWith('en') ? 'en' : 'es';
+  const lang = userLang.startsWith('es') ? 'es' : 'en';
 
   // Función para actualizar textos
   function applyTranslations() {

@@ -130,7 +130,7 @@
   </div>
 
   
-   <script src="../../utils/translatetable.js"></script>
+ <script src="../../utils/translatetable.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -140,6 +140,7 @@
     }
   });
 </script>
+
 <script>
     fetch("../../utils/infomodal.html")
       .then(response => response.text())
@@ -147,7 +148,7 @@
     document.getElementById("modal-container").innerHTML = html;
 
     const userLang = navigator.language || navigator.userLanguage;
-    const lang = userLang.startsWith('en') ? 'en' : 'es';
+    const lang = userLang.startsWith('es') ? 'es' : 'en';
 
     if(lang === 'en') {
       document.querySelector('#info-modal .modal-content').innerHTML = `
@@ -185,6 +186,7 @@
   </script>
 
 
+
 <script>
     // Define variables globales para usarlas en otros scripts
     window.idJuego = "barcelona";
@@ -195,28 +197,6 @@
   <script src="barcelona.js"></script>
   <script type="module" src="../../utils/funciones.js"></script>
   <script type="module" src="../../utils/teclado.js"></script>
-  <script>
-    fetch("../../utils/infomodal.html")
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById("modal-container").innerHTML = html;
-
-        // Asignar eventos DESPUÉS de insertar el HTML
-        const closeBtn = document.getElementById("close-info");
-        const modal = document.getElementById("info-modal");
-
-        closeBtn.onclick = () => {
-          modal.style.display = "none";
-        };
-
-        window.onclick = (e) => {
-          if (e.target === modal) {
-            modal.style.display = "none";
-          }
-        };
-      });
-  </script>
-
 
 </body>
 </html>
