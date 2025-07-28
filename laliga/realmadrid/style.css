@@ -619,43 +619,49 @@ body {
   border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
 }
 
+
 @media (max-width: 1070px) {
   #main-title-container {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;  /* centra todo horizontalmente */
     gap: 15px;
-  }
-
-  #left-section,
-  #center-right-section {
-    position: static;
-    justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
+    position: static;
   }
 
-  #center-right-section {
-    transform: none;
-    text-align: center;
-    justify-content: center;
-  }
-
-  /* ORDEN EN MÓVIL */
   #left-section {
     order: 1;
+    position: static;
+    width: 100%;          /* ocupa todo el ancho */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   #main-title {
     order: 2;
+    position: static;
+    transform: none;
     text-align: center;
     font-size: 1.5rem;
-    width: 100%;
+    margin: 0;
+    user-select: none;
+    pointer-events: none;
+    /* quitar width: 100% para que sea flexible */
   }
 
   #center-right-section {
     order: 3;
+    position: static;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* espacio entre botones */
+    /* quitar width 100% para flexibilidad */
   }
 
+  /* Otros ajustes para botones y textos */
   #logo-img {
     width: 60px;
     height: auto;
@@ -680,11 +686,12 @@ body {
     width: 22px;
     height: 22px;
   }
-    .hint-bubble {
+
+  .hint-bubble {
     top: 50%;
-    left: 100%; /* justo a la derecha del botón */
-    max-width: 600px; /* limita el ancho para que no sea demasiado ancho */
-    white-space: pre-line		; /* para que pueda hacer wrap en vez de crecer horizontalmente */
+    left: 100%;
+    max-width: 600px;
+    white-space: pre-line;
     padding: 8px 12px;
     transform: translate(8px, -50%);
     box-sizing: border-box;
@@ -700,9 +707,7 @@ body {
     overflow-wrap: break-word;
   }
 
-  /* Mostrar la burbuja al hacer hover */
   #hint-button:hover .hint-bubble {
     display: block;
   }
-
 }
