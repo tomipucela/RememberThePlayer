@@ -677,9 +677,17 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px; /* espacio entre botones */
+    margin-left: 150px;
+    gap:5 px; /* espacio entre botones */
     /* quitar width 100% para flexibilidad */
   }
+  #buttons-container {
+    margin-left: -50px;
+    display: flex;
+    justify-content: flex-start; /* alinea a la izquierda */
+    gap: 0px; /* espacio reducido entre botones */
+  }
+
 
   /* Otros ajustes para botones y textos */
   #logo-img {
@@ -696,11 +704,15 @@ body {
     height: auto;
   }
 
-  #info-button,
-  #hint-button {
+  #info-button {
     margin-left: 10px;
     font-size: 1.2rem;
   }
+  #hint-button {
+    margin-left: -5px;
+    font-size: 1.2rem;
+  }
+
 
   #hint-button svg {
     width: 22px;
@@ -731,4 +743,3 @@ body {
     display: block;
   }
 }
-
