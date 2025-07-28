@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #000000;
-      background-image: url("../../img/checkered-light-emboss.png");
+      background-image: url("../img/checkered-light-emboss.png");
       color: #fff !important;
       padding: 20px;
       display: flex;
