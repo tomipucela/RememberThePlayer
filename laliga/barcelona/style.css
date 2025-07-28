@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+  background-image: url("../../img/checkered-light-emboss.png");
   color: #fff !important;
   padding: 20px;
   display: flex;
@@ -77,7 +77,7 @@ body {
 
 .modal-content-resultado {
   background-color: #9fff96;
-  background-image: url("https://www.transparenttextures.com/patterns/circles.png");
+  background-image: url("../../img/circles.png");
   padding: 24px 32px;
   border-radius: 12px;
   max-width: 700px;

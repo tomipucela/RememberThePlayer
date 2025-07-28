@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #000000;
-      background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+      background-image: url("../../img/checkered-light-emboss.png");
       color: #fff !important;
       padding: 20px;
       display: flex;
@@ -309,7 +309,7 @@
 
 .grid-item[href="laliga2/laliga2.html"] {
         background-color: #00d4d7;
-        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+        background-image: url("../../img/diagmonds-light.png");
         color: white;
         font-weight: bold;
         font-size: 1.75rem;
@@ -328,7 +328,7 @@
         }
 .grid-item[href="laliga/laliga.html"] {
         background-color: #ec5a4d;
-        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+        background-image: url("../../img/diagmonds-light.png");
         color: white;
         font-weight: bold;
         font-size: 1.75rem;

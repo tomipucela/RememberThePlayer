@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #000000;
-      background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+      background-image: url("../../img/checkered-light-emboss.png");
       color: #fff !important;
       padding: 20px;
       display: flex;
@@ -317,7 +317,7 @@
 
 .grid-item[href="realmadrid/realmadrid.html"] {
         background-color: white;
-        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+        background-image: url("../../img/diagmonds-light.png");
         color: rgb(218, 156, 0);
         font-weight: bold;
         font-size: 1.75rem;
