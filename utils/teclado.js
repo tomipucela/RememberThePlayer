@@ -3,7 +3,8 @@ import {
   cargarPartidaGuardada,
   formatearTemporada,
   submitGuess,
-  reiniciarJuego
+  reiniciarJuego,
+  mostrarEstadisticas
 } from "./funciones.js";
 import { banderaDePaisImg } from './paises.js';
 
@@ -196,6 +197,9 @@ const columnasPista = [
 ];
 
 
+document.getElementById("stats-button").onclick = () => {
+  mostrarEstadisticas(idJuego);
+};
 
 
   
@@ -288,6 +292,7 @@ restartBtn.addEventListener("click", () => {
   const guessInput = document.getElementById("guessName");
   guessInput.value = "";
   guessInput.focus();
+  
 });
 
 });

@@ -172,7 +172,7 @@ function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
 }
 
 // Función para mostrar estadísticas sin actualizar (para el botón)
-function mostrarEstadisticas(idJuego) {
+export function mostrarEstadisticas(idJuego) {
   const key = `estadisticas-jugador-del-dia-${idJuego}`;
   const stats = JSON.parse(localStorage.getItem(key)) || {
     jugadasTotales: 0,
