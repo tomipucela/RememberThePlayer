@@ -8,6 +8,10 @@ function obtenerCodigoISO(pais) {
   const mapa = {
     "Costa de Marfil": "ci",
     costa_de_marfil: "ci",
+    estados_unidos: "us",
+    bielorrusia: "by",
+    gabon: "ga",
+    gales: "gb-wls",
     espana: "es",
     españa: "es",
     francia: "fr",
