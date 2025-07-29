@@ -4,6 +4,7 @@
     es: {
       rememberText: "Remember<br />the player", // Si quieres traducirlo, pon aquí el texto en español
       infoTitle: "Información",
+      statsTitle: "Estadísticas",
       hintTitle: "Pista",
       hintText: "Aquí aparecerá la pista del jugador.",
       guessPlaceholder: "Nombre del jugador...",
@@ -22,6 +23,7 @@
     en: {
       rememberText: "Remember<br />the player",
       infoTitle: "Information",
+      statsTitle: "Stats",
       hintTitle: "Hint",
       hintText: "The player's hint will appear here.",
       guessPlaceholder: "Player's name...",
@@ -52,6 +54,7 @@
     document.getElementById('remember-text').innerHTML = t.rememberText;
     document.getElementById('liga2-text').textContent = t.liga2Text;
     document.getElementById('info-button').title = t.infoTitle;
+    document.getElementById('stats-button').title = t.statsTitle;
     document.getElementById('info-button').setAttribute('aria-label', t.infoAriaLabel);
     document.getElementById('hint-button').title = t.hintTitle;
     document.getElementById('hint-button').setAttribute('aria-label', t.hintAriaLabel);
