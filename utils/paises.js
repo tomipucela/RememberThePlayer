@@ -7,6 +7,7 @@ export function banderaDePaisImg(pais) {
 function obtenerCodigoISO(pais) {
   const mapa = {
     "Costa de Marfil": "ci",
+    costa_de_marfil: "ci",
     espana: "es",
     españa: "es",
     francia: "fr",
