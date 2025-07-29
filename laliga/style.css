@@ -39,7 +39,6 @@
 
         .grid-item[href="realmadrid/realmadrid.html"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #b1b0b0; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -63,5 +62,26 @@
 
         .grid-item[href="barcelona/barcelona.html"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #4b1a9c; /* Mantiene color morado más oscuro al hover */
+        }
+
+.grid-item[href="atleticomadrid/atleticomadrid.html"] {
+        background: repeating-linear-gradient(
+            90deg,
+            #ffffff,
+            #fff 10px,
+            #e1291d 10px,
+            #e1291d 20px
+        );
+        color: #011d6e;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="atleticomadrid/atleticomadrid.html"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
         }
