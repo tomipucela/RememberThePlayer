@@ -39,6 +39,7 @@
 
         .grid-item[href="realmadrid/realmadrid.html"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-color: #b1b0b0; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
