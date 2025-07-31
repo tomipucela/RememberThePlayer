@@ -117,7 +117,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Rafa Navarro ",
+    "nombre": "Rafa Navarro",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
     "dorsal": 2,
@@ -180,7 +180,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Juan Miranda ",
+    "nombre": "Juan Miranda",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
     "dorsal": 3,
@@ -567,7 +567,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Abde Ezzalzouli ",
+    "nombre": "Abde Ezzalzouli",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 10,
@@ -639,7 +639,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Luiz Henrique ",
+    "nombre": "Luiz Henrique",
     "nacionalidad": "Brasil",
     "posicion": "Atacante",
     "dorsal": 11,
@@ -675,7 +675,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Matias Nahuel ",
+    "nombre": "Matias Nahuel",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 11,
@@ -756,7 +756,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Cristiano Piccini ",
+    "nombre": "Cristiano Piccini",
     "nacionalidad": "Italia",
     "posicion": "Defensa",
     "dorsal": 12,
@@ -1134,7 +1134,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Giovani Lo Celso ",
+    "nombre": "Giovani Lo Celso",
     "nacionalidad": "Argentina",
     "posicion": "Centrocampista",
     "dorsal": 20,
@@ -1224,7 +1224,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Marc Roca ",
+    "nombre": "Marc Roca",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
     "dorsal": 21,
@@ -1431,7 +1431,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Chadi Riad ",
+    "nombre": "Chadi Riad",
     "nacionalidad": "Marruecos",
     "posicion": "Defensa",
     "dorsal": 28,

@@ -36,7 +36,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Facundo Ferreyra ",
+    "nombre": "Facundo Ferreyra",
     "nacionalidad": "Argentina",
     "posicion": "Atacante",
     "dorsal": 12,
@@ -189,7 +189,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Alfon Gonzalez ",
+    "nombre": "Alfon Gonzalez",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 12,
@@ -207,7 +207,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Carles Perez ",
+    "nombre": "Carles Perez",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 7,
@@ -522,7 +522,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Theo Bongonda ",
+    "nombre": "Theo Bongonda",
     "nacionalidad": "RD Congo",
     "posicion": "Atacante",
     "dorsal": 7,
@@ -612,7 +612,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Marcelo Diaz ",
+    "nombre": "Marcelo Diaz",
     "nacionalidad": "Chile",
     "posicion": "Centrocampista",
     "dorsal": 5,
@@ -738,7 +738,7 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Iago Aspas ",
+    "nombre": "Iago Aspas",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 10,
@@ -1089,7 +1089,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Sergio Alvarez ",
+    "nombre": "Sergio Alvarez",
     "nacionalidad": "Espana",
     "posicion": "Portero",
     "dorsal": 25,
