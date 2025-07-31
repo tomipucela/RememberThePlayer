@@ -1,0 +1,75 @@
+#guessName {
+  flex-grow: 1;
+  padding: 10px 15px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid   #8ac3ee;
+  border-radius: 6px;
+  font-family: 'Roboto Slab', serif;
+  outline: none;
+}
+
+.suggestions-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background:#000;
+  border-top: none !important;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: 'Roboto Slab', serif;
+  color: #5aa6e1; /* Texto negro por defecto */
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #5aa6e1;
+  color:#000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.suggestion-item:hover {
+  background-color:#e5254e;
+  color: #8ac3ee;
+}
+
+#guess-table thead th {
+  padding: 30px 12px; /* Más bajo que el resto de filas */
+  background-color:#8ac3ee;
+  color: #000;
+  border-radius: 8px;
+}
+
+.autocomplete-active {
+  background-color:#e5254e;;
+  color: #8ac3ee;
+}
+
+#liga2-text {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 32px;
+  border: 2px solid #ec5a4d; /* borde rojo */
+  color: #ec5a4d; /* texto rojo */
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* agrega border-color */
+  background-color: transparent; /* fondo inicial transparente */
+}
+
+#liga2-text:hover {
+  background-color: #ec5a4d; /* fondo rojo */
+  color: #000;               /* texto negro */
+  border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
+}

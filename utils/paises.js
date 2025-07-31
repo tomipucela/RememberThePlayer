@@ -35,7 +35,7 @@ function obtenerCodigoISO(pais) {
     croacia: "hr",
     dinamarca: "dk",
     ecuador: "ec",
-    egipcio: "eg",
+    egipto: "eg",
     el_salvador: "sv",
     emiratos_arabes_unidos: "ae",
     eslovaquia: "sk",
