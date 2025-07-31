@@ -34,7 +34,7 @@
 
 .suggestion-item:hover {
   background-color:#005187;
-  color: black;
+  color: #ffee00;
 }
 
 #guess-table thead th {
