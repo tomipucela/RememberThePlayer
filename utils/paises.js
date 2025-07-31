@@ -12,6 +12,7 @@ function obtenerCodigoISO(pais) {
     angola: "ao",
     arabia_saudi: "sa",
     argentina: "ar",
+    argelia:"dz",
     australia: "au",
     austria: "at",
     belarus: "by",
