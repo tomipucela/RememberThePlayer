@@ -45,7 +45,7 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Thibaur Courtois",
+    "nombre": "Thibaut Courtois",
     "nacionalidad": "Belgica",
     "posicion": "Portero",
     "dorsal": 1,

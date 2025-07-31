@@ -145,7 +145,7 @@ const jugadores = [
   },
   {
     "nombre": "Fabio Faria",
-    "nacionalidad": "Espana",
+    "nacionalidad": "Portugal",
     "posicion": "Defensa",
     "dorsal": 2,
     "temporadaPrim": 2011,
