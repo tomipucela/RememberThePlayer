@@ -56,6 +56,7 @@ function obtenerCodigoISO(pais) {
     guinea: "gn",
     guinea_bisau: "gw",
     guinea_ecuatorial: "gq",
+    holanda: "nl",
     honduras: "hn",
     hungria: "hu",
     india: "in",
