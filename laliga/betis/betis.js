@@ -928,7 +928,7 @@ const jugadores = [
   },
   {
     "nombre": "Roque Santa Cruz",
-    "nacionalidad": "Espana",
+    "nacionalidad": "Paraguay",
     "posicion": "Atacante",
     "dorsal": 16,
     "temporadaPrim": 2012,
