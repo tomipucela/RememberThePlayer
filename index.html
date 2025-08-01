@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="icon" type="image/png" href="img/logo4.ico" />
   <meta charset="UTF-8" />
   <title>Remember The Player</title>
+  <link rel="icon" type="image/png" href="img/logo4.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -32,61 +32,95 @@
       <div class="grid-item disabled">Serie A 🔜</div>
       <div class="grid-item disabled">Ligue 1 🔜</div>
     </div>
+
+    <!-- NUEVO README BOX -->
+    <section id="readme-section" class="readme-box">
+      <!-- Se rellenará dinámicamente -->
+    </section>
   </main>
 
-  <!-- El contenedor del modal DEBE estar dentro del body -->
   <div id="modal-container"></div>
 
   <script>
     fetch("./utils/infomodal.html")
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById("modal-container").innerHTML = html;
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("modal-container").innerHTML = html;
 
-      const userLang = navigator.language || navigator.userLanguage;
-      const lang = userLang.startsWith('en') ? 'en' : 'es';
+        const userLang = navigator.language || navigator.userLanguage;
+        const lang = userLang.startsWith('en') ? 'en' : 'es';
 
-      // Por defecto, texto en español (lo que venga en infomodal.html)
-      // Si quieres, aquí puedes modificar el contenido para español explícitamente, pero no es obligatorio
-
-      if(lang === 'en') {
-        document.querySelector('#info-modal .modal-content').innerHTML = `
-          <span id="close-info" class="close">&times;</span>
-          <h2>How to play Remember The Player?</h2>
-          <p>Your goal is to guess a player from a recent season who played in the selected team. You have 6 attempts.</p>
-          <h2>What do the columns mean?</h2>
-          <ul>
-            <li><strong>Player</strong>: guessed player</li>
-            <li><strong>Nationality</strong>: nationality of the guessed player. Will appear green if correct, gray if not.</li>
-            <li><strong>Position</strong>: position of the guessed player. Will appear green if correct, gray if not.</li>
-            <li><strong>Number</strong>: last number worn by the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
-            <li><strong>First Season</strong>: first season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
-            <li><strong>Last Season</strong>: last season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
-          </ul>
-          <p>If it gets too hard, don't worry, we offer you a hint. Just click the hint button above and choose the column whose value you want to reveal.</p>
-          <p>Good luck!</p>
-        `;
-      }
-
-      // Ahora asignamos eventos al botón cerrar del modal
-      const closeBtn = document.getElementById("close-info");
-      const modal = document.getElementById("info-modal");
-
-      closeBtn.onclick = () => {
-        modal.style.display = "none";
-      };
-
-      window.onclick = (e) => {
-        if (e.target === modal) {
-          modal.style.display = "none";
+        // Traducción del modal
+        if (lang === 'en') {
+          document.querySelector('#info-modal .modal-content').innerHTML = `
+            <span id="close-info" class="close">&times;</span>
+            <h2>How to play Remember The Player?</h2>
+            <p>Your goal is to guess a player from a recent season who played in the selected team. You have 6 attempts.</p>
+            <h2>What do the columns mean?</h2>
+            <ul>
+              <li><strong>Player</strong>: guessed player</li>
+              <li><strong>Nationality</strong>: nationality of the guessed player. Will appear green if correct, gray if not.</li>
+              <li><strong>Position</strong>: position of the guessed player. Will appear green if correct, gray if not.</li>
+              <li><strong>Number</strong>: last number worn by the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+              <li><strong>First Season</strong>: first season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+              <li><strong>Last Season</strong>: last season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#8a070d;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+            </ul>
+            <p>If it gets too hard, don't worry, we offer you a hint. Just click the hint button above and choose the column whose value you want to reveal.</p>
+            <p>Good luck!</p>
+          `;
         }
-      };
 
-      // Añadimos evento para abrir el modal al pulsar el botón info
-      document.getElementById("info-button").addEventListener("click", () => {
-        modal.style.display = "block";
+        // Cerrar modal
+        const closeBtn = document.getElementById("close-info");
+        const modal = document.getElementById("info-modal");
+
+        closeBtn.onclick = () => {
+          modal.style.display = "none";
+        };
+
+        window.onclick = (e) => {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
+        };
+
+        document.getElementById("info-button").addEventListener("click", () => {
+          modal.style.display = "block";
+        });
+
+        // README dinámico
+        const readmeBox = document.getElementById("readme-section");
+        if (lang === 'es') {
+          readmeBox.innerHTML = `
+          <h2>¿Qué es "Remember the Player"?</h2>
+          <p class="readme-intro">
+            "Remember the Player" es un juego de memoria futbolera. Cada día habrá un nuevo jugador del equipo que selecciones que deberás intentar adivinar
+            a través de una serie de intentos. Este jugador habrá jugado para el equipo que selecciones en algún momento en las últimas 15 temporadas. 
+            Aunque esto no queda ahi, podrás tambien jugar de forma ilimitada si así lo prefieres. 
+            Si quieres averiguar más sobre cómo se juega, presiona el botón de info que se encuentra en la parte superior.
+          </p>
+          <p class="readme-footer">
+            El juego fue creado por Tomás, un desarrollador independiente español. Si quieres apoyar el proyecto puedes comprarle un café en este enlace y él añadirá el equipo que desees al juego.
+            Si encuentras algún problema en el juego o algún fallo en las bases de datos del juego, te animamos a que nos escribas un correo a ... y lo solucionaremos lo antes posible.
+          </p>
+        `;
+            
+        } else {
+          readmeBox.innerHTML = `
+            <h2>What is "Remember the Player"?</h2>
+            <p class="readme-intro">
+              "Remember the Player" is a football memory game. Each day, a new mystery player will be chosen from the team you select, and your goal is to guess who it is using a limited number of attempts.
+               The player will have been part of that team at some point in the past 15 seasons.
+              But that's not all — you can also play in unlimited mode if you prefer.  
+              To learn more about how the game works, click the info button at the top.
+            </p>
+            <p class="readme-footer">
+              This game was created by Tomás, an independent developer from Spain. If you’d like to support the project, you can buy him a coffee using the link — he’ll add any team you want to the game.
+              If you encounter any issues or find any mistakes in the game's data, feel free to email us at ... and we’ll fix it as soon as possible.
+            </p>
+          `;
+        }
       });
-    });
   </script>
 </body>
 </html>
