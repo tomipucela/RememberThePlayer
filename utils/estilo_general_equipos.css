@@ -598,7 +598,7 @@ body {
   #main-title-container {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* centra todo horizontalmente */
+    align-items: center;
     gap: 15px;
     width: 100%;
     position: static;
@@ -609,16 +609,17 @@ body {
     position: static;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* centra horizontalmente */
     flex-wrap: wrap;
-    transform: scale(2);         /* aumenta al 150% */
-    transform-origin: center;      /* que crezca desde el centro */
+    transform: scale(2);
+    transform-origin: center;
   }
 
-  #main-title {
+    #main-title {
     order: 2;
     position: static;
     transform: none;
+    align-items: center;  /* centra horizontalmente */
     text-align: center;
     font-size: 1.5rem;
     margin: 0;
@@ -632,6 +633,7 @@ body {
   #center-right-section {
     order: 3;
     position: static;
+    align-items: center;  /* centra horizontalmente */  
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -651,48 +653,57 @@ body {
     transform-origin: center;      /* que crezca desde el centro */
   }
 
-#input-container {
-  margin-top: 25px;
-  position: relative;
-  max-width: 400px;   /* por ejemplo, tamaño máximo deseado */
-  width: fit-content; /* que tome solo el ancho del contenido */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  transform: scale(1.75);
-  transform-origin: center;
-  z-index: 1;
-}
+  #input-container {
+    margin-top: 25px;
+    position: relative;
+    max-width: 400px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transform: scale(1.75);
+    transform-origin: center;
+    z-index: 1;
+    margin-left: auto;  /* centra horizontalmente */
+    margin-right: auto;
+  }
 
-  /* Otros ajustes para botones y textos */
   #logo-img {
     width: 60px;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #game-area {
-  font-size: 150%; /* aumenta el tamaño base de todo excepto lo limitado por max-width */
+    font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   #remember-text {
     font-size: 18px;
+    text-align: center;
   }
 
   #liga2-text {
     font-size: 1rem;
     height: auto;
+    text-align: center;
   }
 
   #info-button {
     margin-left: 10px;
     font-size: 1.2rem;
   }
+
   #hint-button {
     margin-left: -5px;
     font-size: 1.2rem;
   }
-
 
   #hint-button svg {
     width: 22px;
@@ -723,5 +734,4 @@ body {
     display: block;
   }
 }
-
 
