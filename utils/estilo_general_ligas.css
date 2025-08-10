@@ -278,3 +278,10 @@
 .close:hover {
   color: #000;
 }
+
+@media (max-width: 1070px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

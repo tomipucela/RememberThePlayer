@@ -967,8 +967,8 @@ const jugadores = [
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 17,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2001,
+    "temporadaPrim": 2001,
+    "temporadaSeg": 2023,
     "grupo": "B"
   },
   {

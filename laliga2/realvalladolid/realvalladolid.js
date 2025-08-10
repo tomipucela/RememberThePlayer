@@ -326,7 +326,7 @@ const jugadores = [
   {
     "nombre": "Alberto Bueno",
     "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
+    "posicion": "Atacante",
     "dorsal": 15,
     "temporadaPrim": 2012,
     "temporadaSeg": 2013,

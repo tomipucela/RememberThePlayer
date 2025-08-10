@@ -329,6 +329,37 @@
 
 
 
+
+
+
+@media (max-width: 1070px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .readme-intro {
+    font-size: 0.85rem; /* más pequeño que el actual 1rem */
+    line-height: 1.5;
+  }
+
+  .readme-footer {
+  font-size: 0.75rem;
+  color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 .grid-item[href="laliga2/laliga2.html"] {
         background-color: #00d4d7;
         background-image: url("./img/diagmonds-light.png");
