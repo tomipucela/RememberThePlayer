@@ -351,7 +351,7 @@
   }
 
   .grid-item {
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 35px 25px;
   }
 
@@ -370,12 +370,12 @@
   }
 
   .readme-intro {
-    font-size: 0.75rem; /* más pequeño que el actual 1rem */
+    font-size: 0.85rem; /* más pequeño que el actual 1rem */
     line-height: 1.5;
   }
 
   .readme-footer {
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: #fff;
   }
 }
