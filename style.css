@@ -334,13 +334,12 @@
 
 @media (max-width: 1070px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
 
   html {
-    font-size: 115%; /* aumenta el tamaño base de todo excepto lo limitado por max-width */
+    font-size: 125%; /* aumenta el tamaño base de todo excepto lo limitado por max-width */
   }
 
   body {
@@ -352,7 +351,7 @@
   }
 
   .grid-item {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     padding: 35px 25px;
   }
 
@@ -371,12 +370,12 @@
   }
 
   .readme-intro {
-    font-size: 0.85rem; /* más pequeño que el actual 1rem */
+    font-size: 0.75rem; /* más pequeño que el actual 1rem */
     line-height: 1.5;
   }
 
   .readme-footer {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: #fff;
   }
 }
