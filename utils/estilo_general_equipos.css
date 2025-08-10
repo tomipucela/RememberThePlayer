@@ -594,6 +594,7 @@ body {
 
 
 @media (max-width: 1070px) {
+
   #main-title-container {
     display: flex;
     flex-direction: column;
@@ -606,10 +607,12 @@ body {
   #left-section {
     order: 1;
     position: static;
-    width: 100%;          /* ocupa todo el ancho */
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    transform: scale(2);         /* aumenta al 150% */
+    transform-origin: center;      /* que crezca desde el centro */
   }
 
   #main-title {
@@ -621,6 +624,8 @@ body {
     margin: 0;
     user-select: none;
     pointer-events: none;
+    transform: scale(2);         /* aumenta al 150% */
+    transform-origin: center;      /* que crezca desde el centro */
     /* quitar width: 100% para que sea flexible */
   }
 
@@ -632,20 +637,42 @@ body {
     flex-wrap: wrap;
     margin-left: 150px;
     gap:5 px; /* espacio entre botones */
+    margin-top: 25px;
+    margin-bottom: 15px;
     /* quitar width 100% para flexibilidad */
   }
   #buttons-container {
-    margin-left: -50px;
+    margin-top: -25px;
+    margin-left: 75px;
     display: flex;
     justify-content: flex-start; /* alinea a la izquierda */
     gap: 0px; /* espacio reducido entre botones */
+    transform: scale(1.75);         /* aumenta al 150% */
+    transform-origin: center;      /* que crezca desde el centro */
   }
 
+#input-container {
+  margin-top: 25px;
+  position: relative;
+  max-width: 400px;   /* por ejemplo, tamaño máximo deseado */
+  width: fit-content; /* que tome solo el ancho del contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transform: scale(1.75);
+  transform-origin: center;
+  z-index: 1;
+}
 
   /* Otros ajustes para botones y textos */
   #logo-img {
     width: 60px;
     height: auto;
+  }
+
+  #game-area {
+  font-size: 150%; /* aumenta el tamaño base de todo excepto lo limitado por max-width */
   }
 
   #remember-text {
