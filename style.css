@@ -339,6 +339,37 @@
     gap: 20px;
   }
 
+  html {
+    font-size: 115%; /* aumenta el tamaño base de todo excepto lo limitado por max-width */
+  }
+
+  body {
+    padding: 25px; /* más margen en móvil */
+  }
+
+  #main-title {
+    font-size: 2.3rem;
+  }
+
+  .grid-item {
+    font-size: 1.4rem;
+    padding: 35px 25px;
+  }
+
+  header {
+    padding: 25px 20px;
+  }
+
+  #remember-text {
+    font-size: 2.8rem;
+  }
+
+  #info-button {
+    font-size: 1.8rem;
+    width: 36px;
+    height: 36px;
+  }
+
   .readme-intro {
     font-size: 0.85rem; /* más pequeño que el actual 1rem */
     line-height: 1.5;
