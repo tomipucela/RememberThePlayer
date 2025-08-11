@@ -22,7 +22,7 @@
 }
 
 
-    .grid-item[href="realvalladolid/realvalladolid.html"] {
+    .grid-item[href="realvalladolid/index.html"] {
         background: repeating-linear-gradient(
             90deg,
             #9602d1,
@@ -41,7 +41,7 @@
 
         }
 
-        .grid-item[href="realvalladolid/realvalladolid.html"]:hover {
+        .grid-item[href="realvalladolid/index.html"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
         background-color: #4b1a9c; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
