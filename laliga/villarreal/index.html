@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="../../img/logo4.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
-  <title>RTP Athletic Club</title>
+  <title>RTP Villarreal</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../../utils/estilo_general_equipos.css" />
 </head>
@@ -16,11 +16,11 @@
     <img src="../../img/logo3.png" alt="Logo" id="logo-img" />
     <span id="remember-text">Remember<br />the player</span>
   </a>
-  <button id="liga2-text" onclick="location.href='../laliga.html'">LaLiga</button>
+  <button id="liga2-text" onclick="location.href='../index.html'">LaLiga</button>
 </div>
 
 <div id="center-right-section">
-  <h1 id="main-title">Athletic Club</h1>
+  <h1 id="main-title">Villarreal</h1>
   <div id="buttons-container">
     <button id="info-button" title="Información" aria-label="Abrir información del juego">i</button>
     <button id="stats-button" title="Estadísticas" aria-label="Mostrar estadísticas">
@@ -140,7 +140,7 @@
   </div>
 
   
- <script src="../../utils/translatetable.js"></script>
+  <script src="../../utils/translatetable.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -195,18 +195,18 @@
   });
   </script>
 
-
-
 <script>
     // Define variables globales para usarlas en otros scripts
-    window.idJuego = "athletic-club";
+    window.idJuego = "villarreal";
     window.claveEstadisticas = `estadisticas-jugador-${window.idJuego}`;
     window.clavePartidaHoy = `partida-${window.idJuego}-${new Date().toISOString().slice(0, 10)}`;
   </script>
 
-  <script src="athleticclub.js"></script>
+  <script src="villarreal.js"></script>
   <script type="module" src="../../utils/funciones.js"></script>
   <script type="module" src="../../utils/teclado.js"></script>
+  
+
 
 </body>
 </html>
