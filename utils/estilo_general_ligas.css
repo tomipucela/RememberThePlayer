@@ -323,4 +323,13 @@
   .modal-content {
     font-size: 1.35rem; /* más cómodo en móvil */
   }
+
+  #liga2-text {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;            /* tamaño cuadrado fijo */
+  height: 40px;
+  }
 }
