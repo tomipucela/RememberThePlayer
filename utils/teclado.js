@@ -17,7 +17,7 @@ const traducciones = {
   "Dorsal": { en: "Number" },
   "Primera Temporada": { en: "First Season" },
   "Última Temporada": { en: "Last Season" },
-  "Haz clic en una columna para desvelar la pista": { en: "Click a column to reveal the hint" },
+  "Elige una columna para ver la pista": { en: "Select a column to reveal the hint" },
 };
 const posicionesTraducidas = {
   'Portero': 'Goalkeeper',
@@ -219,8 +219,7 @@ document.getElementById("hint-button").onclick = () => {
 
   } else {
     // Mostrar instrucción para elegir columna
-    bubble.textContent = t("Haz clic en una columna para desvelar la pista");
-
+    bubble.textContent = t("Elige una columna para ver la pista");
     bubble.style.display = "flex";
 
     columnasPista.forEach(col => {
