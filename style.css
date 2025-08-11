@@ -390,7 +390,7 @@
 
 
 
-.grid-item[href="laliga2/index.html"] {
+.grid-item[href="laliga2/"] {
         background-color: #00d4d7;
         background-image: url("./img/diagmonds-light.png");
         color: white;
@@ -404,12 +404,12 @@
 
         }
 
-        .grid-item[href="laliga2/index.html"]:hover {
+        .grid-item[href="laliga2/"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
         background-color: #028f92; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
-.grid-item[href="laliga/index.html"] {
+.grid-item[href="laliga/"] {
         background-color: #ec5a4d;
         background-image: url("./img/diagmonds-light.png");
         color: white;
@@ -423,7 +423,7 @@
 
         }
 
-        .grid-item[href="laliga/index.html"]:hover {
+        .grid-item[href="laliga/"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
         background-color: #943830; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
