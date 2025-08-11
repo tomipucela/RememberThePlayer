@@ -56,6 +56,7 @@ function obtenerCodigoISO(pais) {
     gabon: "ga",
     gambia: "gm",
     gales: "gb-wls",
+    georgia: "ge",
     ghana: "gh",
     grecia: "gr",
     guadalupe: "gp",
