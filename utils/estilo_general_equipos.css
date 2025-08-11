@@ -12,18 +12,14 @@ body {
     margin: 0;
 }
 #buttons-container {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px; /* para separarlo un poco del título */
-  position: static;  /* quitar absolute para que fluya */
-  position: absolute;
-  top: 50%;
-  left: calc(50% + 150px); /* 150px es un ejemplo del ancho del título más un margen */
-  transform: translateY(-85%);
-  z-index: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Aumentado para un espacio más visible */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    margin-top: 20px;
+    position: static; /* Asegura que el contenedor fluya con el resto del contenido */
+    z-index: 2;
 }
 
 
@@ -318,16 +314,6 @@ body {
   z-index: 1;
 }
 
-#buttons-container {
-    position: static;
-    transform: none;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-}
 
 
 
