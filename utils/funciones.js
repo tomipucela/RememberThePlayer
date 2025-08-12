@@ -188,7 +188,7 @@ export function mostrarEstadisticas(idJuego) {
 
 
 // Guardar partida al finalizar jugador del día
-export function guardarProgresoPartida(resultado, elegido, intentos, clavePartidaHoy) {
+export function guardarProgresoPartida(resultado, elegido, intentos, clavePartidaHoy,pistaMostrada) {
   // No guardar si el jugador actual no es el del día
   const jugadorDelDia = getJugadorDelDiaLocal();
   if (elegido.nombre !== jugadorDelDia.nombre) return;
@@ -197,7 +197,8 @@ export function guardarProgresoPartida(resultado, elegido, intentos, clavePartid
     intentos,
     resultado,
     jugadas: [],
-    elegido
+    elegido,
+    pistaMostrada
   };
 
   for (let i = 1; i <= intentos+1; i++) {
@@ -218,7 +219,7 @@ export function guardarProgresoPartida(resultado, elegido, intentos, clavePartid
 
 
 // Cargar progreso si ya jugó
-export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado) {
+export function cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado) {
   const guardado = localStorage.getItem(clavePartidaHoy);
   if (!guardado) return 0;
 
@@ -254,6 +255,12 @@ export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado
   return intentos+1;
 }
 
+export function cargarPistaGuardada(clavePartidaHoy) {
+  const guardado = localStorage.getItem(clavePartidaHoy);
+  if (!guardado) return "";
+  const datos = JSON.parse(guardado);
+  return datos.pistaMostrada;
+}
 
 export function desactivarInput() {
   const inputElem = document.getElementById("guessName");
@@ -286,7 +293,7 @@ export function formatearTemporada(temporadaSeg) {
   }
 }
 
-export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTerminado,elegido, intentos) {
+export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTerminado,elegido, intentos,pistaMostrada) {
 
   if (juegoTerminado) return; // Bloquea si ya terminó
 
@@ -301,7 +308,7 @@ export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTe
 mostrarComparacion(jugador, elegido, intentos);
 
 // Guardar progreso después del intento (antes de comprobar si ganó o perdió)
-  guardarProgresoPartida("en_progreso", elegido, intentos, clavePartidaHoy);
+  guardarProgresoPartida("en_progreso", elegido, intentos, clavePartidaHoy,pistaMostrada);
 
 if (jugador.nombre === elegido.nombre) {
   if(esEspanol){
@@ -310,7 +317,7 @@ if (jugador.nombre === elegido.nombre) {
     mostrarMensaje(`Correct! 🎉 You guessed it in ${intentos+1} attempt${intentos > 0 ? "s" : ""}`, 4000, '#6aaa64');
   }
   desactivarInput();
-  guardarProgresoPartida("acertado", elegido, intentos, clavePartidaHoy);
+  guardarProgresoPartida("acertado", elegido, intentos, clavePartidaHoy,pistaMostrada);
   guardarEstadisticasPartida(true,intentos, elegido,claveEstadisticas);
   let timeout;  // Declarás aquí la variable
 
@@ -338,7 +345,7 @@ else if (intentos >= maxIntentos-1) {
     mostrarMensaje(`You ran out of attempts! It was: ${elegido.nombre}`, 4000, '#d9534f');
   }
   desactivarInput();
-  guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy);
+  guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy,pistaMostrada);
   guardarEstadisticasPartida(false,intentos, elegido,claveEstadisticas);
   let timeout;  // Declarás aquí la variable
 

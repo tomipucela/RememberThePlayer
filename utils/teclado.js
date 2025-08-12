@@ -4,7 +4,9 @@ import {
   formatearTemporada,
   submitGuess,
   reiniciarJuego,
-  mostrarEstadisticas
+  mostrarEstadisticas,
+  cargarPistaGuardada,
+  guardarProgresoPartida
 } from "./funciones.js";
 import { banderaDePaisImg } from './paises.js';
 
@@ -41,7 +43,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const maxIntentos = 6;
   let juegoTerminado = false;
-  let pistaMostrada = false;
+  let pistaMostrada = cargarPistaGuardada(clavePartidaHoy);
+  if (pistaMostrada) {
+    
+    const bubble = document.getElementById("hint-bubble");
+    if (bubble) {
+      bubble.innerHTML = pistaMostrada;
+      bubble.style.display = "flex";
+    }
+    document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
+  }
   let intentos = cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado);
 
   if (intentos< maxIntentos) {
@@ -79,7 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
           idJuego,
           juegoTerminado,
           elegido,
-          intentos
+          intentos,
+          pistaMostrada
         );
 
         if (acierto === 0) {
@@ -117,7 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
           idJuego,
           juegoTerminado,
           elegido,
-          intentos
+          intentos,
+          pistaMostrada
         );
 
         if (acierto === 0) {
@@ -211,7 +224,7 @@ document.getElementById("hint-button").onclick = () => {
     // Ocultar pista y resetear estados
     bubble.style.display = "none";
     bubble.innerHTML = "";
-    pistaMostrada = false;
+    pistaMostrada = "";
 
     columnasPista.forEach(col => {
       const th = document.getElementById(col.id);
@@ -235,16 +248,21 @@ document.getElementById("hint-button").onclick = () => {
     if (th) {
       th.onclick = () => {
         const bubble = document.getElementById("hint-bubble");
-        if (!pistaMostrada && bubble.style.display === "flex") {
+        if (bubble.style.display === "flex" && pistaMostrada === "") {
           columnasPista.forEach(c2 => {
             const th2 = document.getElementById(c2.id);
             if (th2) th2.classList.remove("pista-clicable-activa", "pista-seleccionada");
           });
+          
           th.classList.add("pista-seleccionada");
-          bubble.innerHTML = `<span style="font-weight:bold;">${col.texto}:</span> ${col.valor()}`;
-          pistaMostrada = true;
+          pistaMostrada = `<span style="font-weight:bold;">${col.texto}:</span> ${col.valor()}`;
+          bubble.innerHTML = pistaMostrada;
           document.getElementById("hint-button").disabled = true;
+
+          // Guardar inmediatamente la pista en el progreso
+          guardarProgresoPartida("en_progreso", elegido, intentos-1, clavePartidaHoy, pistaMostrada);
         }
+
       };
     }
   });
@@ -264,7 +282,7 @@ restartBtn.addEventListener("click", () => {
   elegido = reiniciarJuego();  // nuevo elegido
   intentos = 0;
   juegoTerminado = false;
-  pistaMostrada = false;
+  pistaMostrada = "";
   document.getElementById("hint-button").disabled = false;
 
   const hintBubble = document.getElementById("hint-bubble");
