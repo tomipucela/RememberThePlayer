@@ -218,20 +218,19 @@ export function guardarProgresoPartida(resultado, elegido, intentos, clavePartid
 
 
 // Cargar progreso si ya jugó
-export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado, intentos) {
+export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado) {
   const guardado = localStorage.getItem(clavePartidaHoy);
-  if (!guardado) return false;
+  if (!guardado) return 0;
 
   const datos = JSON.parse(guardado);
   const jugadorHoy = getJugadorDelDiaLocal();
   if (datos.elegido.nombre !== jugadorHoy.nombre) {
     // Si no es el mismo jugador, es una partida de otro día: ignórala
     localStorage.removeItem(clavePartidaHoy);
-    return false;
+    return 0;
   }
   elegido = datos.elegido;
-  juegoTerminado = true;
-  intentos = datos.intentos;
+  let intentos = datos.intentos;
 
   datos.jugadas.forEach((fila, i) => {
     fila.forEach((celda, j) => {
@@ -241,16 +240,18 @@ export function cargarPartidaGuardada(  clavePartidaHoy, elegido, juegoTerminado
     });
   });
 
-  desactivarInput();
-  mostrarBotonReinicio();
-  if(esEspanol){
+  if (datos.resultado !== "en_progreso") {
+    juegoTerminado = true;
+    desactivarInput();
+    mostrarBotonReinicio();
+    if(esEspanol){
     mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#6aaa64");
-  }else{
-    mostrarMensaje("You already played today's player. But you can keep playing!", 4000, "#6aaa64");
-  }
+    }else{
+      mostrarMensaje("You already played today's player. But you can keep playing!", 4000, "#6aaa64");
+    }
     document.getElementById("guessName").style.display = "none";
-
-  return true;
+  }
+  return intentos+1;
 }
 
 
@@ -298,6 +299,9 @@ export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTe
   }
 
 mostrarComparacion(jugador, elegido, intentos);
+
+// Guardar progreso después del intento (antes de comprobar si ganó o perdió)
+  guardarProgresoPartida("en_progreso", elegido, intentos, clavePartidaHoy);
 
 if (jugador.nombre === elegido.nombre) {
   if(esEspanol){

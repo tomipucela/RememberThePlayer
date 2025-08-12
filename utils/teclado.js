@@ -38,12 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let elegido = getJugadorDelDiaLocal();
   console.log("Jugador del día (local):", elegido);
 
-  let intentos = 0;
+
   const maxIntentos = 6;
   let juegoTerminado = false;
   let pistaMostrada = false;
+  let intentos = cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado);
 
-  if (!cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado, intentos)) {
+  if (intentos< maxIntentos) {
     document.getElementById("guessName").focus();
   }
 
