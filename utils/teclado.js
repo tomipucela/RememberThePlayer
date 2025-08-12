@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos++;
         } else if (acierto === 1){
           juegoTerminado = true;
+          document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
         }
 
       };
@@ -137,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos++;
         } else if (acierto === 1){
           juegoTerminado = true;
+          document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
         }
 
       }
@@ -282,6 +284,7 @@ restartBtn.addEventListener("click", () => {
   elegido = reiniciarJuego();  // nuevo elegido
   intentos = 0;
   juegoTerminado = false;
+  document.getElementById("hint-button").disabled = false; // desactivar botón si ya se mostró
   pistaMostrada = "";
   document.getElementById("hint-button").disabled = false;
 

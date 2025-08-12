@@ -246,11 +246,12 @@ export function cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado) 
     desactivarInput();
     mostrarBotonReinicio();
     if(esEspanol){
-    mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#6aaa64");
+      mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#6aaa64");
     }else{
       mostrarMensaje("You already played today's player. But you can keep playing!", 4000, "#6aaa64");
     }
     document.getElementById("guessName").style.display = "none";
+    document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
   }
   return intentos+1;
 }
