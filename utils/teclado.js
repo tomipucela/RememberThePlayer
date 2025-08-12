@@ -39,8 +39,7 @@ function t(texto) {
 document.addEventListener("DOMContentLoaded", () => {
   let elegido = getJugadorDelDiaLocal();
   console.log("Jugador del día (local):", elegido);
-
-
+  document.getElementById("hint-button").disabled = false;
   const maxIntentos = 6;
   let juegoTerminado = false;
   let pistaMostrada = cargarPistaGuardada(clavePartidaHoy);
