@@ -733,7 +733,7 @@ const jugadores = [
     "nacionalidad": "Brasil",
     "posicion": "Atacante",
     "dorsal": 12,
-    "temporadaPrim": 2024,
+    "temporadaPrim": 2022,
     "temporadaSeg": 2024,
     "grupo": "B"
   },

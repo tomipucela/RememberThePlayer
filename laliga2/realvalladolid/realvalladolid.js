@@ -416,7 +416,7 @@ const jugadores = [
   {
     "nombre": "Daniel Larsson",
     "nacionalidad": "Suecia",
-    "posicion": "Centrocampista",
+    "posicion": "Atacante",
     "dorsal": 11,
     "temporadaPrim": 2013,
     "temporadaSeg": 2014,
@@ -568,7 +568,7 @@ const jugadores = [
   },
   {
     "nombre": "Johan Mojica",
-    "nacionalidad": "Espana",
+    "nacionalidad": "Colombia",
     "posicion": "Defensa",
     "dorsal": 3,
     "temporadaPrim": 2015,
