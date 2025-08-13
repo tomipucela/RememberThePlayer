@@ -6,7 +6,8 @@ import {
   reiniciarJuego,
   mostrarEstadisticas,
   cargarPistaGuardada,
-  guardarProgresoPartida
+  guardarProgresoPartida,
+  procesarFallo
 } from "./funciones.js";
 import { banderaDePaisImg } from './paises.js';
 
@@ -314,5 +315,16 @@ restartBtn.addEventListener("click", () => {
   guessInput.focus();
   
 });
+
+
+
+
+
+
+document.getElementById("flag-button").addEventListener("click", () => {
+  const mensaje= esEspanol ? `Te rendiste. El jugador era: ${elegido.nombre}.` :`You gave up. The player was: ${elegido.nombre}`;
+  procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, claveEstadisticas, pistaMostrada);
+});
+
 
 });

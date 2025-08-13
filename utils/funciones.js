@@ -266,6 +266,8 @@ export function cargarPistaGuardada(clavePartidaHoy) {
 export function desactivarInput() {
   const inputElem = document.getElementById("guessName");
   inputElem.disabled = true;
+  const flagButton = document.getElementById("flag-button");
+  flagButton.style.display = "none";
 }
 
 export function mostrarBotonReinicio() {
@@ -309,7 +311,7 @@ export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTe
 mostrarComparacion(jugador, elegido, intentos);
 
 // Guardar progreso después del intento (antes de comprobar si ganó o perdió)
-  guardarProgresoPartida("en_progreso", elegido, intentos, clavePartidaHoy,pistaMostrada);
+guardarProgresoPartida("en_progreso", elegido, intentos, clavePartidaHoy,pistaMostrada);
 
 if (jugador.nombre === elegido.nombre) {
   if(esEspanol){
@@ -337,14 +339,18 @@ if (jugador.nombre === elegido.nombre) {
     return 1; // Indica que se acertó
 }
 
-
 //añado un cometarioo xq no parece q se suba
 else if (intentos >= maxIntentos-1) {
-  if(esEspanol){
-    mostrarMensaje(`¡Se acabaron los intentos! Era: ${elegido.nombre}`, 4000, '#d9534f');
-  }else{
-    mostrarMensaje(`You ran out of attempts! It was: ${elegido.nombre}`, 4000, '#d9534f');
-  }
+  const mensaje= esEspanol ? `¡Se acabaron los intentos! El jugador del dia era: ${elegido.nombre}.` :`You ran out of attempts! Today's player was: ${elegido.nombre}`;
+  procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, claveEstadisticas, pistaMostrada);
+  return 1;
+}
+  inputElem.value = "";
+  return 0; // Indica que no se acertó
+}
+
+export function procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, claveEstadisticas, pistaMostrada) {
+  mostrarMensaje(mensaje, 4000, '#d9534f');
   desactivarInput();
   guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy,pistaMostrada);
   guardarEstadisticasPartida(false,intentos, elegido,claveEstadisticas);
@@ -355,19 +361,12 @@ else if (intentos >= maxIntentos-1) {
   } else {
     timeout = 1000;
   }
-
   setTimeout(() => {
     actualizarEstadisticas(intentos,idJuego,elegido,false); // solo en la primera partida del día
     document.getElementById("guessName").style.display = "none";
     mostrarBotonReinicio();
   }, timeout);
-  return 1;
 }
-
-  inputElem.value = "";
-  return 0; // Indica que no se acertó
-}
-
 
 function mostrarComparacion(j,elegido, intentos) {
   const fila = intentos;
@@ -444,6 +443,8 @@ export function reiniciarJuego() {
   inputElem.disabled = false;
   inputElem.value = "";
   inputElem.focus();
+  const flagButton = document.getElementById("flag-button");
+  flagButton.style.display = "inline-block"; 
 
   // Ocultar botón reinicio
   const restartBtn = document.getElementById("restart-btn");
@@ -459,7 +460,11 @@ export function reiniciarJuego() {
   document.getElementById("hint-bubble").style.display = "none";
 
   const nuevoElegido = jugadores[Math.floor(Math.random() * jugadores.length)];
-    console.log("reiniciarJuego: nuevo elegido ->", nuevoElegido);
+  while(nuevoElegido.nombre === getJugadorDelDiaLocal().nombre) {
+    nuevoElegido = jugadores[Math.floor(Math.random() * jugadores.length)];
+  }
+
+  console.log("reiniciarJuego: nuevo elegido ->", nuevoElegido);
 
   return nuevoElegido;
 }
