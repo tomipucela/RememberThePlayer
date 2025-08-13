@@ -621,6 +621,13 @@ body {
 
 /* Media Query for Mobile (max-width: 768px) */
 @media (max-width: 768px) {
+  #input-container{
+    font-size: 1.3rem !important;
+  }
+
+  .suggestions-box {
+    font-size: 1.3rem !important;
+  }
     #remember-text {
         font-size: 1.5rem;
     }
@@ -635,7 +642,10 @@ body {
         align-items: stretch;
         gap: 15px;
     }
-
+    #guess-table th,
+    #guess-table td {
+      font-size: 1.5rem !important;
+    }
 
 .hint-bubble {
   position: absolute;
@@ -657,5 +667,6 @@ body {
 #hint-button:hover .hint-bubble {
     display: block;
 }
+
 
 }
