@@ -620,7 +620,7 @@ body {
 }
 
 /* Media Query for Mobile (max-width: 768px) */
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   #input-container{
     font-size: 1.3rem !important;
   }
