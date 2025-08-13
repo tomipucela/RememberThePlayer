@@ -302,3 +302,26 @@
         background-color: #0068c4; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
+
+
+.grid-item[href="espanyol/"] {
+        background: repeating-linear-gradient(
+            90deg,
+            #1c63b8,
+            #1c63b8 10px,
+            #fff 10px,
+            #fff 20px
+        );
+        color: #000;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;    
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="espanyol/"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        }
