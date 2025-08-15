@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../../img/logo4.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+  <title>RTP Alaves</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../utils/estilo_general_equipos.css" />
+</head>
+<body>
+<div id="main-title-container">
+
+  <div id="left-section" class="header-section">
+  <a href="../../" id="logo-link">
+    <img src="../../img/logo3.png" alt="Logo" id="logo-img" />
+    <span id="remember-text">Remember<br />the player</span>
+  </a>
+  <button id="liga2-text" onclick="location.href='../'">LaLiga</button>
+</div>
+
+<div id="center-right-section">
+  <h1 id="main-title">Alaves</h1>
+  <div id="buttons-container">
+    <button id="info-button" title="Información" aria-label="Abrir información del juego">i</button>
+    <button id="stats-button" title="Estadísticas" aria-label="Mostrar estadísticas">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="14" width="3" height="6"/>
+        <rect x="10.5" y="10" width="3" height="10"/>
+        <rect x="17" y="6" width="3" height="14"/>
+      </svg>
+    </button>
+
+    <!-- Agrupa el botón y el bubble juntos -->
+    <div id="hint-wrapper" style="position: relative; display: inline-block;">
+    <button id="hint-button" title="Pista" aria-label="Pista" style="background:transparent;border:none;cursor:pointer;padding:0 0 0 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="11" r="6"/>
+        <path d="M9 18h6"/>
+        <path d="M10 22h4"/>
+      </svg>
+    </button>
+
+    <div id="hint-bubble" class="hint-bubble"></div>
+  </div>
+</div>
+
+</div>
+
+
+</div>
+<div id="modal-container"></div>
+
+<div id="hint-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-hint" class="close">&times;</span>
+    <h2>Pista</h2>
+    <p id="hint-text">Aquí aparecerá la pista del jugador.</p>
+  </div>
+</div>
+
+<div id="input-container">
+  <div class="input-with-button">
+    <input type="text" id="guessName" placeholder="Nombre del jugador..." autocomplete="off" />
+    <button id="flag-button" title="Rendirse">🏳️</button>
+  </div>
+  
+  <div id="suggestions" class="suggestions-box"></div>
+  <button id="restart-btn" style="display:none;">Continuar Jugando</button>
+</div>
+
+  
+  
+
+  <div id="game-area">
+
+    <div id="feedback"></div>
+
+    <table id="guess-table">
+      <thead>
+  <tr>
+    <th>Jugador</th>
+    <th id="th-nacionalidad" class="pista-clicable">Nacionalidad</th>
+    <th id="th-posicion" class="pista-clicable">Posición</th>
+    <th id="th-dorsal" class="pista-clicable">Dorsal</th>
+    <th id="th-primera" class="pista-clicable">Primera Temporada</th>
+    <th id="th-ultima" class="pista-clicable">Última Temporada</th>  </tr>
+</thead>
+      <tbody>
+        <tr id="row-1">
+          <td id="r1-c1"></td>
+          <td id="r1-c2"></td>
+          <td id="r1-c3"></td>
+          <td id="r1-c4"></td>
+          <td id="r1-c5"></td>
+          <td id="r1-c6"></td>
+        </tr>
+        <tr id="row-2">
+          <td id="r2-c1"></td>
+          <td id="r2-c2"></td>
+          <td id="r2-c3"></td>
+          <td id="r2-c4"></td>
+          <td id="r2-c5"></td>
+          <td id="r2-c6"></td>
+        </tr>
+        <tr id="row-3">
+          <td id="r3-c1"></td>
+          <td id="r3-c2"></td>
+          <td id="r3-c3"></td>
+          <td id="r3-c4"></td>
+          <td id="r3-c5"></td>
+          <td id="r3-c6"></td>
+        </tr>
+        <tr id="row-4">
+          <td id="r4-c1"></td>
+          <td id="r4-c2"></td>
+          <td id="r4-c3"></td>
+          <td id="r4-c4"></td>
+          <td id="r4-c5"></td>
+          <td id="r4-c6"></td>
+        </tr>
+        <tr id="row-5">
+          <td id="r5-c1"></td>
+          <td id="r5-c2"></td>
+          <td id="r5-c3"></td>
+          <td id="r5-c4"></td>
+          <td id="r5-c5"></td>
+          <td id="r5-c6"></td>
+        </tr>
+        <tr id="row-6">
+          <td id="r6-c1"></td>
+          <td id="r6-c2"></td>
+          <td id="r6-c3"></td>
+          <td id="r6-c4"></td>
+          <td id="r6-c5"></td>
+          <td id="r6-c6"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="history"></div>
+
+    <div id="message-box"></div>
+
+  </div>
+
+  
+ <script src="../../utils/translatetable.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ligaButton = document.getElementById('liga2-text');
+    if (ligaButton) {
+      ligaButton.textContent = 'LaLiga';
+    }
+  });
+</script>
+
+
+<script>
+    fetch("../../utils/infomodal.html")
+      .then(response => response.text())
+  .then(html => {
+    document.getElementById("modal-container").innerHTML = html;
+
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('es') ? 'es' : 'en';
+
+    if(lang === 'en') {
+      document.querySelector('#info-modal .modal-content').innerHTML = `
+        <span id="close-info" class="close">&times;</span>
+        <h2>How to play Remember The Player?</h2>
+        <p>Your goal is to guess a player from a recent season who played in the selected team. You have 6 attempts.</p>
+        <h2>What do the columns mean?</h2>
+        <ul>
+          <li><strong>Player</strong>: guessed player</li>
+          <li><strong>Nationality</strong>: nationality of the guessed player. Will appear green if correct, gray if not.</li>
+          <li><strong>Position</strong>: position of the guessed player. Will appear green if correct, gray if not.</li>
+          <li><strong>Number</strong>: last number worn by the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#006400;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+          <li><strong>First Season</strong>: first season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#006400;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+          <li><strong>Last Season</strong>: last season of the guessed player in the selected team. Will appear green if correct, gray if not, with an up arrow (<span style="color:#006400;">▲</span>) if the correct number is higher, and a down arrow (<span style="color:#8a070d;">▼</span>) if lower.</li>
+        </ul>
+        <p>If it gets too hard, don't worry, we offer you a hint. Just click the hint button above and choose the column whose value you want to reveal.</p>
+        <p>Good luck!</p>
+      `;
+    }
+
+    // Re-assign close button events after changing content
+    const closeBtn = document.getElementById("close-info");
+    const modal = document.getElementById("info-modal");
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    window.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
+  </script>
+
+
+
+<script>
+    // Define variables globales para usarlas en otros scripts
+    window.idJuego = "alaves";
+    window.claveEstadisticas = `estadisticas-jugador-${window.idJuego}`;
+    window.clavePartidaHoy = `partida-${window.idJuego}-${new Date().toISOString().slice(0, 10)}`;
+  </script>
+
+  <script src="alaves.js"></script>
+  <script type="module" src="../../utils/funciones.js"></script>
+  <script type="module" src="../../utils/teclado.js"></script>
+
+</body>
+</html>
