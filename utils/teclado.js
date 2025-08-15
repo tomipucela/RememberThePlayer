@@ -34,6 +34,13 @@ function t(texto) {
   return traducciones[texto]?.en || texto;
 }
 
+function normalizarTexto(texto) {
+  return texto
+    .normalize("NFD")               // separa letras y acentos
+    .replace(/[\u0300-\u036f]/g, "") // quita los acentos
+    .replace(/ñ/gi, "n")             // opcional: convierte ñ → n
+    .toLowerCase();
+}
 
 
 
@@ -64,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentFocus = -1;
 
   input.addEventListener("input", () => {
-    const value = input.value.trim().toLowerCase();
+    const value = normalizarTexto(input.value.trim());
     suggestionsBox.innerHTML = "";
     currentFocus = -1;
 
