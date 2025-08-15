@@ -1,411 +1,177 @@
 const jugadores = [
   {
-    "nombre": "Aaron Martin",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2018,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Abraham Gonzalez",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 10,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Adria Pedrosa",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Adrian Embarba",
-    "nacionalidad": "Espana",
+    "nombre": "Abde Rebbach",
+    "nacionalidad": "Argelia",
     "posicion": "Atacante",
-    "dorsal": 23,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Aldo Duscher",
-    "nacionalidad": "Argentina",
-    "posicion": "Centrocampista",
-    "dorsal": 22,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2011,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Aleix Vidal",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 22,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2023,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alejo Veliz",
-    "nacionalidad": "Argentina",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Alex Fernandez",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 7,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alex Kral",
-    "nacionalidad": "Republica Checa",
-    "posicion": "Centrocampista",
-    "dorsal": 20,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Alex Lopez",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 18,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2021,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alfa Semedo",
-    "nacionalidad": "Guinea-Bissau",
-    "posicion": "Centrocampista",
-    "dorsal": 2,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Alvaro Aguado",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 18,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alvaro Fernandez",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 25,
+    "dorsal": 21,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Alvaro Gonzalez",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 22,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2017,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alvaro Tejero",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 12,
-    "temporadaPrim": 2025,
     "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
-    "nombre": "Alvaro Vadillo",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 19,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2021,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alvaro Vazquez",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 22,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2017,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Anaitz Arbilla",
-    "nacionalidad": "Espana",
+    "nombre": "Abdel Abqar",
+    "nacionalidad": "Marruecos",
     "posicion": "Defensa",
-    "dorsal": 23,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Ander Iturraspe",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 8,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2020,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Andres Prieto",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2020,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Antonio Raillo",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 24,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2016,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Antoniu Roca",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 31,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Benjamin Lecomte",
-    "nacionalidad": "Francia",
-    "posicion": "Portero",
-    "dorsal": 13,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Bernardo Espinosa",
-    "nacionalidad": "Colombia",
-    "posicion": "Defensa",
-    "dorsal": 20,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2020,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Borja Iglesias",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Brian Olivan",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 14,
+    "dorsal": 5,
     "temporadaPrim": 2023,
     "temporadaSeg": 2025,
     "grupo": "B"
   },
   {
-    "nombre": "Burgui",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2016,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Carlos Clerc",
+    "nombre": "Adrian Dieguez",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 12,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Carlos Kameni",
-    "nacionalidad": "Camerun",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2005,
-    "temporadaSeg": 2012,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Carlos Romero",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 22,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Carlos Sanchez",
-    "nacionalidad": "Colombia",
-    "posicion": "Centrocampista",
-    "dorsal": 8,
+    "dorsal": 26,
     "temporadaPrim": 2018,
     "temporadaSeg": 2018,
     "grupo": "A"
   },
   {
-    "nombre": "Cesar Montes",
-    "nacionalidad": "Mexico",
-    "posicion": "Defensa",
-    "dorsal": 23,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Christian Alfonso",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 24,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2013,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Cristhian Stuani",
-    "nacionalidad": "Uruguay",
-    "posicion": "Atacante",
-    "dorsal": 8,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Cristian Alvarez",
-    "nacionalidad": "Argentina",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2013,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Cristian Gomez",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 23,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2013,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Dani Gomez",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 19,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Daniel Osvaldo",
-    "nacionalidad": "Italia",
-    "posicion": "Atacante",
-    "dorsal": 17,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "David Garcia",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2001,
-    "temporadaSeg": 2011,
-    "grupo": "A"
-  },
-  {
-    "nombre": "David Lopez",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 15,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Denis Suarez",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 6,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Didac Vila",
+    "nombre": "Adrian Marin",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
     "dorsal": 17,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2022,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2021,
     "grupo": "B"
   },
   {
-    "nombre": "Diego Colotto",
-    "nacionalidad": "Argentina",
-    "posicion": "Defensa",
-    "dorsal": 19,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2015,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Diego Lopez",
+    "nombre": "Adrian Ortola",
     "nacionalidad": "Espana",
     "posicion": "Portero",
     "dorsal": 13,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Diego Reyes",
-    "nacionalidad": "Mexico",
-    "posicion": "Defensa",
-    "dorsal": 23,
     "temporadaPrim": 2017,
     "temporadaSeg": 2017,
     "grupo": "A"
   },
   {
-    "nombre": "Edu Exposito",
+    "nombre": "Adrian Pica",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 36,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Aleix Vidal",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 18,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2020,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Aleksandar Katai",
+    "nacionalidad": "Serbia",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2018,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Aleksandar Pantic",
+    "nacionalidad": "Serbia",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2017,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Aleksandar Sedlar",
+    "nacionalidad": "Serbia",
+    "posicion": "Defensa",
+    "dorsal": 4,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2025,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Alex Blanco",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2019,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Alex Ortiz",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 4,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Alex Sola",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2024,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Alexis Ruano",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 4,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2018,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Alfonso Pedraza",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 17,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2018,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Alvaro Medran",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 23,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2018,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Ander Guevara",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Anderson Arroyo",
+    "nacionalidad": "Colombia",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2023,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Andoni Gorosabel",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2024,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Antonio Blanco",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
     "dorsal": 8,
@@ -414,300 +180,588 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Enzo Roco",
-    "nacionalidad": "Chile",
+    "nombre": "Antonio Sivera",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 1,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Aritz Borda",
+    "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 6,
+    "dorsal": 17,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Asier Villalibre",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Bojan Krkic",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 15,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2018,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Borja Baston",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 18,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2019,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Borja Sainz",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 29,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2021,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Borja Viguera",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 10,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Burgui",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 18,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2021,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Carles Alena",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 21,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Carlos Lazaro",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 5,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Carlos Martin",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 15,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Carlos Protesoni",
+    "nacionalidad": "Uruguay",
+    "posicion": "Centrocampista",
+    "dorsal": 23,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2025,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Carlos Vicente",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Carlos Vigaray",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2019,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Christian Santos",
+    "nacionalidad": "Venezuela",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2018,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Cristian Espinoza",
+    "nacionalidad": "Argentina",
+    "posicion": "Atacante",
+    "dorsal": 14,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2017,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Dani Abalo",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 20,
     "temporadaPrim": 2016,
     "temporadaSeg": 2016,
     "grupo": "A"
   },
   {
-    "nombre": "Eric Bailly",
-    "nacionalidad": "Costa de Marfil",
+    "nombre": "Dani Estrada",
+    "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 30,
+    "dorsal": 4,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Dani Pacheco",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Dani Toribio",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 16,
     "temporadaPrim": 2015,
     "temporadaSeg": 2015,
     "grupo": "B"
+  },
+  {
+    "nombre": "Dani Torres",
+    "nacionalidad": "Colombia",
+    "posicion": "Centrocampista",
+    "dorsal": 16,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2020,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Darko Brasanac",
+    "nacionalidad": "Serbia",
+    "posicion": "Centrocampista",
+    "dorsal": 20,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2019,
+    "grupo": "B"
+  },
+  {
+    "nombre": "David Torres",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Deyverson",
+    "nacionalidad": "Brasil",
+    "posicion": "Atacante",
+    "dorsal": 14,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2021,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Diego Rolan",
+    "nacionalidad": "Uruguay",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2019,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Edgar Mendez",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 17,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2022,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Einar Galilea",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 27,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Emilio Sanchez",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 14,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Enzo Zidane",
+    "nacionalidad": "Francia",
+    "posicion": "Centrocampista",
+    "dorsal": 21,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2018,
+    "grupo": "A"
   },
   {
     "nombre": "Ernesto Galan",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
     "dorsal": 14,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2013,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Esteban Granero",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 23,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2020,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Facundo Ferreyra",
-    "nacionalidad": "Argentina",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2020,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Felipe Caicedo",
-    "nacionalidad": "Ecuador",
-    "posicion": "Atacante",
-    "dorsal": 10,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2017,
+    "temporadaSeg": 2015,
     "grupo": "B"
   },
   {
-    "nombre": "Felipe Mattioni",
-    "nacionalidad": "Brasil",
+    "nombre": "Facundo Garces",
+    "nacionalidad": "Malasia",
     "posicion": "Defensa",
     "dorsal": 2,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2015,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Fernando Calero",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 5,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Fernando Pacheco",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 13,
-    "temporadaPrim": 2023,
+    "temporadaPrim": 2025,
     "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
-    "nombre": "Ferran Corominas",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 20,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Fran Merida",
-    "nacionalidad": "Espana",
+    "nombre": "Facundo Guichon",
+    "nacionalidad": "Uruguay",
     "posicion": "Centrocampista",
-    "dorsal": 8,
+    "dorsal": 11,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Facundo Pellistri",
+    "nacionalidad": "Uruguay",
+    "posicion": "Atacante",
+    "dorsal": 18,
     "temporadaPrim": 2021,
     "temporadaSeg": 2022,
     "grupo": "A"
   },
   {
-    "nombre": "Francesco Bardi",
-    "nacionalidad": "Italia",
+    "nombre": "Fernando Pacheco",
+    "nacionalidad": "Espana",
     "posicion": "Portero",
     "dorsal": 1,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2016,
+    "temporadaSeg": 2022,
     "grupo": "B"
   },
   {
-    "nombre": "Gabriel Torje",
-    "nacionalidad": "Rumania",
+    "nombre": "Florian Lejeune",
+    "nacionalidad": "Francia",
+    "posicion": "Defensa",
+    "dorsal": 22,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2022,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Gaizka Toquero",
+    "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 25,
-    "temporadaPrim": 2014,
+    "dorsal": 18,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2017,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Giuliano Simeone",
+    "nacionalidad": "Argentina",
+    "posicion": "Atacante",
+    "dorsal": 20,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2024,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Gonzalo Escalante",
+    "nacionalidad": "Argentina",
+    "posicion": "Centrocampista",
+    "dorsal": 16,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2022,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Gorka Laborda",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 21,
+    "temporadaPrim": 2013,
     "temporadaSeg": 2014,
     "grupo": "A"
   },
   {
-    "nombre": "Gerard Moreno",
+    "nombre": "Guillermo Maripan",
+    "nacionalidad": "Chile",
+    "posicion": "Defensa",
+    "dorsal": 6,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2020,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Guzman Casaseca",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 7,
-    "temporadaPrim": 2016,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Hector Hernandez",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 20,
+    "temporadaPrim": 2018,
     "temporadaSeg": 2018,
     "grupo": "B"
   },
   {
-    "nombre": "German Parreno",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2015,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Giedrius Arlauskis",
-    "nacionalidad": "Lituania",
-    "posicion": "Portero",
-    "dorsal": 1,
+    "nombre": "Hernan Bernardello",
+    "nacionalidad": "Argentina",
+    "posicion": "Centrocampista",
+    "dorsal": 22,
     "temporadaPrim": 2016,
     "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Hector Moreno",
-    "nacionalidad": "Mexico",
-    "posicion": "Defensa",
-    "dorsal": 15,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2015,
     "grupo": "A"
   },
   {
     "nombre": "Hernan Perez",
     "nacionalidad": "Paraguay",
     "posicion": "Atacante",
-    "dorsal": 17,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2019,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Ivan Alonso",
-    "nacionalidad": "Uruguay",
-    "posicion": "Atacante",
-    "dorsal": 24,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2011,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Ivan de la Pena",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 9,
-    "temporadaPrim": 2003,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Jairo Morillas",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 20,
-    "temporadaPrim": 2015,
+    "dorsal": 21,
+    "temporadaPrim": 2018,
     "temporadaSeg": 2018,
-    "grupo": "A"
+    "grupo": "B"
   },
   {
-    "nombre": "Javi Chica",
+    "nombre": "Hugo Novoa",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2007,
-    "temporadaSeg": 2011,
+    "dorsal": 16,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Ianis Hagi",
+    "nacionalidad": "Rumania",
+    "posicion": "Centrocampista",
+    "dorsal": 10,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2024,
     "grupo": "B"
   },
   {
-    "nombre": "Javi Fuego",
+    "nombre": "Ibai Gomez",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 11,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2019,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Inaki Goitia",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 25,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Inaki Saenz",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 16,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Inigo Cordoba",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 17,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2021,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Ion Velez",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 11,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Ivan Crespo",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 1,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Jagoba Beobide",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
-    "dorsal": 18,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2018,
+    "dorsal": 24,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Jason Remeseiro",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 10,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2023,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Jaume Delgado",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2014,
     "grupo": "A"
   },
   {
     "nombre": "Javi Lopez",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 16,
-    "temporadaPrim": 2011,
+    "dorsal": 27,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2024,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Javi Munoz",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 15,
+    "temporadaPrim": 2020,
     "temporadaSeg": 2020,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Javi Marquez",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 4,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2012,
     "grupo": "A"
   },
   {
-    "nombre": "Javi Puado",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Jesus Datolo",
-    "nacionalidad": "Argentina",
-    "posicion": "Centrocampista",
-    "dorsal": 23,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2012,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Jhon Cordoba",
-    "nacionalidad": "Colombia",
-    "posicion": "Atacante",
-    "dorsal": 24,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2014,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Joan Capdevila",
+    "nombre": "Javier Carpio",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 11,
-    "temporadaPrim": 1999,
-    "temporadaSeg": 2014,
+    "dorsal": 2,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Jesus Owono",
+    "nacionalidad": "Guinea Ecuatorial",
+    "posicion": "Portero",
+    "dorsal": 13,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
-    "nombre": "Joan Garcia",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2025,
+    "nombre": "Jiri Jarosik",
+    "nacionalidad": "Republica Checa",
+    "posicion": "Defensa",
+    "dorsal": 20,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2015,
     "grupo": "B"
   },
   {
     "nombre": "Joan Jordan",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
-    "dorsal": 19,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2016,
+    "dorsal": 24,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
-    "nombre": "Joan Verdu",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 10,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2013,
+    "nombre": "Joaquin Panichelli",
+    "nacionalidad": "Argentina",
+    "posicion": "Atacante",
+    "dorsal": 29,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2024,
     "grupo": "B"
   },
   {
-    "nombre": "Jofre Carreras",
+    "nombre": "John Guidetti",
+    "nacionalidad": "Suecia",
+    "posicion": "Atacante",
+    "dorsal": 10,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2022,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Jon Guridi",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 18,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2025,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Jon Karrikaburu",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 17,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2025,
+    "dorsal": 9,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2024,
     "grupo": "A"
   },
   {
@@ -715,71 +769,17 @@ const jugadores = [
     "nacionalidad": "Argentina",
     "posicion": "Atacante",
     "dorsal": 12,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2020,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2019,
     "grupo": "B"
   },
   {
-    "nombre": "Jordi Amat",
-    "nacionalidad": "Indonesia",
-    "posicion": "Defensa",
-    "dorsal": 5,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2012,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Jose Alberto Canas",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 14,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Jose Antonio Reyes",
+    "nombre": "Jony",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2017,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Jose Callejon",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 8,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Jose Carlos Lazo",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 16,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2024,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Jose Gragera",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 15,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Jose Manuel Jurado",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 10,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2018,
+    "dorsal": 23,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2019,
     "grupo": "A"
   },
   {
@@ -787,287 +787,269 @@ const jugadores = [
     "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 9,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2022,
     "grupo": "B"
   },
   {
-    "nombre": "Juan Albin",
-    "nacionalidad": "Uruguay",
-    "posicion": "Centrocampista",
-    "dorsal": 17,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2013,
+    "nombre": "Jota Peleteiro",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 24,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2021,
     "grupo": "A"
   },
   {
-    "nombre": "Juan Forlin",
-    "nacionalidad": "Argentina",
-    "posicion": "Defensa",
-    "dorsal": 6,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2013,
+    "nombre": "Juanma",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 22,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2015,
     "grupo": "B"
   },
   {
-    "nombre": "Juan Rafael Fuentes",
+    "nombre": "Juli Cerda",
     "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 18,
-    "temporadaPrim": 2014,
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2015,
     "temporadaSeg": 2016,
     "grupo": "A"
   },
   {
-    "nombre": "Julian Luque",
+    "nombre": "Kike Garcia",
     "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 32,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Justin Smith",
-    "nacionalidad": "Canada",
-    "posicion": "Centrocampista",
-    "dorsal": 40,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Kalu Uche",
-    "nacionalidad": "Nigeria",
     "posicion": "Atacante",
-    "dorsal": 12,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2012,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Keidi Bare",
-    "nacionalidad": "Albania",
-    "posicion": "Centrocampista",
-    "dorsal": 8,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2024,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Keita Balde",
-    "nacionalidad": "Senegal",
-    "posicion": "Atacante",
-    "dorsal": 9,
+    "dorsal": 17,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2024,
+    "temporadaSeg": 2025,
     "grupo": "B"
   },
   {
-    "nombre": "Kiko Casilla",
+    "nombre": "Kiko Femenia",
     "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 13,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2015,
+    "posicion": "Defensa",
+    "dorsal": 21,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2017,
     "grupo": "A"
   },
   {
-    "nombre": "Landry Dimata",
-    "nacionalidad": "Belgica",
-    "posicion": "Atacante",
-    "dorsal": 18,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2022,
+    "nombre": "Krisztian Vadocz",
+    "nacionalidad": "Hungria",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
     "grupo": "B"
   },
   {
-    "nombre": "Leandro Cabrera",
-    "nacionalidad": "Uruguay",
+    "nombre": "Lisandro Magallan",
+    "nacionalidad": "Argentina",
     "posicion": "Defensa",
     "dorsal": 6,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2020,
     "grupo": "A"
   },
   {
-    "nombre": "Lei Wu",
-    "nacionalidad": "China",
+    "nombre": "Ljubomir Fejsa",
+    "nacionalidad": "Serbia",
+    "posicion": "Centrocampista",
+    "dorsal": 15,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2020,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Lucas Perez",
+    "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 7,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Leo Baptistao",
-    "nacionalidad": "Brasil",
-    "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2019,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2021,
     "grupo": "A"
   },
   {
-    "nombre": "Lluis Lopez",
+    "nombre": "Luciano Gonzalez",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 6,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2021,
+    "dorsal": 15,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2014,
     "grupo": "B"
   },
   {
-    "nombre": "Loren Moron",
+    "nombre": "Luis Rioja",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 16,
+    "dorsal": 11,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2024,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Luka Romero",
+    "nacionalidad": "Argentina",
+    "posicion": "Atacante",
+    "dorsal": 20,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Mamadou Loum",
+    "nacionalidad": "Senegal",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
     "temporadaPrim": 2022,
     "temporadaSeg": 2022,
     "grupo": "A"
   },
   {
-    "nombre": "Lucas Vazquez",
+    "nombre": "Mamadou Sylla",
+    "nacionalidad": "Senegal",
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2023,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Manu Barreiro",
     "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 17,
+    "posicion": "Atacante",
+    "dorsal": 10,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2017,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Manu Fernandez",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 13,
     "temporadaPrim": 2015,
     "temporadaSeg": 2015,
     "grupo": "B"
   },
   {
-    "nombre": "Luis Garcia",
+    "nombre": "Manu Garcia",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
-    "dorsal": 10,
-    "temporadaPrim": 2006,
-    "temporadaSeg": 2012,
+    "dorsal": 19,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2021,
     "grupo": "A"
   },
   {
     "nombre": "Manu Lanzarote",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2014,
+    "dorsal": 12,
+    "temporadaPrim": 2015,
     "temporadaSeg": 2015,
     "grupo": "B"
   },
   {
-    "nombre": "Manu Molina",
+    "nombre": "Manu Sanchez",
     "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 29,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2011,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Manu Morlanes",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 6,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Marash Kumbulla",
-    "nacionalidad": "Albania",
     "posicion": "Defensa",
-    "dorsal": 4,
+    "dorsal": 3,
     "temporadaPrim": 2025,
     "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
-    "nombre": "Marc Navarro",
+    "nombre": "Manu Vallejo",
     "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2018,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Marc Roca",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 21,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2021,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Marco Asensio",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 25,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Mario Hermoso",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 22,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Martin Braithwaite",
-    "nacionalidad": "Dinamarca",
     "posicion": "Atacante",
-    "dorsal": 22,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2024,
+    "dorsal": 7,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2022,
     "grupo": "B"
   },
   {
-    "nombre": "Martin Demichelis",
-    "nacionalidad": "Argentina",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2017,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Martin Petrov",
-    "nacionalidad": "Bulgaria",
-    "posicion": "Atacante",
-    "dorsal": 17,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2013,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Matias Vargas",
-    "nacionalidad": "Argentina",
-    "posicion": "Atacante",
-    "dorsal": 22,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2021,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Michael Ciani",
-    "nacionalidad": "Francia",
+    "nombre": "Marco Sangalli",
+    "nacionalidad": "Espana",
     "posicion": "Defensa",
     "dorsal": 15,
-    "temporadaPrim": 2016,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Marcos Llorente",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
+    "temporadaPrim": 2017,
     "temporadaSeg": 2017,
     "grupo": "B"
   },
   {
-    "nombre": "Miguel Llambrich",
+    "nombre": "Martin Aguirregabiria",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2021,
+    "dorsal": 21,
+    "temporadaPrim": 2017,
     "temporadaSeg": 2022,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Matt Miazga",
+    "nacionalidad": "Estados Unidos",
+    "posicion": "Defensa",
+    "dorsal": 4,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2022,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Mauro Quiroga",
+    "nacionalidad": "Argentina",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Migue",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 21,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Miguel de la Fuente",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Miroslav Stevanovic",
+    "nacionalidad": "Bosnia y Herzegovina",
+    "posicion": "Centrocampista",
+    "dorsal": 16,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Moussa Diarra",
+    "nacionalidad": "Mali",
+    "posicion": "Defensa",
+    "dorsal": 22,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
@@ -1075,278 +1057,242 @@ const jugadores = [
     "nacionalidad": "Ghana",
     "posicion": "Centrocampista",
     "dorsal": 22,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2013,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Naldo",
-    "nacionalidad": "Brasil",
-    "posicion": "Defensa",
-    "dorsal": 5,
     "temporadaPrim": 2018,
     "temporadaSeg": 2020,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Nico Melamed",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 21,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2024,
     "grupo": "B"
   },
   {
-    "nombre": "Oier Olazabal",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Omar El Hilali",
+    "nombre": "Munir El Haddadi",
     "nacionalidad": "Marruecos",
+    "posicion": "Atacante",
+    "dorsal": 24,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2018,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Nahuel Tenaglia",
+    "nacionalidad": "Argentina",
     "posicion": "Defensa",
-    "dorsal": 23,
-    "temporadaPrim": 2021,
+    "dorsal": 14,
+    "temporadaPrim": 2022,
     "temporadaSeg": 2025,
     "grupo": "B"
   },
   {
-    "nombre": "Oscar Duarte",
-    "nacionalidad": "Costa Rica",
+    "nombre": "Nano",
+    "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 6,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2019,
+    "dorsal": 23,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
     "grupo": "A"
   },
   {
-    "nombre": "Oscar Gil",
-    "nacionalidad": "Espana",
+    "nombre": "Nenad Krsticic",
+    "nacionalidad": "Serbia",
+    "posicion": "Centrocampista",
+    "dorsal": 23,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2017,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Nicolas Schenone",
+    "nacionalidad": "Uruguay",
+    "posicion": "Centrocampista",
+    "dorsal": 16,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Nikola Maras",
+    "nacionalidad": "Serbia",
     "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2021,
+    "dorsal": 19,
+    "temporadaPrim": 2023,
     "temporadaSeg": 2024,
     "grupo": "B"
   },
   {
-    "nombre": "Oscar Melendo",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 14,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Pablo Piatti",
-    "nacionalidad": "Argentina",
-    "posicion": "Centrocampista",
-    "dorsal": 19,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2020,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Pablo Ramon",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
+    "nombre": "Oliver Burke",
+    "nacionalidad": "Escocia",
+    "posicion": "Atacante",
     "dorsal": 24,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Paco Montanes",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Pape Diop",
-    "nacionalidad": "Senegal",
-    "posicion": "Centrocampista",
-    "dorsal": 20,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2018,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Pau Lopez",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2018,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Pere Milla",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Philippe Coutinho",
-    "nacionalidad": "Brasil",
-    "posicion": "Centrocampista",
-    "dorsal": 23,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2012,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Pipa",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2019,
+    "temporadaPrim": 2020,
     "temporadaSeg": 2020,
     "grupo": "A"
   },
   {
-    "nombre": "Pizzi",
-    "nacionalidad": "Portugal",
+    "nombre": "Oscar Romero",
+    "nacionalidad": "Paraguay",
     "posicion": "Centrocampista",
     "dorsal": 10,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2018,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Oscar Rubio",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Oscar Serrano",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
     "temporadaPrim": 2014,
     "temporadaSeg": 2014,
     "grupo": "B"
   },
   {
-    "nombre": "Pol Lozano",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 10,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Ramon",
-    "nacionalidad": "Brasil",
-    "posicion": "Defensa",
-    "dorsal": 12,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Raul Baena",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 7,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2013,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Raul de Tomas",
-    "nacionalidad": "Espana",
+    "nombre": "Patrick Twumasi",
+    "nacionalidad": "Ghana",
     "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Raul Rodriguez",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2015,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Rober Correa",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Roberto (Portero)",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Roberto Fernandez",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 2,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Roberto Rosales",
-    "nacionalidad": "Venezuela",
-    "posicion": "Defensa",
-    "dorsal": 8,
+    "dorsal": 24,
     "temporadaPrim": 2019,
     "temporadaSeg": 2019,
     "grupo": "A"
   },
   {
-    "nombre": "Romaric",
-    "nacionalidad": "Costa de Marfil",
-    "posicion": "Centrocampista",
-    "dorsal": 11,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2012,
+    "nombre": "Pau Cabanes",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 19,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
     "grupo": "B"
   },
   {
-    "nombre": "Ronael Pierre-Gabriel",
-    "nacionalidad": "Francia",
+    "nombre": "Pau Torres",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 13,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Pepe Mora",
+    "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 18,
+    "dorsal": 20,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Pere Pons",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 20,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2022,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Rafa Garcia",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 4,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Rafa Marin",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 16,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2024,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Rafa Navarro",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 12,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2020,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Ranko Despotovic",
+    "nacionalidad": "Serbia",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Raul Carnero",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 3,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2017,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Rober Gonzalez",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 20,
     "temporadaPrim": 2023,
     "temporadaSeg": 2023,
     "grupo": "A"
+  },
+  {
+    "nombre": "Roberto",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 13,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2020,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Rodrigo Battaglia",
+    "nacionalidad": "Argentina",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2021,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Rodrigo Ely",
+    "nacionalidad": "Brasil",
+    "posicion": "Defensa",
+    "dorsal": 4,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2021,
+    "grupo": "B"
   },
   {
     "nombre": "Ruben Duarte",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
     "dorsal": 3,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2017,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Ruben Sanchez",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 24,
-    "temporadaPrim": 2022,
+    "temporadaPrim": 2018,
     "temporadaSeg": 2024,
     "grupo": "A"
   },
   {
-    "nombre": "Rui Fonte",
-    "nacionalidad": "Portugal",
+    "nombre": "Ruben Sobrino",
+    "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2013,
+    "dorsal": 7,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2019,
     "grupo": "B"
   },
   {
@@ -1354,215 +1300,224 @@ const jugadores = [
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
     "dorsal": 8,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2017,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2023,
     "grupo": "A"
   },
   {
-    "nombre": "Salvi Sanchez",
+    "nombre": "Samu Aghehowa",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 19,
+    "dorsal": 32,
     "temporadaPrim": 2024,
     "temporadaSeg": 2024,
     "grupo": "B"
   },
   {
-    "nombre": "Samuele Longo",
-    "nacionalidad": "Italia",
-    "posicion": "Atacante",
+    "nombre": "Samuel Llorca",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 25,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Santiago Mourino",
+    "nacionalidad": "Uruguay",
+    "posicion": "Defensa",
     "dorsal": 12,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2013,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Sebastien Corchia",
-    "nacionalidad": "Francia",
-    "posicion": "Defensa",
-    "dorsal": 18,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2020,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Sergi Darder",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 10,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Sergi Gomez",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2022,
+    "temporadaPrim": 2025,
     "temporadaSeg": 2025,
     "grupo": "B"
   },
   {
-    "nombre": "Sergio Garcia",
+    "nombre": "Saul Garcia",
     "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2019,
+    "posicion": "Defensa",
+    "dorsal": 12,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2022,
     "grupo": "A"
   },
   {
-    "nombre": "Sergio Sanchez",
+    "nombre": "Sergio Llamas",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 12,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2017,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Sergio Mora",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 14,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Sergio Pelegrin",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 24,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2018,
+    "dorsal": 15,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
     "grupo": "B"
   },
   {
     "nombre": "Sergio Tejera",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
-    "dorsal": 5,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2014,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Sidnei",
-    "nacionalidad": "Brasil",
-    "posicion": "Defensa",
     "dorsal": 6,
     "temporadaPrim": 2014,
-    "temporadaSeg": 2014,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Simao",
-    "nacionalidad": "Portugal",
-    "posicion": "Atacante",
-    "dorsal": 20,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2014,
+    "temporadaSeg": 2015,
     "grupo": "A"
   },
   {
-    "nombre": "Thievy Bifouma",
-    "nacionalidad": "Congo",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2014,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Tonny Vilhena",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Centrocampista",
-    "dorsal": 19,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Urko Gonzalez de Zarate",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 19,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Victor Alvarez",
+    "nombre": "Tachi",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 5,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2017,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Victor Campuzano",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 24,
+    "dorsal": 2,
     "temporadaPrim": 2020,
     "temporadaSeg": 2021,
     "grupo": "B"
   },
   {
-    "nombre": "Victor Gomez",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 34,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2020,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Victor Ruiz",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 4,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Victor Sanchez",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 4,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2020,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Vini Souza",
-    "nacionalidad": "Brasil",
-    "posicion": "Centrocampista",
-    "dorsal": 12,
-    "temporadaPrim": 2023,
+    "nombre": "Taichi Hara",
+    "nacionalidad": "Japon",
+    "posicion": "Atacante",
+    "dorsal": 24,
+    "temporadaPrim": 2022,
     "temporadaSeg": 2023,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Vladimir Weiss",
-    "nacionalidad": "Eslovaquia",
-    "posicion": "Atacante",
-    "dorsal": 17,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2012,
     "grupo": "A"
   },
   {
-    "nombre": "Walid Cheddira",
-    "nacionalidad": "Marruecos",
+    "nombre": "Takashi Inui",
+    "nacionalidad": "Japon",
     "posicion": "Atacante",
-    "dorsal": 16,
+    "dorsal": 11,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2019,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Theo Hernandez",
+    "nacionalidad": "Francia",
+    "posicion": "Defensa",
+    "dorsal": 15,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2017,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Tomas Conechny",
+    "nacionalidad": "Argentina",
+    "posicion": "Atacante",
+    "dorsal": 10,
     "temporadaPrim": 2025,
     "temporadaSeg": 2025,
     "grupo": "B"
   },
   {
-    "nombre": "Walter Pandiani",
-    "nacionalidad": "Uruguay",
-    "posicion": "Atacante",
-    "dorsal": 20,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2012,
+    "nombre": "Tomas Pina",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2022,
     "grupo": "A"
   },
   {
-    "nombre": "Yangel Herrera",
-    "nacionalidad": "Venezuela",
+    "nombre": "Toni Martinez",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 11,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2025,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Toni Moya",
+    "nacionalidad": "Espana",
     "posicion": "Centrocampista",
-    "dorsal": 25,
+    "dorsal": 6,
     "temporadaPrim": 2022,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Toti",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Unai Medina",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 17,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Victor Camarasa",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 10,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2020,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Victor Laguardia",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 5,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Xabier Castillo",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 23,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Xeber Alkain",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 17,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2024,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Ximo Navarro",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 23,
+    "temporadaPrim": 2019,
     "temporadaSeg": 2022,
     "grupo": "B"
+  },
+  {
+    "nombre": "Zouhair Feddal",
+    "nacionalidad": "Marruecos",
+    "posicion": "Defensa",
+    "dorsal": 24,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2017,
+    "grupo": "A"
   }
 ];
