@@ -416,8 +416,10 @@ function mostrarComparacion(j,elegido, intentos) {
       if (valor === correcto) {
         celda.innerHTML = valor;
       } else {
-        const flecha = j[prop] > elegido[prop] ? "▼" : "▲";
-        celda.innerHTML = `${valor} <span style="color:#8a070d;">${flecha}</span>`;
+        const flechaHaciaAbajo = j[prop] > elegido[prop];
+        const flecha = flechaHaciaAbajo ? "▼" : "▲";
+        const colorFlecha = flechaHaciaAbajo ? "#8a070d" : "#006400"; // inherit = mismo color del texto
+        celda.innerHTML = `${valor} <span style="color:${colorFlecha};">${flecha}</span>`;
       }
     } else if (prop === "posicion" && !esEspanol) {
       celda.innerText = posicionesTraducidas[valor] || valor;

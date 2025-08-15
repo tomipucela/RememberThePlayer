@@ -33,6 +33,7 @@ function obtenerCodigoISO(pais) {
     chile: "cl",
     china: "cn",
     colombia: "co",
+    congo: "cg",
     corea_del_sur: "kr",
     costa_de_marfil: "ci",
     costa_rica: "cr",

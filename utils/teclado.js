@@ -184,7 +184,7 @@ const columnasPista = [
     id: "th-nacionalidad",
     texto: t("Nacionalidad"),
     valor: () => {
-      const bandera = banderaDePaisImg(elegido.nacionalidad);
+      const bandera = banderaDePaisImg(elegido.nacionalidad.toLowerCase());
       return `${bandera}`;
     }
   },
@@ -302,7 +302,7 @@ restartBtn.addEventListener("click", () => {
 
   // Actualizar funciones valor() para usar nuevo elegido
   columnasPista.forEach(col => {
-    if (col.id === "th-nacionalidad") col.valor = () => elegido.nacionalidad;
+    if (col.id === "th-nacionalidad") col.valor = () => banderaDePaisImg(elegido.nacionalidad.toLowerCase());
     else if (col.id === "th-posicion") col.valor = () => elegido.posicion;
     else if (col.id === "th-dorsal") col.valor = () => elegido.dorsal;
     else if (col.id === "th-primera") col.valor = () => formatearTemporada(elegido.temporadaPrim);
