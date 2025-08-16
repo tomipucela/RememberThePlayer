@@ -370,3 +370,86 @@ background-position: 40px 40px; /* Mueve las rayas para dar animación */
         .grid-item[href="girona/"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
         }
+
+.grid-item[href="sevilla/"] {
+        background-color: white;
+        background-image: url("../img/diagmonds-light.png");
+        color: #eb393a;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="sevilla/"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-color: #b1b0b0; /* Mantiene color morado más oscuro al hover */
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
+
+.grid-item[href="levante/"] {
+        background: repeating-linear-gradient(
+            90deg,
+            #b4053e,
+            #b4053e 10px,
+            #005ca5 10px,
+            #005ca5 20px
+        );
+        color: #fac400;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="levante/"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        }
+
+.grid-item[href="elche/"] {
+        background-color: #0f8b45;
+        background-image: url("../img/gplay.png");
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="elche/"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-color: #0e7b3d; /* Mantiene color morado más oscuro al hover */
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
+
+
+      
+.grid-item[href="oviedo/"] {
+        background-color: #0034a1;
+        background-image: url("../img/gplay.png");
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="oviedo/"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-color: #003dc1; /* Mantiene color morado más oscuro al hover */
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
