@@ -33,8 +33,8 @@
 }
 
 .suggestion-item:hover {
-  background-color: #ffffff !important;
-  color:#e7b606 !important;
+  background-color: #e7b606 !important;
+  color:#b11b30 !important;
 }
 
 #guess-table thead th {
@@ -45,8 +45,8 @@
 }
 
 .autocomplete-active {
-  background-color: #ffffff !important;
-  color: #e7b606 !important;
+  background-color: #e7b606 !important;
+  color: #b11b30 !important;
 }
 
 #liga2-text {
