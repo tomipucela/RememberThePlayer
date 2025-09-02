@@ -14,7 +14,7 @@ const jugadores = [
     "posicion": "Portero",
     "dorsal": 1,
     "temporadaPrim": 2015,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -531,11 +531,11 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Pau Cubarsi",
+    "nombre": "Inaki Pena",
     "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2024,
+    "posicion": "Portero",
+    "dorsal": 13,
+    "temporadaPrim": 2023,
     "temporadaSeg": 2025,
     "grupo": "B"
   },
@@ -698,7 +698,7 @@ const jugadores = [
     "posicion": "Defensa",
     "dorsal": 3,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -743,16 +743,16 @@ const jugadores = [
     "posicion": "Defensa",
     "dorsal": 4,
     "temporadaPrim": 2020,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "A"
   },
   {
-    "nombre": "Inigo Martinez",
+    "nombre": "Pau Cubarsi",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
     "dorsal": 5,
     "temporadaPrim": 2024,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -851,7 +851,7 @@ const jugadores = [
     "posicion": "Centrocampista",
     "dorsal": 6,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "A"
   },
   {
@@ -909,11 +909,11 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Ferran Torres",
+    "nombre": "Inigo Martinez",
     "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2022,
+    "posicion": "Defensa",
+    "dorsal": 5,
+    "temporadaPrim": 2024,
     "temporadaSeg": 2025,
     "grupo": "B"
   },
@@ -927,12 +927,12 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Pedri Gonzalez",
+    "nombre": "Ferran Torres",
     "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 8,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2025,
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -972,12 +972,12 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Robert Lewandowski",
-    "nacionalidad": "Polonia",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2025,
+    "nombre": "Pedri Gonzalez",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2026,
     "grupo": "A"
   },
   {
@@ -999,12 +999,12 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Ansu Fati",
-    "nacionalidad": "Espana",
+    "nombre": "Robert Lewandowski",
+    "nacionalidad": "Polonia",
     "posicion": "Atacante",
-    "dorsal": 10,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2025,
+    "dorsal": 9,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -1026,21 +1026,21 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Raphinha",
-    "nacionalidad": "Brasil",
-    "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2023,
+    "nombre": "Hector Fort",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 32,
+    "temporadaPrim": 2024,
     "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
-    "nombre": "Inaki Pena",
+    "nombre": "Lamine Yamal",
     "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 13,
+    "posicion": "Atacante",
+    "dorsal": 10,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -1053,12 +1053,12 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Pablo Torre",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 14,
+    "nombre": "Raphinha",
+    "nacionalidad": "Brasil",
+    "posicion": "Atacante",
+    "dorsal": 11,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -1071,12 +1071,12 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Andreas Christiensen",
-    "nacionalidad": "Dinamarca",
-    "posicion": "Defensa",
-    "dorsal": 15,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2025,
+    "nombre": "Joan Garcia",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 13,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -1098,11 +1098,11 @@ const jugadores = [
     "grupo": "B"
   },
   {
-    "nombre": "Fermin Lopez",
+    "nombre": "Pablo Torre",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
-    "dorsal": 16,
-    "temporadaPrim": 2024,
+    "dorsal": 14,
+    "temporadaPrim": 2023,
     "temporadaSeg": 2025,
     "grupo": "A"
   },
@@ -1125,12 +1125,12 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Marc Casado",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 17,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2025,
+    "nombre": "Marcus Rashford",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 14,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
@@ -1143,21 +1143,39 @@ const jugadores = [
     "grupo": "A"
   },
   {
-    "nombre": "Pau Victor",
-    "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 18,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
+    "nombre": "Andreas Christiensen",
+    "nacionalidad": "Dinamarca",
+    "posicion": "Defensa",
+    "dorsal": 15,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
-    "nombre": "Lamine Yamal",
+    "nombre": "Fermin Lopez",
     "nacionalidad": "Espana",
-    "posicion": "Atacante",
-    "dorsal": 19,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2025,
+    "posicion": "Centrocampista",
+    "dorsal": 16,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Marc Casado",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 17,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Gerard Martin",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 18,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2026,
     "grupo": "A"
   },
   {
@@ -1166,8 +1184,17 @@ const jugadores = [
     "posicion": "Centrocampista",
     "dorsal": 20,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "B"
+  },
+  {
+    "nombre": "Ansu Fati",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 10,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2025,
+    "grupo": "A"
   },
   {
     "nombre": "Frenkie De Jong",
@@ -1175,8 +1202,26 @@ const jugadores = [
     "posicion": "Centrocampista",
     "dorsal": 21,
     "temporadaPrim": 2020,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Pau Victor",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 18,
+    "temporadaPrim": 2025,
     "temporadaSeg": 2025,
     "grupo": "A"
+  },
+  {
+    "nombre": "Marc Bernal",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 22,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2026,
+    "grupo": "B"
   },
   {
     "nombre": "Jules Kounde",
@@ -1184,8 +1229,8 @@ const jugadores = [
     "posicion": "Defensa",
     "dorsal": 23,
     "temporadaPrim": 2023,
-    "temporadaSeg": 2025,
-    "grupo": "B"
+    "temporadaSeg": 2026,
+    "grupo": "A"
   },
   {
     "nombre": "Eric Garcia",
@@ -1193,8 +1238,8 @@ const jugadores = [
     "posicion": "Defensa",
     "dorsal": 24,
     "temporadaPrim": 2022,
-    "temporadaSeg": 2025,
-    "grupo": "A"
+    "temporadaSeg": 2026,
+    "grupo": "B"
   },
   {
     "nombre": "Wojciech Szczesny",
@@ -1202,25 +1247,7 @@ const jugadores = [
     "posicion": "Portero",
     "dorsal": 25,
     "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Hector Fort",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 32,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2025,
+    "temporadaSeg": 2026,
     "grupo": "A"
-  },
-  {
-    "nombre": "Gerard Martin",
-    "nacionalidad": "Espana",
-    "posicion": "Defensa",
-    "dorsal": 35,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2025,
-    "grupo": "B"
   }
 ];
