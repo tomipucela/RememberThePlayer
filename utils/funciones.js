@@ -167,8 +167,9 @@ function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
 
   stats.ultimaFecha = hoy;
   localStorage.setItem(key, JSON.stringify(stats));
+  return stats;
 
-  mostrarModalEstadisticas(stats);
+  
 }
 
 // Función para mostrar estadísticas sin actualizar (para el botón)
@@ -246,9 +247,9 @@ export function cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado) 
     desactivarInput();
     mostrarBotonReinicio();
     if(esEspanol){
-      mostrarMensaje("Ya jugaste el jugador del día. ¡Pero puedes continuar jugando!.", 4000, "#6aaa64");
+      mostrarMensaje(`El jugador del día era ${elegido.nombre}. ¡Pero puedes continuar jugando!`, 4000, "#6aaa64");
     }else{
-      mostrarMensaje("You already played today's player. But you can keep playing!", 4000, "#6aaa64");
+      mostrarMensaje(`Today's player was ${elegido.nombre}. But you can keep playing!", 4000, "#6aaa64`);
     }
     document.getElementById("guessName").style.display = "none";
     document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
@@ -322,6 +323,7 @@ if (jugador.nombre === elegido.nombre) {
   desactivarInput();
   guardarProgresoPartida("acertado", elegido, intentos, clavePartidaHoy,pistaMostrada);
   guardarEstadisticasPartida(true,intentos, elegido,claveEstadisticas);
+  let stats=actualizarEstadisticas(intentos,idJuego,elegido,true); // solo en la primera partida del día
   let timeout;  // Declarás aquí la variable
 
   if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
@@ -329,9 +331,10 @@ if (jugador.nombre === elegido.nombre) {
   } else {
     timeout = 1000;
   }
+  
 
   setTimeout(() => {
-    actualizarEstadisticas(intentos,idJuego,elegido,true); // solo en la primera partida del día
+    mostrarModalEstadisticas(stats);
     document.getElementById("guessName").style.display = "none";
     mostrarBotonReinicio();
   }, timeout);
@@ -354,6 +357,7 @@ export function procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, clave
   desactivarInput();
   guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy,pistaMostrada);
   guardarEstadisticasPartida(false,intentos, elegido,claveEstadisticas);
+  let stats=actualizarEstadisticas(intentos,idJuego,elegido,false); // solo en la primera partida del día
   let timeout;  // Declarás aquí la variable
 
   if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
@@ -362,7 +366,7 @@ export function procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, clave
     timeout = 1000;
   }
   setTimeout(() => {
-    actualizarEstadisticas(intentos,idJuego,elegido,false); // solo en la primera partida del día
+    mostrarModalEstadisticas(stats);
     document.getElementById("guessName").style.display = "none";
     mostrarBotonReinicio();
   }, timeout);
