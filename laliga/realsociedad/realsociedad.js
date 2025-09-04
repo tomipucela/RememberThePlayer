@@ -84,7 +84,7 @@ const jugadores = [
     "nombre": "Alvaro Odriozola",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 69,
+    "dorsal": 20,
     "temporadaPrim": 2016,
     "temporadaSeg": 2026,
     "grupo": "B"
@@ -1020,7 +1020,7 @@ const jugadores = [
     "nombre": "Umar Sadiq",
     "nacionalidad": "Nigeria",
     "posicion": "Atacante",
-    "dorsal": 69,
+    "dorsal": 15,
     "temporadaPrim": 2023,
     "temporadaSeg": 2026,
     "grupo": "B"

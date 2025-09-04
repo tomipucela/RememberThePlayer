@@ -129,7 +129,7 @@ const jugadores = [
     "nombre": "Alexis Sanchez",
     "nacionalidad": "Chile",
     "posicion": "Atacante",
-    "dorsal": 69,
+    "dorsal": 10,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "A"
@@ -147,7 +147,7 @@ const jugadores = [
     "nombre": "Alvaro Fernandez",
     "nacionalidad": "Espana",
     "posicion": "Portero",
-    "dorsal": 69,
+    "dorsal": 25,
     "temporadaPrim": 2025,
     "temporadaSeg": 2026,
     "grupo": "A"
@@ -228,7 +228,7 @@ const jugadores = [
     "nombre": "Batista Mendy",
     "nacionalidad": "Francia",
     "posicion": "Centrocampista",
-    "dorsal": 69,
+    "dorsal": 19,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"
@@ -498,7 +498,7 @@ const jugadores = [
     "nombre": "Fabio Cardoso",
     "nacionalidad": "Portugal",
     "posicion": "Defensa",
-    "dorsal": 69,
+    "dorsal": 15,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"

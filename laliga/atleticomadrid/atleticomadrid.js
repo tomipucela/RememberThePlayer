@@ -849,7 +849,7 @@ const jugadores = [
     "nombre": "Nico Gonzalez",
     "nacionalidad": "Argentina",
     "posicion": "Atacante",
-    "dorsal": 12,
+    "dorsal": 23,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "A"

@@ -327,7 +327,7 @@ const jugadores = [
     "nombre": "Bryan Gil",
     "nacionalidad": "Espana",
     "posicion": "Atacante",
-    "dorsal": 69,
+    "dorsal": 21,
     "temporadaPrim": 2025,
     "temporadaSeg": 2026,
     "grupo": "A"
@@ -551,7 +551,7 @@ const jugadores = [
     "nombre": "Dominik Livakovic",
     "nacionalidad": "Croacia",
     "posicion": "Portero",
-    "dorsal": 69,
+    "dorsal": 1,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"

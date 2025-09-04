@@ -1380,7 +1380,7 @@ const jugadores = [
     "nombre": "Sofyan Amrabat",
     "nacionalidad": "Marruecos",
     "posicion": "Centrocampista",
-    "dorsal": 15,
+    "dorsal": 14,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"

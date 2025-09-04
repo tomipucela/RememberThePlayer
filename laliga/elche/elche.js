@@ -66,7 +66,7 @@ const jugadores = [
     "nombre": "Adria Pedrosa",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 69,
+    "dorsal": 3,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"
@@ -1533,7 +1533,7 @@ const jugadores = [
     "nombre": "Hector Fort",
     "nacionalidad": "Espana",
     "posicion": "Defensa",
-    "dorsal": 69,
+    "dorsal": 39,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "A"

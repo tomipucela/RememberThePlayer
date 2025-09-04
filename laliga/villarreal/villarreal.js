@@ -867,7 +867,7 @@ const jugadores = [
     "nombre": "Manor Solomon",
     "nacionalidad": "Israel",
     "posicion": "Atacante",
-    "dorsal": 69,
+    "dorsal": 6,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "A"

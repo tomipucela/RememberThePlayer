@@ -930,7 +930,7 @@ const jugadores = [
     "nombre": "Lucas Beltran",
     "nacionalidad": "Argentina",
     "posicion": "Centrocampista",
-    "dorsal": 69,
+    "dorsal": 15,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"

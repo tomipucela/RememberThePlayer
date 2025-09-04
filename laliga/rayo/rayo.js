@@ -111,7 +111,7 @@ const jugadores = [
     "nombre": "Alemao",
     "nacionalidad": "Brasil",
     "posicion": "Atacante",
-    "dorsal": 69,
+    "dorsal": 9,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "A"
@@ -1128,7 +1128,7 @@ const jugadores = [
     "nombre": "Nobel Mendy",
     "nacionalidad": "Senegal",
     "posicion": "Defensa",
-    "dorsal": 69,
+    "dorsal": 32,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"
