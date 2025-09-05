@@ -109,7 +109,7 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr)!important; /* 4 columnas fijas */
+      grid-template-columns: repeat(1, 1fr)!important; /* 4 columnas fijas */
       gap: 20px;
       width: 100%;
       max-width: 1000px;
@@ -400,39 +400,57 @@
 
 .grid-item[href="laliga2/"] {
         background-color: #00d4d7;
-        background-image: url("./img/diagmonds-light.png");
+        background-image: url("./img/gplay.png");
         color: white;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
         background-size: 40px 40px;
         background-position: 0 0;
-          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
             font-family: 'Roboto Slab', serif;
 
         }
 
         .grid-item[href="laliga2/"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #028f92; /* Mantiene color morado más oscuro al hover */
+        background-color: #03f5f9; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 .grid-item[href="laliga/"] {
         background-color: #ec5a4d;
-        background-image: url("./img/diagmonds-light.png");
+        background-image: url("./img/gplay.png");
         color: white;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
         background-size: 40px 40px;
         background-position: 0 0;
-          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
             font-family: 'Roboto Slab', serif;
 
         }
 
         .grid-item[href="laliga/"]:hover {
         background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #943830; /* Mantiene color morado más oscuro al hover */
+                background-color: #d14f44;
+
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
+
+.grid-item[href="premier/"] {
+        background-color: #3d195b;
+        background-image: url("./img/gplay.png");
+        color: white;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="premier/"]:hover {
+        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-color: #2b0947; /* Mantiene color morado más oscuro al hover */
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
