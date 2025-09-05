@@ -109,7 +109,7 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(2, 1fr)!important; /* 4 columnas fijas */
       gap: 20px;
       width: 100%;
       max-width: 1000px;
@@ -130,6 +130,14 @@
     }
 
     
+.email-link {
+  color: #ff6600 !important;      /* Forza el color */
+  text-decoration: none !important; /* Quita subrayado */
+}
+.email-link:hover {
+  color: #ff3300 !important;
+  text-decoration: underline !important;
+}
 
     .grid-item:hover {
       transform: translateY(-5px);

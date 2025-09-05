@@ -20,6 +20,15 @@
   background-color: #00d4d7;
   color: #000;
 }
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr)!important; /* 4 columnas fijas */
+      grid-auto-rows: 120px; /* Altura fija para cada fila (ajusta si necesitas) */
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      margin-top: 40px;
+    }
 
 
     .grid-item[href="realvalladolid/"] {
