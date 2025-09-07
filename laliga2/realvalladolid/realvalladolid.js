@@ -697,7 +697,7 @@ const jugadores = [
     "nacionalidad": "Portugal",
     "posicion": "Defensa",
     "dorsal": 5,
-    "temporadaPrim": 2013,
+    "temporadaPrim": 2010,
     "temporadaSeg": 2013,
     "grupo": "B"
   },
@@ -1130,7 +1130,7 @@ const jugadores = [
     "posicion": "Centrocampista",
     "dorsal": 7,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2014,
+    "temporadaSeg": 2013,
     "grupo": "B"
   },
   {
