@@ -334,7 +334,9 @@ if (jugador.nombre === elegido.nombre) {
   
 
   setTimeout(() => {
-    mostrarModalEstadisticas(stats);
+    if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
+      mostrarModalEstadisticas(stats);
+    }
     document.getElementById("guessName").style.display = "none";
     mostrarBotonReinicio();
   }, timeout);
@@ -366,7 +368,9 @@ export function procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, clave
     timeout = 1000;
   }
   setTimeout(() => {
-    mostrarModalEstadisticas(stats);
+    if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
+      mostrarModalEstadisticas(stats);
+    }
     document.getElementById("guessName").style.display = "none";
     mostrarBotonReinicio();
   }, timeout);
