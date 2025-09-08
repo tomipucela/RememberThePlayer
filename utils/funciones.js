@@ -469,8 +469,8 @@ export function reiniciarJuego() {
   // Ocultar mensaje
   document.getElementById("hint-bubble").style.display = "none";
 
-  const nuevoElegido = jugadores[Math.floor(Math.random() * jugadores.length)];
-  while(nuevoElegido.nombre === getJugadorDelDiaLocal().nombre) {
+  let nuevoElegido = jugadores[Math.floor(Math.random() * jugadores.length)];
+  while (nuevoElegido.nombre === getJugadorDelDiaLocal().nombre) {
     nuevoElegido = jugadores[Math.floor(Math.random() * jugadores.length)];
   }
 
