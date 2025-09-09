@@ -346,7 +346,12 @@ if (jugador.nombre === elegido.nombre) {
 
 //añado un cometarioo xq no parece q se suba
 else if (intentos >= maxIntentos-1) {
-  const mensaje= esEspanol ? `¡Se acabaron los intentos! El jugador del dia era: ${elegido.nombre}.` :`You ran out of attempts! Today's player was: ${elegido.nombre}`;
+  let mensaje;
+  if(elegido.nombre === getJugadorDelDiaLocal().nombre){
+    mensaje= esEspanol ? `¡Se acabaron los intentos! El jugador del dia era: ${elegido.nombre}.` :`You ran out of attempts! Today's player was: ${elegido.nombre}`;
+  }else{
+    mensaje= esEspanol ? `¡Se acabaron los intentos! El jugador era: ${elegido.nombre}.` :`You ran out of attempts! The player was: ${elegido.nombre}`;
+  }
   procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, claveEstadisticas, pistaMostrada);
   return 1;
 }
