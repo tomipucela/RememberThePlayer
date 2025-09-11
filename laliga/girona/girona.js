@@ -228,7 +228,7 @@ const jugadores = [
     "nombre": "Azzedine Ounahi",
     "nacionalidad": "Marruecos",
     "posicion": "Centrocampista",
-    "dorsal": 69,
+    "dorsal": 18,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"

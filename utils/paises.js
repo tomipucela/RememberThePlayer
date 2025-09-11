@@ -22,6 +22,7 @@ function obtenerCodigoISO(pais) {
     belgica: "be",
     birmania: "mm",
     bosnia_herzegovina: "ba",
+    "bosnia-herzegovina": "ba",
     bosnia_y_herzegovina: "ba",
     brasil: "br",
     brunei: "bn",

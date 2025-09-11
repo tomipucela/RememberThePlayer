@@ -39,7 +39,7 @@ const jugadores = [
     "nombre": "Alan Matturro",
     "nacionalidad": "Uruguay",
     "posicion": "Defensa",
-    "dorsal": 69,
+    "dorsal": 3,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "A"
@@ -921,7 +921,7 @@ const jugadores = [
     "nombre": "Karl Etta Eyong",
     "nacionalidad": "Camerun",
     "posicion": "Atacante",
-    "dorsal": 69,
+    "dorsal": 21,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "A"
@@ -930,7 +930,7 @@ const jugadores = [
     "nombre": "Kervin Arriaga",
     "nacionalidad": "Honduras",
     "posicion": "Centrocampista",
-    "dorsal": 69,
+    "dorsal": 16,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"
@@ -1668,7 +1668,7 @@ const jugadores = [
     "nombre": "Unai Vencedor",
     "nacionalidad": "Espana",
     "posicion": "Centrocampista",
-    "dorsal": 69,
+    "dorsal": 12,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"
