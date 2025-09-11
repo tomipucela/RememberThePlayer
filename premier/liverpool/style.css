@@ -1,0 +1,73 @@
+#guessName {
+  flex-grow: 1;
+  padding: 10px 15px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid #cb0226;
+  border-radius: 6px;
+  font-family: 'Roboto Slab', serif;
+  outline: none;
+}
+
+.suggestions-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #cb0226 !important;
+  border-top: none !important;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: 'Roboto Slab', serif;
+  color: #fff !important;
+  display: block; 
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff !important;
+  background: #af1517 !important;
+}
+
+.suggestion-item:hover {
+  background-color: #fff !important;
+  color: #cb0226 !important;
+}
+
+#guess-table thead th {
+  padding: 30px 12px; /* Más bajo que el resto de filas */
+  background-color: #cb0226; /* Morado más claro */
+  color: #fff;
+  border-radius: 8px;
+}
+
+.autocomplete-active {
+  background-color: #fff !important;
+  color: #cb0226 !important;
+}
+
+#liga2-text {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;            /* tamaño cuadrado fijo */
+  height: 32px;
+  border: 2px solid #5b2686;  /* borde con el color que tenías */
+  color: #5b2686;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 6px;     /* bordes redondeados */
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#liga2-text:hover {
+  background-color: #5b2686;
+  color: #ffffff;
+}
