@@ -1,1127 +1,1001 @@
 const jugadores = [
   {
-    "nombre": "Aaron Wan-Bissaka",
-    "nacionalidad": "RD del Congo",
-    "posicion": "Defensa",
-    "dorsal": 29,
+    "nombre": "Adam Bogdan",
+    "nacionalidad": "Hungria",
+    "posicion": "Portero",
+    "dorsal": 34,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2019,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Adam Lallana",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 20,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2020,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Adrian",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 13,
     "temporadaPrim": 2020,
     "temporadaSeg": 2024,
     "grupo": "A"
   },
   {
-    "nombre": "Adnan Januzaj",
-    "nacionalidad": "Belgica",
-    "posicion": "Atacante",
-    "dorsal": 15,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2017,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alejandro Garnacho",
-    "nacionalidad": "Argentina",
-    "posicion": "Atacante",
-    "dorsal": 17,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Alex Telles",
-    "nacionalidad": "Brasil",
-    "posicion": "Defensa",
-    "dorsal": 27,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Alexander Buttner",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Defensa",
-    "dorsal": 28,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2014,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Alexis Sanchez",
-    "nacionalidad": "Chile",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2019,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Altay Bayindir",
-    "nacionalidad": "Turquia",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2026,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Amad Diallo",
-    "nacionalidad": "Costa de Marfil",
-    "posicion": "Atacante",
-    "dorsal": 16,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Ander Herrera",
+    "nombre": "Alberto Moreno",
     "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 21,
+    "posicion": "Defensa",
+    "dorsal": 18,
     "temporadaPrim": 2015,
     "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Anders Lindegaard",
-    "nacionalidad": "Dinamarca",
-    "posicion": "Portero",
-    "dorsal": 13,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2015,
     "grupo": "B"
   },
   {
-    "nombre": "Anderson",
-    "nacionalidad": "Brasil",
-    "posicion": "Centrocampista",
-    "dorsal": 8,
-    "temporadaPrim": 2008,
-    "temporadaSeg": 2013,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Andre Onana",
-    "nacionalidad": "Camerun",
-    "posicion": "Portero",
-    "dorsal": 24,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Andreas Pereira",
-    "nacionalidad": "Brasil",
+    "nombre": "Alex Oxlade-Chamberlain",
+    "nacionalidad": "Inglaterra",
     "posicion": "Centrocampista",
     "dorsal": 15,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2020,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2023,
     "grupo": "A"
   },
   {
-    "nombre": "Angel Di Maria",
-    "nacionalidad": "Argentina",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Anthony Elanga",
+    "nombre": "Alexander Isak",
     "nacionalidad": "Suecia",
     "posicion": "Atacante",
-    "dorsal": 36,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Anthony Martial",
-    "nacionalidad": "Francia",
-    "posicion": "Atacante",
     "dorsal": 9,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Antonio Valencia",
-    "nacionalidad": "Ecuador",
-    "posicion": "Defensa",
-    "dorsal": 25,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Antony",
-    "nacionalidad": "Brasil",
-    "posicion": "Atacante",
-    "dorsal": 21,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Ashley Young",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 18,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Axel Tuanzebe",
-    "nacionalidad": "RD del Congo",
-    "posicion": "Defensa",
-    "dorsal": 38,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2021,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Bastian Schweinsteiger",
-    "nacionalidad": "Alemania",
-    "posicion": "Centrocampista",
-    "dorsal": 31,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2016,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Benjamin Sesko",
-    "nacionalidad": "Eslovenia",
-    "posicion": "Atacante",
-    "dorsal": 30,
     "temporadaPrim": 2026,
     "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
-    "nombre": "Brandon Williams",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 33,
+    "nombre": "Alexis Mac Allister",
+    "nacionalidad": "Argentina",
+    "posicion": "Centrocampista",
+    "dorsal": 10,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Alisson",
+    "nacionalidad": "Brasil",
+    "posicion": "Portero",
+    "dorsal": 1,
     "temporadaPrim": 2019,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Bruno Fernandes",
-    "nacionalidad": "Portugal",
-    "posicion": "Centrocampista",
-    "dorsal": 8,
-    "temporadaPrim": 2020,
     "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
-    "nombre": "Bryan Mbeumo",
-    "nacionalidad": "Camerun",
-    "posicion": "Atacante",
-    "dorsal": 19,
-    "temporadaPrim": 2026,
-    "temporadaSeg": 2026,
+    "nombre": "Aly Cissokho",
+    "nacionalidad": "Francia",
+    "posicion": "Defensa",
+    "dorsal": 20,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
     "grupo": "A"
   },
   {
-    "nombre": "Cameron Borthwick-Jackson",
+    "nombre": "Andre Wisdom",
     "nacionalidad": "Inglaterra",
     "posicion": "Defensa",
-    "dorsal": 43,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2020,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Casemiro",
-    "nacionalidad": "Brasil",
-    "posicion": "Centrocampista",
-    "dorsal": 18,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2026,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Chicharito",
-    "nacionalidad": "Mexico",
-    "posicion": "Atacante",
-    "dorsal": 14,
-    "temporadaPrim": 2011,
+    "dorsal": 47,
+    "temporadaPrim": 2013,
     "temporadaSeg": 2014,
     "grupo": "B"
   },
   {
-    "nombre": "Chris Smalling",
+    "nombre": "Andrew Robertson",
+    "nacionalidad": "Escocia",
+    "posicion": "Defensa",
+    "dorsal": 26,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Andy Carroll",
     "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2013,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Arthur Melo",
+    "nacionalidad": "Brasil",
+    "posicion": "Centrocampista",
+    "dorsal": 29,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Brad Jones",
+    "nacionalidad": "Australia",
+    "posicion": "Portero",
+    "dorsal": 1,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Charlie Adam",
+    "nacionalidad": "Escocia",
+    "posicion": "Centrocampista",
+    "dorsal": 26,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2012,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Christian Benteke",
+    "nacionalidad": "Belgica",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Christian Poulsen",
+    "nacionalidad": "Dinamarca",
+    "posicion": "Centrocampista",
+    "dorsal": 28,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2011,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Cody Gakpo",
+    "nacionalidad": "Paises Bajos",
+    "posicion": "Atacante",
+    "dorsal": 18,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Conor Bradley",
+    "nacionalidad": "Irlanda del Norte",
     "posicion": "Defensa",
     "dorsal": 12,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Christian Eriksen",
-    "nacionalidad": "Dinamarca",
-    "posicion": "Centrocampista",
-    "dorsal": 14,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Corry Evans",
-    "nacionalidad": "Irlanda del Norte",
-    "posicion": "Centrocampista",
-    "dorsal": 31,
-    "temporadaPrim": 2008,
-    "temporadaSeg": 2011,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Cristiano Ronaldo",
-    "nacionalidad": "Portugal",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Daley Blind",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Defensa",
-    "dorsal": 17,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2018,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Daniel James",
-    "nacionalidad": "Gales",
-    "posicion": "Atacante",
-    "dorsal": 21,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2021,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Danny Welbeck",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Atacante",
-    "dorsal": 19,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2014,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Darren Fletcher",
-    "nacionalidad": "Escocia",
-    "posicion": "Centrocampista",
-    "dorsal": 24,
-    "temporadaPrim": 2003,
-    "temporadaSeg": 2014,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Darron Gibson",
-    "nacionalidad": "Irlanda",
-    "posicion": "Centrocampista",
-    "dorsal": 28,
-    "temporadaPrim": 2008,
-    "temporadaSeg": 2012,
-    "grupo": "A"
-  },
-  {
-    "nombre": "David de Gea",
-    "nacionalidad": "Espana",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2023,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Dean Henderson",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Portero",
-    "dorsal": 26,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Dimitar Berbatov",
-    "nacionalidad": "Bulgaria",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2012,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Diogo Dalot",
-    "nacionalidad": "Portugal",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2026,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Donny van de Beek",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Centrocampista",
-    "dorsal": 34,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Edinson Cavani",
-    "nacionalidad": "Uruguay",
-    "posicion": "Atacante",
-    "dorsal": 21,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Edwin van der Sar",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Portero",
-    "dorsal": 1,
-    "temporadaPrim": 2011,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Eric Bailly",
-    "nacionalidad": "Costa de Marfil",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Fabio",
-    "nacionalidad": "Brasil",
-    "posicion": "Defensa",
-    "dorsal": 20,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Facundo Pellistri",
-    "nacionalidad": "Uruguay",
-    "posicion": "Atacante",
-    "dorsal": 28,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2024,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Federico Macheda",
-    "nacionalidad": "Italia",
-    "posicion": "Atacante",
-    "dorsal": 27,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2012,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Fred",
-    "nacionalidad": "Brasil",
-    "posicion": "Centrocampista",
-    "dorsal": 17,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Gabriel Obertan",
-    "nacionalidad": "Francia",
-    "posicion": "Atacante",
-    "dorsal": 26,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Gary Neville",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 1995,
-    "temporadaSeg": 2011,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Hannibal",
-    "nacionalidad": "Tunez",
-    "posicion": "Centrocampista",
-    "dorsal": 46,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Harry Maguire",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 5,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2026,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Henrikh Mkhitaryan",
-    "nacionalidad": "Armenia",
-    "posicion": "Centrocampista",
-    "dorsal": 22,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2018,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Jack Butland",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Portero",
-    "dorsal": 31,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Jadon Sancho",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Atacante",
-    "dorsal": 25,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "James Wilson",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Atacante",
-    "dorsal": 29,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2018,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Jesse Lingard",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Centrocampista",
-    "dorsal": 14,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Ji-sung Park",
-    "nacionalidad": "Corea del Sur",
-    "posicion": "Centrocampista",
-    "dorsal": 13,
-    "temporadaPrim": 2006,
-    "temporadaSeg": 2012,
-    "grupo": "A"
-  },
-  {
-    "nombre": "John O'Shea",
-    "nacionalidad": "Irlanda",
-    "posicion": "Defensa",
-    "dorsal": 22,
-    "temporadaPrim": 2001,
-    "temporadaSeg": 2011,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Jonny Evans",
-    "nacionalidad": "Irlanda del Norte",
-    "posicion": "Defensa",
-    "dorsal": 35,
-    "temporadaPrim": 2008,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Joshua Zirkzee",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Juan Mata",
-    "nacionalidad": "Espana",
-    "posicion": "Centrocampista",
-    "dorsal": 8,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Kobbie Mainoo",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Centrocampista",
-    "dorsal": 37,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Lee Grant",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Portero",
-    "dorsal": 13,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Leny Yoro",
-    "nacionalidad": "Francia",
-    "posicion": "Defensa",
-    "dorsal": 15,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Lisandro Martinez",
-    "nacionalidad": "Argentina",
-    "posicion": "Defensa",
-    "dorsal": 6,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2026,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Luke Shaw",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 23,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Manuel Ugarte",
-    "nacionalidad": "Uruguay",
-    "posicion": "Centrocampista",
-    "dorsal": 25,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2026,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Marcel Sabitzer",
-    "nacionalidad": "Austria",
-    "posicion": "Centrocampista",
-    "dorsal": 15,
-    "temporadaPrim": 2023,
-    "temporadaSeg": 2023,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Marcos Rojo",
-    "nacionalidad": "Argentina",
-    "posicion": "Defensa",
-    "dorsal": 16,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Marcus Rashford",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Atacante",
-    "dorsal": 10,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Marouane Fellaini",
-    "nacionalidad": "Belgica",
-    "posicion": "Centrocampista",
-    "dorsal": 27,
-    "temporadaPrim": 2014,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Mason Greenwood",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Atacante",
-    "dorsal": 11,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2023,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Mason Mount",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Centrocampista",
-    "dorsal": 7,
     "temporadaPrim": 2024,
     "temporadaSeg": 2026,
     "grupo": "A"
   },
   {
-    "nombre": "Matheus Cunha",
-    "nacionalidad": "Brasil",
-    "posicion": "Atacante",
-    "dorsal": 10,
-    "temporadaPrim": 2026,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Matteo Darmian",
-    "nacionalidad": "Italia",
-    "posicion": "Defensa",
-    "dorsal": 36,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Matthijs de Ligt",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Defensa",
-    "dorsal": 4,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Memphis Depay",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2017,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Michael Carrick",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Centrocampista",
-    "dorsal": 16,
-    "temporadaPrim": 2007,
-    "temporadaSeg": 2018,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Michael Owen",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Atacante",
-    "dorsal": 7,
-    "temporadaPrim": 2010,
-    "temporadaSeg": 2012,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Morgan Schneiderlin",
-    "nacionalidad": "Francia",
-    "posicion": "Centrocampista",
-    "dorsal": 28,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Nani",
-    "nacionalidad": "Portugal",
-    "posicion": "Atacante",
-    "dorsal": 17,
-    "temporadaPrim": 2008,
-    "temporadaSeg": 2014,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Nathan Bishop",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Portero",
-    "dorsal": 30,
-    "temporadaPrim": 2021,
-    "temporadaSeg": 2021,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Nemanja Matic",
-    "nacionalidad": "Serbia",
-    "posicion": "Centrocampista",
-    "dorsal": 31,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2022,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Nemanja Vidic?",
-    "nacionalidad": "Serbia",
-    "posicion": "Defensa",
-    "dorsal": 15,
-    "temporadaPrim": 2006,
-    "temporadaSeg": 2014,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Nick Powell",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Centrocampista",
-    "dorsal": 22,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2016,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Noussair Mazraoui",
-    "nacionalidad": "Marruecos",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2026,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Odion Ighalo",
-    "nacionalidad": "Nigeria",
-    "posicion": "Atacante",
-    "dorsal": 25,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2021,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Patrice Evra",
-    "nacionalidad": "Francia",
-    "posicion": "Defensa",
-    "dorsal": 3,
-    "temporadaPrim": 2006,
-    "temporadaSeg": 2014,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Patrick Dorgu",
-    "nacionalidad": "Dinamarca",
-    "posicion": "Defensa",
-    "dorsal": 13,
-    "temporadaPrim": 2025,
-    "temporadaSeg": 2026,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Paul Pogba",
-    "nacionalidad": "Francia",
-    "posicion": "Centrocampista",
-    "dorsal": 6,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Paul Scholes",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Centrocampista",
-    "dorsal": 22,
-    "temporadaPrim": 1995,
-    "temporadaSeg": 2013,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Phil Jones",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 4,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2023,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Radamel Falcao",
-    "nacionalidad": "Colombia",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2015,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Rafael",
-    "nacionalidad": "Brasil",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2009,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Raphael Varane",
-    "nacionalidad": "Francia",
-    "posicion": "Defensa",
-    "dorsal": 19,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2024,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Rasmus Hojlund",
-    "nacionalidad": "Dinamarca",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2025,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Rio Ferdinand",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 5,
-    "temporadaPrim": 2003,
-    "temporadaSeg": 2014,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Robin van Persie",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Atacante",
-    "dorsal": 20,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2015,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Romelu Lukaku",
-    "nacionalidad": "Belgica",
-    "posicion": "Atacante",
-    "dorsal": 9,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2019,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Ryan Giggs",
+    "nombre": "Craig Bellamy",
     "nacionalidad": "Gales",
-    "posicion": "Centrocampista",
-    "dorsal": 11,
-    "temporadaPrim": 1991,
-    "temporadaSeg": 2014,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Sam Johnstone",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Portero",
-    "dorsal": 34,
-    "temporadaPrim": 2013,
-    "temporadaSeg": 2018,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Scott McTominay",
-    "nacionalidad": "Escocia",
-    "posicion": "Centrocampista",
+    "posicion": "Atacante",
     "dorsal": 39,
-    "temporadaPrim": 2017,
-    "temporadaSeg": 2024,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2012,
     "grupo": "B"
   },
   {
-    "nombre": "Senne Lammens",
-    "nacionalidad": "Belgica",
-    "posicion": "Portero",
-    "dorsal": 31,
-    "temporadaPrim": 2026,
+    "nombre": "Curtis Jones",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 17,
+    "temporadaPrim": 2019,
     "temporadaSeg": 2026,
     "grupo": "A"
   },
   {
-    "nombre": "Sergio Reguilon",
-    "nacionalidad": "Espana",
+    "nombre": "Daniel Agger",
+    "nacionalidad": "Dinamarca",
     "posicion": "Defensa",
-    "dorsal": 15,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2024,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Sergio Romero",
-    "nacionalidad": "Argentina",
-    "posicion": "Portero",
-    "dorsal": 22,
-    "temporadaPrim": 2016,
-    "temporadaSeg": 2021,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Shinji Kagawa",
-    "nacionalidad": "Japon",
-    "posicion": "Centrocampista",
-    "dorsal": 26,
-    "temporadaPrim": 2013,
+    "dorsal": 5,
+    "temporadaPrim": 2008,
     "temporadaSeg": 2014,
     "grupo": "B"
   },
   {
-    "nombre": "Sofyan Amrabat",
-    "nacionalidad": "Marruecos",
-    "posicion": "Centrocampista",
-    "dorsal": 4,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2024,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Tahith Chong",
-    "nacionalidad": "Curazao",
-    "posicion": "Centrocampista",
-    "dorsal": 44,
-    "temporadaPrim": 2019,
-    "temporadaSeg": 2022,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Teden Mengi",
+    "nombre": "Daniel Sturridge",
     "nacionalidad": "Inglaterra",
-    "posicion": "Defensa",
-    "dorsal": 43,
-    "temporadaPrim": 2020,
-    "temporadaSeg": 2023,
+    "posicion": "Atacante",
+    "dorsal": 15,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2019,
     "grupo": "A"
   },
   {
-    "nombre": "Timothy Fosu-Mensah",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Defensa",
-    "dorsal": 24,
+    "nombre": "Danny Ings",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 28,
     "temporadaPrim": 2016,
-    "temporadaSeg": 2021,
+    "temporadaSeg": 2018,
     "grupo": "B"
   },
   {
-    "nombre": "Tom Cleverley",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Centrocampista",
-    "dorsal": 23,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2015,
+    "nombre": "Darwin Nunez",
+    "nacionalidad": "Uruguay",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2025,
     "grupo": "A"
   },
   {
-    "nombre": "Tom Heaton",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Portero",
-    "dorsal": 22,
-    "temporadaPrim": 2022,
-    "temporadaSeg": 2026,
+    "nombre": "David N'Gog",
+    "nacionalidad": "Francia",
+    "posicion": "Atacante",
+    "dorsal": 24,
+    "temporadaPrim": 2009,
+    "temporadaSeg": 2011,
     "grupo": "B"
   },
   {
-    "nombre": "Tomasz Kuszczak",
-    "nacionalidad": "Polonia",
-    "posicion": "Portero",
-    "dorsal": 29,
+    "nombre": "Dejan Lovren",
+    "nacionalidad": "Croacia",
+    "posicion": "Defensa",
+    "dorsal": 6,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2020,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Diogo Jota",
+    "nacionalidad": "Portugal",
+    "posicion": "Atacante",
+    "dorsal": 20,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2025,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Dirk Kuyt",
+    "nacionalidad": "Paises Bajos",
+    "posicion": "Atacante",
+    "dorsal": 18,
     "temporadaPrim": 2007,
     "temporadaSeg": 2012,
     "grupo": "A"
   },
   {
-    "nombre": "Tyrell Malacia",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Defensa",
-    "dorsal": 12,
-    "temporadaPrim": 2023,
+    "nombre": "Divock Origi",
+    "nacionalidad": "Belgica",
+    "posicion": "Atacante",
+    "dorsal": 27,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2022,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Dominic Solanke",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 29,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2019,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Dominik Szoboszlai",
+    "nacionalidad": "Hungria",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 2024,
     "temporadaSeg": 2026,
     "grupo": "B"
   },
   {
-    "nombre": "Victor Lindelof",
-    "nacionalidad": "Suecia",
-    "posicion": "Defensa",
-    "dorsal": 2,
-    "temporadaPrim": 2018,
-    "temporadaSeg": 2025,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Victor Valdes",
-    "nacionalidad": "Espana",
+    "nombre": "Doni",
+    "nacionalidad": "Brasil",
     "posicion": "Portero",
     "dorsal": 32,
-    "temporadaPrim": 2015,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Wayne Rooney",
-    "nacionalidad": "Inglaterra",
-    "posicion": "Atacante",
-    "dorsal": 10,
-    "temporadaPrim": 2005,
-    "temporadaSeg": 2018,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2012,
     "grupo": "A"
   },
   {
-    "nombre": "Wes Brown",
-    "nacionalidad": "Inglaterra",
+    "nombre": "Emre Can",
+    "nacionalidad": "Alemania",
     "posicion": "Defensa",
-    "dorsal": 6,
-    "temporadaPrim": 1998,
-    "temporadaSeg": 2011,
+    "dorsal": 23,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2018,
     "grupo": "B"
   },
   {
-    "nombre": "Wilfried Zaha",
-    "nacionalidad": "Costa de Marfil",
+    "nombre": "Fabinho",
+    "nacionalidad": "Brasil",
+    "posicion": "Centrocampista",
+    "dorsal": 3,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Fabio Aurelio",
+    "nacionalidad": "Brasil",
+    "posicion": "Defensa",
+    "dorsal": 6,
+    "temporadaPrim": 2007,
+    "temporadaSeg": 2012,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Fabio Borini",
+    "nacionalidad": "Italia",
     "posicion": "Atacante",
     "dorsal": 29,
     "temporadaPrim": 2013,
-    "temporadaSeg": 2014,
+    "temporadaSeg": 2015,
     "grupo": "A"
   },
   {
-    "nombre": "Will Keane",
-    "nacionalidad": "Irlanda",
-    "posicion": "Atacante",
-    "dorsal": 48,
-    "temporadaPrim": 2012,
-    "temporadaSeg": 2016,
-    "grupo": "B"
-  },
-  {
-    "nombre": "Willy Kambwala",
-    "nacionalidad": "Francia",
-    "posicion": "Defensa",
-    "dorsal": 53,
-    "temporadaPrim": 2024,
-    "temporadaSeg": 2024,
-    "grupo": "A"
-  },
-  {
-    "nombre": "Wout Weghorst",
-    "nacionalidad": "Paises Bajos",
-    "posicion": "Atacante",
-    "dorsal": 27,
+    "nombre": "Fabio Carvalho",
+    "nacionalidad": "Portugal",
+    "posicion": "Centrocampista",
+    "dorsal": 28,
     "temporadaPrim": 2023,
     "temporadaSeg": 2023,
     "grupo": "B"
   },
   {
-    "nombre": "Zlatan Ibrahimovic",
-    "nacionalidad": "Suecia",
+    "nombre": "Federico Chiesa",
+    "nacionalidad": "Italia",
+    "posicion": "Atacante",
+    "dorsal": 14,
+    "temporadaPrim": 2025,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Fernando Torres",
+    "nacionalidad": "Espana",
     "posicion": "Atacante",
     "dorsal": 9,
+    "temporadaPrim": 2008,
+    "temporadaSeg": 2011,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Florian Wirtz",
+    "nacionalidad": "Alemania",
+    "posicion": "Centrocampista",
+    "dorsal": 7,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Georginio Wijnaldum",
+    "nacionalidad": "Paises Bajos",
+    "posicion": "Centrocampista",
+    "dorsal": 5,
     "temporadaPrim": 2017,
+    "temporadaSeg": 2021,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Giorgi Mamardashvili",
+    "nacionalidad": "Georgia",
+    "posicion": "Portero",
+    "dorsal": 25,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Glen Johnson",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2010,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Harvey Elliott",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 19,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Hugo Ekitike",
+    "nacionalidad": "Francia",
+    "posicion": "Atacante",
+    "dorsal": 22,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Iago Aspas",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Ibrahima Konate",
+    "nacionalidad": "Francia",
+    "posicion": "Defensa",
+    "dorsal": 5,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "James Milner",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 7,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Jamie Carragher",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 23,
+    "temporadaPrim": 1997,
+    "temporadaSeg": 2013,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Javier Manquillo",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 19,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Jay Spearing",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 20,
+    "temporadaPrim": 2009,
+    "temporadaSeg": 2012,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Jeremie Frimpong",
+    "nacionalidad": "Paises Bajos",
+    "posicion": "Defensa",
+    "dorsal": 30,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Joe Allen",
+    "nacionalidad": "Gales",
+    "posicion": "Centrocampista",
+    "dorsal": 24,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Joe Cole",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 10,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2013,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Joe Gomez",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Joel Matip",
+    "nacionalidad": "Camerun",
+    "posicion": "Defensa",
+    "dorsal": 32,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2024,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Jon Flanagan",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 38,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Jonjo Shelvey",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 33,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2013,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Jordan Henderson",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 14,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2023,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Jordon Ibe",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 33,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Jose Enrique",
+    "nacionalidad": "Espana",
+    "posicion": "Defensa",
+    "dorsal": 3,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Kevin Stewart",
+    "nacionalidad": "Jamaica",
+    "posicion": "Centrocampista",
+    "dorsal": 35,
+    "temporadaPrim": 2016,
     "temporadaSeg": 2017,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Kolo Toure",
+    "nacionalidad": "Costa de Marfil",
+    "posicion": "Defensa",
+    "dorsal": 4,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Konstantinos Tsimikas",
+    "nacionalidad": "Grecia",
+    "posicion": "Defensa",
+    "dorsal": 21,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Loris Karius",
+    "nacionalidad": "Alemania",
+    "posicion": "Portero",
+    "dorsal": 22,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2022,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Lucas Leiva",
+    "nacionalidad": "Brasil",
+    "posicion": "Centrocampista",
+    "dorsal": 21,
+    "temporadaPrim": 2008,
+    "temporadaSeg": 2017,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Luis Alberto",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Luis Diaz",
+    "nacionalidad": "Colombia",
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2022,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Luis Suarez",
+    "nacionalidad": "Uruguay",
+    "posicion": "Atacante",
+    "dorsal": 7,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Mamadou Sakho",
+    "nacionalidad": "Francia",
+    "posicion": "Defensa",
+    "dorsal": 17,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2016,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Mario Balotelli",
+    "nacionalidad": "Italia",
+    "posicion": "Atacante",
+    "dorsal": 45,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Martin Kelly",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 34,
+    "temporadaPrim": 2009,
+    "temporadaSeg": 2014,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Martin Skrtel",
+    "nacionalidad": "Eslovaquia",
+    "posicion": "Defensa",
+    "dorsal": 37,
+    "temporadaPrim": 2008,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Maxi Rodriguez",
+    "nacionalidad": "Argentina",
+    "posicion": "Atacante",
+    "dorsal": 11,
+    "temporadaPrim": 2010,
+    "temporadaSeg": 2012,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Milan Jovanovic",
+    "nacionalidad": "Serbia",
+    "posicion": "Atacante",
+    "dorsal": 14,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2011,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Milos Kerkez",
+    "nacionalidad": "Hungria",
+    "posicion": "Defensa",
+    "dorsal": 6,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Mohamed Salah",
+    "nacionalidad": "Egipto",
+    "posicion": "Atacante",
+    "dorsal": 11,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Naby Keita",
+    "nacionalidad": "Guinea",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Nat Phillips",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 47,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2023,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Nathaniel Clyne",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 2,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2020,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Neco Williams",
+    "nacionalidad": "Gales",
+    "posicion": "Defensa",
+    "dorsal": 76,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2022,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Nuri Sahin",
+    "nacionalidad": "Turquia",
+    "posicion": "Centrocampista",
+    "dorsal": 4,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2013,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Ozan Kabak",
+    "nacionalidad": "Turquia",
+    "posicion": "Defensa",
+    "dorsal": 19,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2021,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Paul Konchesky",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 3,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2011,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Pepe Reina",
+    "nacionalidad": "Espana",
+    "posicion": "Portero",
+    "dorsal": 25,
+    "temporadaPrim": 2006,
+    "temporadaSeg": 2013,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Philippe Coutinho",
+    "nacionalidad": "Brasil",
+    "posicion": "Centrocampista",
+    "dorsal": 10,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2018,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Ragnar Klavan",
+    "nacionalidad": "Estonia",
+    "posicion": "Defensa",
+    "dorsal": 17,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2018,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Raheem Sterling",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 31,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Raul Meireles",
+    "nacionalidad": "Portugal",
+    "posicion": "Centrocampista",
+    "dorsal": 4,
+    "temporadaPrim": 2011,
+    "temporadaSeg": 2011,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Rickie Lambert",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2015,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Rio Ngumoha",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 73,
+    "temporadaPrim": 2026,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Roberto Firmino",
+    "nacionalidad": "Brasil",
+    "posicion": "Atacante",
+    "dorsal": 9,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2023,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Ryan Babel",
+    "nacionalidad": "Paises Bajos",
+    "posicion": "Atacante",
+    "dorsal": 19,
+    "temporadaPrim": 2008,
+    "temporadaSeg": 2011,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Ryan Gravenberch",
+    "nacionalidad": "Paises Bajos",
+    "posicion": "Centrocampista",
+    "dorsal": 38,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Sadio Mane",
+    "nacionalidad": "Senegal",
+    "posicion": "Atacante",
+    "dorsal": 10,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2022,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Sebastian Coates",
+    "nacionalidad": "Uruguay",
+    "posicion": "Defensa",
+    "dorsal": 16,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2015,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Sheyi Ojo",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Atacante",
+    "dorsal": 54,
+    "temporadaPrim": 2016,
+    "temporadaSeg": 2016,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Simon Mignolet",
+    "nacionalidad": "Belgica",
+    "posicion": "Portero",
+    "dorsal": 22,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2020,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Sotiris Kyrgiakos",
+    "nacionalidad": "Grecia",
+    "posicion": "Defensa",
+    "dorsal": 16,
+    "temporadaPrim": 2010,
+    "temporadaSeg": 2011,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Stefan Bajcetic",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 43,
+    "temporadaPrim": 2023,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Steven Gerrard",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 8,
+    "temporadaPrim": 1999,
+    "temporadaSeg": 2015,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Stewart Downing",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Centrocampista",
+    "dorsal": 19,
+    "temporadaPrim": 2012,
+    "temporadaSeg": 2013,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Suso",
+    "nacionalidad": "Espana",
+    "posicion": "Atacante",
+    "dorsal": 30,
+    "temporadaPrim": 2013,
+    "temporadaSeg": 2013,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Takumi Minamino",
+    "nacionalidad": "Japon",
+    "posicion": "Atacante",
+    "dorsal": 18,
+    "temporadaPrim": 2020,
+    "temporadaSeg": 2022,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Thiago Alcantara",
+    "nacionalidad": "Espana",
+    "posicion": "Centrocampista",
+    "dorsal": 6,
+    "temporadaPrim": 2021,
+    "temporadaSeg": 2024,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Trent Alexander-Arnold",
+    "nacionalidad": "Inglaterra",
+    "posicion": "Defensa",
+    "dorsal": 66,
+    "temporadaPrim": 2017,
+    "temporadaSeg": 2025,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Victor Moses",
+    "nacionalidad": "Nigeria",
+    "posicion": "Atacante",
+    "dorsal": 12,
+    "temporadaPrim": 2014,
+    "temporadaSeg": 2014,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Virgil van Dijk",
+    "nacionalidad": "Paises Bajos",
+    "posicion": "Defensa",
+    "dorsal": 4,
+    "temporadaPrim": 2018,
+    "temporadaSeg": 2026,
+    "grupo": "A"
+  },
+  {
+    "nombre": "Wataru Endo",
+    "nacionalidad": "Japon",
+    "posicion": "Centrocampista",
+    "dorsal": 3,
+    "temporadaPrim": 2024,
+    "temporadaSeg": 2026,
+    "grupo": "B"
+  },
+  {
+    "nombre": "Xherdan Shaqiri",
+    "nacionalidad": "Suiza",
+    "posicion": "Centrocampista",
+    "dorsal": 23,
+    "temporadaPrim": 2019,
+    "temporadaSeg": 2021,
     "grupo": "A"
   }
 ];
