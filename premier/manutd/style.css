@@ -38,8 +38,8 @@
 }
 
 #guess-table thead th {
-  padding: 30px 12px; /* Más bajo que el resto de filas */
-  background-color: #df1b1f; /* Morado más claro */
+  padding: 30px 12px; 
+  background-color: #df1b1f; 
   color: #faf600;
   border-radius: 8px;
 }
@@ -54,14 +54,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 160px;            /* tamaño cuadrado fijo */
+  width: 160px;            
   height: 32px;
-  border: 2px solid #5b2686;  /* borde con el color que tenías */
+  border: 2px solid #5b2686;  
   color: #5b2686;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1.2rem;
-  border-radius: 6px;     /* bordes redondeados */
+  border-radius: 6px;     
   cursor: pointer;
   user-select: none;
   transition: background-color 0.3s, color 0.3s;

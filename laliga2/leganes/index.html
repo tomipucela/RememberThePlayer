@@ -31,7 +31,6 @@
       </svg>
     </button>
 
-    <!-- Agrupa el botón y el bubble juntos -->
     <div id="hint-wrapper" style="position: relative; display: inline-block;">
     <button id="hint-button" title="Pista" aria-label="Pista" style="background:transparent;border:none;cursor:pointer;padding:0 0 0 10px;">
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -156,7 +155,6 @@
 </script>
 
 <script>
-    // Define variables globales para usarlas en otros scripts
     window.idJuego = "leganes";
     window.claveEstadisticas = `estadisticas-jugador-${window.idJuego}`;
     window.clavePartidaHoy = `partida-${window.idJuego}-${new Date().toISOString().slice(0, 10)}`;
@@ -194,7 +192,6 @@
       `;
     }
 
-    // Re-assign close button events after changing content
     const closeBtn = document.getElementById("close-info");
     const modal = document.getElementById("info-modal");
 

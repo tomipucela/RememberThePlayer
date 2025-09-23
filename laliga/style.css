@@ -5,27 +5,27 @@
   justify-content: center;
   width: 80px;
   height: 32px;
-  border: 2px solid #ec5a4d; /* borde rojo */
-  color: #ec5a4d; /* texto rojo */
+  border: 2px solid #ec5a4d; 
+  color: #ec5a4d; 
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1.2rem;
   border-radius: 6px;
   cursor: pointer;
   user-select: none;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* agrega border-color */
-  background-color: transparent; /* fondo inicial transparente */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+  background-color: transparent; 
 }
 
 #liga2-text:hover {
-  background-color: #ec5a4d; /* fondo rojo */
-  color: #000;               /* texto negro */
-  border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
+  background-color: #ec5a4d; 
+  color: #000;               
+  border-color: #ec5a4d;     
 }
 
 .grid-item[href="realmadrid/"] {
         background-color: white;
-        background-image: url("../img/diagmonds-light.png");
+        background-image: url("..diagmonds-light.png");
         color: rgb(218, 156, 0);
         font-weight: bold;
         font-size: 1.75rem;
@@ -38,8 +38,8 @@
         }
 
         .grid-item[href="realmadrid/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #b1b0b0; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #b1b0b0; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -62,7 +62,7 @@
         }
 
         .grid-item[href="barcelona/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="atleticomadrid/"] {
@@ -85,7 +85,7 @@
         }
 
         .grid-item[href="atleticomadrid/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="athleticclub/"] {
@@ -108,12 +108,12 @@
         }
 
         .grid-item[href="athleticclub/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="villarreal/"] {
         background-color: #ffee00;
-        background-image: url("../img/diagmonds-light.png");
+        background-image: url("..diagmonds-light.png");
         color: #005187;
         font-weight: bold;
         font-size: 1.75rem;
@@ -126,8 +126,8 @@
         }
 
         .grid-item[href="villarreal/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #c4a300; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #c4a300; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -151,12 +151,12 @@
         }
 
         .grid-item[href="betis/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="celta/"] {
         background-color: #8ac3ee;
-        background-image: url("../img/diagmonds-light.png");
+        background-image: url("..diagmonds-light.png");
         color: #000000;
         font-weight: bold;
         font-size: 1.75rem;
@@ -169,8 +169,8 @@
         }
 
         .grid-item[href="celta/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #5ba9e5; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #5ba9e5; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -195,13 +195,13 @@
 }
 
         .grid-item[href="rayo/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 
 .grid-item[href="osasuna/"] {
         background-color: #bd080f;
-        background-image: url("../img/gplay.png");
+        background-image: url("..gplay.png");
         color: #001247;
         font-weight: bold;
         font-size: 1.75rem;
@@ -214,8 +214,8 @@
         }
 
         .grid-item[href="osasuna/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #81060a; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #81060a; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -238,12 +238,12 @@
         }
 
         .grid-item[href="realsociedad/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="mallorca/"] {
         background-color: #ec1b1e;
-        background-image: url("../img/gplay.png");
+        background-image: url("..gplay.png");
         color: #000;
         font-weight: bold;
         font-size: 1.75rem;
@@ -256,8 +256,8 @@
         }
 
         .grid-item[href="mallorca/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #b51619; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #b51619; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -281,12 +281,12 @@
         }
 
         .grid-item[href="valencia/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="getafe/"] {
         background-color: #0157a0;
-        background-image: url("../img/gplay.png");
+        background-image: url("..gplay.png");
         color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
@@ -298,8 +298,8 @@
         }
 
         .grid-item[href="getafe/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #0068c4; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #0068c4; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -323,7 +323,7 @@
         }
 
         .grid-item[href="espanyol/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="alaves/"] {
@@ -345,7 +345,7 @@ background-position: 0 0;
 }
 
 .grid-item[href="alaves/"]:hover {
-background-position: 40px 40px; /* Mueve las rayas para dar animación */
+background-position: 40px 40px; 
 }
 
 .grid-item[href="girona/"] {
@@ -368,12 +368,12 @@ background-position: 40px 40px; /* Mueve las rayas para dar animación */
         }
 
         .grid-item[href="girona/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="sevilla/"] {
         background-color: white;
-        background-image: url("../img/diagmonds-light.png");
+        background-image: url("..diagmonds-light.png");
         color: #eb393a;
         font-weight: bold;
         font-size: 1.75rem;
@@ -386,8 +386,8 @@ background-position: 40px 40px; /* Mueve las rayas para dar animación */
         }
 
         .grid-item[href="sevilla/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #b1b0b0; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #b1b0b0; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -410,12 +410,12 @@ background-position: 40px 40px; /* Mueve las rayas para dar animación */
         }
 
         .grid-item[href="levante/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
         }
 
 .grid-item[href="elche/"] {
         background-color: #0f8b45;
-        background-image: url("../img/gplay.png");
+        background-image: url("..gplay.png");
         color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
@@ -428,8 +428,8 @@ background-position: 40px 40px; /* Mueve las rayas para dar animación */
         }
 
         .grid-item[href="elche/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #0e7b3d; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #0e7b3d; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
@@ -437,7 +437,7 @@ background-position: 40px 40px; /* Mueve las rayas para dar animación */
       
 .grid-item[href="oviedo/"] {
         background-color: #0034a1;
-        background-image: url("../img/gplay.png");
+        background-image: url("..gplay.png");
         color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
@@ -449,7 +449,7 @@ background-position: 40px 40px; /* Mueve las rayas para dar animación */
         }
 
         .grid-item[href="oviedo/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #003dc1; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px; 
+        background-color: #003dc1; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }

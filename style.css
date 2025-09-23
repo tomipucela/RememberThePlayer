@@ -3,7 +3,6 @@
       padding: 0;
       box-sizing: border-box;
     }
-    /* General Body Styles */
     body {
       font-family: Arial, sans-serif;
       background-color: #000000;
@@ -19,14 +18,14 @@
 #header-right {
   display: flex;
   align-items: center;
-  gap: 15px; /* espacio entre botón y texto */
+  gap: 15px; 
 }
 
 #liga2-text {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #00d4d7; /* color similar al botón o al link de LaLiga2 */
+  color: #00d4d7;
   user-select: none;
 }
 
@@ -34,7 +33,7 @@
       width: 35px;
       height: 35px;
       border-radius: 50%;
-      margin-right: 10px; /* antes era 8px */
+      margin-right: 10px; 
       vertical-align: middle;
     }
 
@@ -55,7 +54,7 @@
     }
 
     #logo-img {
-      width: 120px; /* más grande */
+      width: 120px;
       height: auto;
       filter: invert(1);
     }
@@ -83,7 +82,7 @@
     }
 
     #remember-text {
-      font-size: 2.5rem; /* tamaño aumentado */
+      font-size: 2.5rem;
       text-transform: uppercase;
       font-weight: bold;
       font-family: 'Roboto Slab', serif;
@@ -109,7 +108,7 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(1, 1fr)!important; /* 4 columnas fijas */
+      grid-template-columns: repeat(1, 1fr)!important;
       gap: 20px;
       width: 100%;
       max-width: 1000px;
@@ -131,8 +130,8 @@
 
     
 .email-link {
-  color: #ff6600 !important;      /* Forza el color */
-  text-decoration: none !important; /* Quita subrayado */
+  color: #ff6600 !important;     
+  text-decoration: none !important;
 }
 .email-link:hover {
   color: #ff3300 !important;
@@ -153,15 +152,14 @@
       transform: none;
       background-color: #555;
     }
-/* Main Title Container */
 #main-title-container {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 10px 20px;
   box-sizing: border-box;
-  justify-content: flex-start; /* No espacios extremos */
-  gap: 30px; /* espacio entre secciones */
+  justify-content: flex-start; 
+  gap: 30px;
 }
 
 
@@ -175,7 +173,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  /* Sin margin-right auto */
 }
 #center-right-section {
   position: absolute;
@@ -248,10 +245,10 @@
   padding: 40px 35px;
   border-radius: 12px;
   width: 95%;
-  max-width: 600px;    /* Aumentado de 420px a 600px */
+  max-width: 600px;   
   position: relative;
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  max-height: 80vh;    /* Aumentado de 70vh a 80vh */
+  max-height: 80vh;   
   overflow-y: auto;
   color: #b38512;
   font-family: 'Roboto Slab', serif;
@@ -289,7 +286,7 @@
 
 .modal-content ul li strong {
   font-weight: 700;
-  color: #b38512; /* Un tono lila más claro para resaltar */
+  color: #b38512;
 }
 
 .close {
@@ -347,11 +344,10 @@
   }
 
   html {
-    font-size: 125%; /* aumenta el tamaño base de todo excepto lo limitado por max-width */
-  }
+    font-size: 125%;
 
   body {
-    padding: 25px; /* más margen en móvil */
+    padding: 25px;
   }
 
   #main-title {
@@ -378,7 +374,7 @@
   }
 
   .readme-intro {
-    font-size: 0.85rem; /* más pequeño que el actual 1rem */
+    font-size: 0.85rem;
     line-height: 1.5;
   }
 
@@ -387,7 +383,7 @@
   color: #fff;
   }
 }
-
+}
 
 
 
@@ -412,8 +408,8 @@
         }
 
         .grid-item[href="laliga2/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #03f5f9; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px;
+        background-color: #03f5f9;
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 .grid-item[href="laliga/"] {
@@ -430,7 +426,7 @@
         }
 
         .grid-item[href="laliga/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px;
                 background-color: #d14f44;
 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
@@ -450,7 +446,8 @@
         }
 
         .grid-item[href="premier/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
-        background-color: #2b0947; /* Mantiene color morado más oscuro al hover */
+        background-position: 40px 40px;
+        background-color: #2b0947;
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
+      

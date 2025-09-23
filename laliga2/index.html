@@ -74,7 +74,6 @@
         `;
       }
 
-      // Asignar evento al botón cerrar, solo si existe
       const closeBtn = document.getElementById("close-info");
       if (closeBtn && modal) {
         closeBtn.onclick = () => {
@@ -88,7 +87,6 @@
         };
       }
 
-      // Opcional: Mostrar el modal al hacer clic en el botón info
       const infoButton = document.getElementById("info-button");
       if (infoButton && modal) {
         infoButton.onclick = () => {

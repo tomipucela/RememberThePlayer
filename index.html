@@ -56,7 +56,6 @@
         const userLang = navigator.language || navigator.userLanguage;
         const lang = userLang.startsWith('en') ? 'en' : 'es';
 
-        // Traducción del modal
         if (lang === 'en') {
           document.querySelector('#info-modal .modal-content').innerHTML = `
             <span id="close-info" class="close">&times;</span>
@@ -76,7 +75,6 @@
           `;
         }
 
-        // Cerrar modal
         const closeBtn = document.getElementById("close-info");
         const modal = document.getElementById("info-modal");
 
@@ -94,7 +92,6 @@
           modal.style.display = "block";
         });
 
-        // README dinámico
         const readmeBox = document.getElementById("readme-section");
         if (lang === 'es') {
           readmeBox.innerHTML = `

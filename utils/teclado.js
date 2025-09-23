@@ -38,7 +38,7 @@ function normalizarTexto(texto) {
   return texto
     .normalize("NFD")               // separa letras y acentos
     .replace(/[\u0300-\u036f]/g, "") // quita los acentos
-    .replace(/ñ/gi, "n")             // opcional: convierte ñ → n
+    .replace(/ñ/gi, "n")             // convierte ñ en n
     .toLowerCase();
 }
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       bubble.innerHTML = pistaMostrada;
       bubble.style.display = "flex";
     }
-    document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
+    document.getElementById("hint-button").disabled = true;
   }
   let intentos = cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado);
 
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos++;
         } else if (acierto === 1){
           juegoTerminado = true;
-          document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
+          document.getElementById("hint-button").disabled = true;
         }
 
       };
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (e.key === "Enter") {
       e.preventDefault();
       if (currentFocus > -1 && items[currentFocus]) {
-        items[currentFocus].click();  // ejecuta el mismo código del click
+        items[currentFocus].click();
       } else {
         const acierto = submitGuess(
           clavePartidaHoy,
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
           intentos++;
         } else if (acierto === 1){
           juegoTerminado = true;
-          document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
+          document.getElementById("hint-button").disabled = true;
         }
 
       }
@@ -230,7 +230,6 @@ document.getElementById("hint-button").onclick = () => {
   const bubble = document.getElementById("hint-bubble");
 
   if (bubble.style.display === "flex") {
-    // Ocultar pista y resetear estados
     bubble.style.display = "none";
     bubble.innerHTML = "";
     pistaMostrada = "";
@@ -241,7 +240,6 @@ document.getElementById("hint-button").onclick = () => {
     });
 
   } else {
-    // Mostrar instrucción para elegir columna
     bubble.textContent = t("Elige una columna para ver la pista");
     bubble.style.display = "flex";
 
@@ -267,8 +265,6 @@ document.getElementById("hint-button").onclick = () => {
           pistaMostrada = `<span style="font-weight:bold;">${col.texto}:</span> ${col.valor()}`;
           bubble.innerHTML = pistaMostrada;
           document.getElementById("hint-button").disabled = true;
-
-          // Guardar inmediatamente la pista en el progreso
           guardarProgresoPartida("en_progreso", elegido, intentos-1, clavePartidaHoy, pistaMostrada);
         }
 
@@ -288,10 +284,10 @@ document.getElementById("hint-button").onclick = () => {
 
 const restartBtn = document.getElementById("restart-btn");
 restartBtn.addEventListener("click", () => {
-  elegido = reiniciarJuego();  // nuevo elegido
+  elegido = reiniciarJuego(); 
   intentos = 0;
   juegoTerminado = false;
-  document.getElementById("hint-button").disabled = false; // desactivar botón si ya se mostró
+  document.getElementById("hint-button").disabled = false;
   pistaMostrada = "";
   document.getElementById("hint-button").disabled = false;
 
@@ -299,7 +295,6 @@ restartBtn.addEventListener("click", () => {
   hintBubble.style.display = "none";
   hintBubble.innerHTML = "";
 
-  // Quitar clases de las columnas
   columnasPista.forEach(col => {
     const th = document.getElementById(col.id);
     if (th) {
@@ -307,7 +302,6 @@ restartBtn.addEventListener("click", () => {
     }
   });
 
-  // Actualizar funciones valor() para usar nuevo elegido
   columnasPista.forEach(col => {
     if (col.id === "th-nacionalidad") col.valor = () => banderaDePaisImg(elegido.nacionalidad.toLowerCase());
     else if (col.id === "th-posicion") col.valor = () => elegido.posicion;
@@ -316,7 +310,6 @@ restartBtn.addEventListener("click", () => {
     else if (col.id === "th-ultima") col.valor = () => formatearTemporada(elegido.temporadaSeg);
   });
 
-  // Limpiar input y poner foco
   const guessInput = document.getElementById("guessName");
   guessInput.value = "";
   guessInput.focus();

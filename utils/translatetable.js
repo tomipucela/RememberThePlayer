@@ -2,7 +2,7 @@
   // Traducciones para español e inglés
   const translations = {
     es: {
-      rememberText: "Remember<br />the player", // Si quieres traducirlo, pon aquí el texto en español
+      rememberText: "Remember<br />the player",
       infoTitle: "Información",
       statsTitle: "Estadísticas",
       hintTitle: "Pista",
@@ -42,7 +42,6 @@
     }
   };
 
-  // Detectar idioma del navegador (solo español o inglés)
   const userLang = navigator.language || navigator.userLanguage;
   const lang = userLang.startsWith('es') ? 'es' : 'en';
 
@@ -50,7 +49,6 @@
   function applyTranslations() {
     const t = translations[lang];
 
-    // Cambiar texto en el DOM
     document.getElementById('remember-text').innerHTML = t.rememberText;
     document.getElementById('liga2-text').textContent = t.liga2Text;
     document.getElementById('info-button').title = t.infoTitle;
@@ -64,7 +62,6 @@
     
     document.getElementById('restart-btn').textContent = t.restartButton;
 
-    // Cambiar encabezados de tabla
     document.querySelector('th:nth-child(1)').textContent = t.tableHeaders.jugador;
     document.getElementById('th-nacionalidad').textContent = t.tableHeaders.nacionalidad;
     document.getElementById('th-posicion').textContent = t.tableHeaders.posicion;
@@ -73,5 +70,4 @@
     document.getElementById('th-ultima').textContent = t.tableHeaders.ultima;
   }
 
-  // Ejecutar la traducción al cargar
   applyTranslations();

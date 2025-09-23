@@ -20,13 +20,10 @@ const posicionesTraducidas = {
 export function guardarEstadisticasPartida(acertado, intentos, elegido, claveEstadisticas) {
   const jugadorDelDia = getJugadorDelDiaLocal();
   if (!elegido || !jugadorDelDia) return;
-  
-  // Normalizar nombre para evitar problemas de formato
   const nombreElegido = elegido.nombre.trim().toLowerCase();
   const nombreDelDia = jugadorDelDia.nombre.trim().toLowerCase();
   if (nombreElegido !== nombreDelDia) return;
 
-  // Cargar estadísticas actuales o inicializar si no existen
   const estadisticas = JSON.parse(localStorage.getItem(claveEstadisticas)) || {
     jugadasTotales: 0,
     victorias: 0,
@@ -58,14 +55,10 @@ export function getJugadorDelDiaLocal() {
 
   const grupoDeseado = (diasDesdeEpoch % 2 === 0) ? "A" : "B";
 
-  // Filtrar jugadores del grupo correspondiente
   const jugadoresDelGrupo = jugadores.filter(j => j.grupo === grupoDeseado);
 
-  // Crear semilla basada en diasDesdeEpoch para que sea reproducible
-  // Ejemplo simple: usar el mismo diasDesdeEpoch para indexar en el grupo
   const seed = diasDesdeEpoch;
 
-  // Índice basado en la semilla y cantidad de jugadores del grupo
   const index = seed % jugadoresDelGrupo.length;
 
   return jugadoresDelGrupo[index];
@@ -108,7 +101,7 @@ export function mostrarModalEstadisticas(stats) {
   contenedor.innerHTML = "";
 
   const valores = Object.values(stats.histograma);
-  const maxValor = Math.max(...valores, 1); // Evitar división por 0
+  const maxValor = Math.max(...valores, 1); 
 
   for (let intento = 1; intento <= 6; intento++) {
     const valor = stats.histograma[intento] || 0;
@@ -156,7 +149,6 @@ function actualizarEstadisticas(intentos, idJuego, elegido, acertado) {
 
   if (acertado) {
     stats.victorias += 1;
-    // Si la última fecha es diferente a hoy, suma a la racha, si es el mismo día no la incrementa
     stats.racha = (stats.ultimaFecha !== hoy) ? stats.racha + 1 : stats.racha;
     if (intentos >= 0 && intentos < 6) {
       stats.histograma[intentos + 1] += 1;
@@ -227,7 +219,6 @@ export function cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado) 
   const datos = JSON.parse(guardado);
   const jugadorHoy = getJugadorDelDiaLocal();
   if (datos.elegido.nombre !== jugadorHoy.nombre) {
-    // Si no es el mismo jugador, es una partida de otro día: ignórala
     localStorage.removeItem(clavePartidaHoy);
     return 0;
   }
@@ -252,7 +243,7 @@ export function cargarPartidaGuardada(clavePartidaHoy, elegido, juegoTerminado) 
       mostrarMensaje(`Today's player was ${elegido.nombre}. But you can keep playing!", 4000, "#6aaa64`);
     }
     document.getElementById("guessName").style.display = "none";
-    document.getElementById("hint-button").disabled = true; // desactivar botón si ya se mostró
+    document.getElementById("hint-button").disabled = true; 
   }
   return intentos+1;
 }
@@ -299,7 +290,7 @@ export function formatearTemporada(temporadaSeg) {
 
 export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTerminado,elegido, intentos,pistaMostrada) {
 
-  if (juegoTerminado) return; // Bloquea si ya terminó
+  if (juegoTerminado) return;
 
   const inputElem = document.getElementById("guessName");
   const input = inputElem.value.trim().toLowerCase();
@@ -310,8 +301,6 @@ export function submitGuess( clavePartidaHoy, claveEstadisticas, idJuego,juegoTe
   }
 
 mostrarComparacion(jugador, elegido, intentos);
-
-// Guardar progreso después del intento (antes de comprobar si ganó o perdió)
 guardarProgresoPartida("en_progreso", elegido, intentos, clavePartidaHoy,pistaMostrada);
 
 if (jugador.nombre === elegido.nombre) {
@@ -323,8 +312,8 @@ if (jugador.nombre === elegido.nombre) {
   desactivarInput();
   guardarProgresoPartida("acertado", elegido, intentos, clavePartidaHoy,pistaMostrada);
   guardarEstadisticasPartida(true,intentos, elegido,claveEstadisticas);
-  let stats=actualizarEstadisticas(intentos,idJuego,elegido,true); // solo en la primera partida del día
-  let timeout;  // Declarás aquí la variable
+  let stats=actualizarEstadisticas(intentos,idJuego,elegido,true);
+  let timeout;
 
   if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
     timeout = 2000;
@@ -364,8 +353,8 @@ export function procesarFallo(mensaje, elegido, intentos, clavePartidaHoy, clave
   desactivarInput();
   guardarProgresoPartida("fallado", elegido, intentos, clavePartidaHoy,pistaMostrada);
   guardarEstadisticasPartida(false,intentos, elegido,claveEstadisticas);
-  let stats=actualizarEstadisticas(intentos,idJuego,elegido,false); // solo en la primera partida del día
-  let timeout;  // Declarás aquí la variable
+  let stats=actualizarEstadisticas(intentos,idJuego,elegido,false);
+  let timeout;
 
   if (elegido.nombre === getJugadorDelDiaLocal().nombre) {
     timeout = 2000;
@@ -410,13 +399,11 @@ function mostrarComparacion(j,elegido, intentos) {
     const valor = valoresJugador[col];
     const correcto = valoresCorrectos[col];
 
-    // Añadir animación y eliminarla al terminar
     celda.classList.add("animar-celda");
     celda.addEventListener("animationend", () => {
       celda.classList.remove("animar-celda");
     }, { once: true });
 
-    // Agregar clase correcta o incorrecta sin sobrescribir animación
     if (valor === correcto) {
       celda.classList.add("correct");
     } else {
@@ -431,7 +418,7 @@ function mostrarComparacion(j,elegido, intentos) {
       } else {
         const flechaHaciaAbajo = j[prop] > elegido[prop];
         const flecha = flechaHaciaAbajo ? "▼" : "▲";
-        const colorFlecha = flechaHaciaAbajo ? "#8a070d" : "#006400"; // inherit = mismo color del texto
+        const colorFlecha = flechaHaciaAbajo ? "#8a070d" : "#006400";
         celda.innerHTML = `${valor} <span style="color:${colorFlecha};">${flecha}</span>`;
       }
     } else if (prop === "posicion" && !esEspanol) {
@@ -471,7 +458,6 @@ export function reiniciarJuego() {
   const suggestionsBox = document.getElementById("suggestions");
   suggestionsBox.innerHTML = "";
 
-  // Ocultar mensaje
   document.getElementById("hint-bubble").style.display = "none";
 
   let nuevoElegido = jugadores[Math.floor(Math.random() * jugadores.length)];

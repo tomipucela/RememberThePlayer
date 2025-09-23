@@ -3,14 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;            /* tamaño cuadrado fijo */
+  width: 80px;            
   height: 32px;
-  border: 2px solid #00d4d7;  /* borde con el color que tenías */
+  border: 2px solid #00d4d7;  
   color: #00d4d7;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1.2rem;
-  border-radius: 6px;     /* bordes redondeados */
+  border-radius: 6px;     
   cursor: pointer;
   user-select: none;
   transition: background-color 0.3s, color 0.3s;
@@ -22,8 +22,8 @@
 }
 .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr)!important; /* 4 columnas fijas */
-      grid-auto-rows: 120px; /* Altura fija para cada fila (ajusta si necesitas) */
+      grid-template-columns: repeat(2, 1fr)!important; 
+      grid-auto-rows: 120px; 
       gap: 20px;
       width: 100%;
       max-width: 1000px;
@@ -50,7 +50,7 @@
         }
 
         .grid-item[href="realvalladolid/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
     .grid-item[href="leganes/"] {
@@ -72,6 +72,6 @@
         }
 
         .grid-item[href="leganes/"]:hover {
-        background-position: 40px 40px; /* Mueve las rayas para dar animación */
+        background-position: 40px 40px; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }

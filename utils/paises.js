@@ -1,5 +1,5 @@
 export function banderaDePaisImg(pais) {
-  const codigo = obtenerCodigoISO(pais); // Necesitas esta función también
+  const codigo = obtenerCodigoISO(pais);
   if (!codigo) return pais;
   return `<img src="https://flagcdn.com/w40/${codigo}.png" alt="${pais}" title="${pais}" style="height:25px;">`;
 }

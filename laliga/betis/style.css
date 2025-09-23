@@ -38,8 +38,8 @@
 }
 
 #guess-table thead th {
-  padding: 30px 12px; /* Más bajo que el resto de filas */
-  background-color: #00943d; /* Morado más claro */
+  padding: 30px 12px; 
+  background-color: #00943d; 
   color: #ffffff;
   border-radius: 8px;
 }
@@ -56,20 +56,20 @@
   justify-content: center;
   width: 80px;
   height: 32px;
-  border: 2px solid #ec5a4d; /* borde rojo */
-  color: #ec5a4d; /* texto rojo */
+  border: 2px solid #ec5a4d; 
+  color: #ec5a4d; 
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1.2rem;
   border-radius: 6px;
   cursor: pointer;
   user-select: none;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* agrega border-color */
-  background-color: transparent; /* fondo inicial transparente */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+  background-color: transparent; 
 }
 
 #liga2-text:hover {
-  background-color: #ec5a4d; /* fondo rojo */
-  color: #000;               /* texto negro */
-  border-color: #ec5a4d;     /* borde rojo (igual al fondo) */
+  background-color: #ec5a4d; 
+  color: #000;               
+  border-color: #ec5a4d;     
 }
