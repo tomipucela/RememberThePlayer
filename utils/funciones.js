@@ -465,7 +465,5 @@ export function reiniciarJuego() {
     nuevoElegido = jugadores[Math.floor(Math.random() * jugadores.length)];
   }
 
-  console.log("reiniciarJuego: nuevo elegido ->", nuevoElegido);
-
   return nuevoElegido;
 }
