@@ -22,7 +22,7 @@
 }
 .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr)!important; 
+      grid-template-columns: repeat(3, 1fr)!important; 
       grid-auto-rows: 120px; 
       gap: 20px;
       width: 100%;
@@ -72,6 +72,28 @@
         }
 
         .grid-item[href="leganes/"]:hover {
+        background-position: 40px 40px; 
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
+.grid-item[href="deportivo/"] {
+        background: repeating-linear-gradient(
+            90deg,
+            #0158a6,
+            #0158a6 10px,
+            white 10px,
+            white 20px
+        );
+        color: #e6b44a;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="deportivo/"]:hover {
         background-position: 40px 40px; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
