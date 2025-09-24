@@ -33,7 +33,7 @@
 
 .grid-item[href="manutd/"] {
         background-color: #da1b23;
-        background-image: url("..gplay.png");
+        background-image: url("../img/gplay.png");
         color: #faf600;
         font-weight: bold;
         font-size: 1.75rem;
@@ -52,7 +52,7 @@
 
 .grid-item[href="liverpool/"] {
         background-color: #cb0226;
-        background-image: url("..gplay.png");
+        background-image: url("../img/gplay.png");
         color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
