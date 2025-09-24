@@ -283,7 +283,7 @@ const jugadores = [
     "nacionalidad": "Portugal",
     "posicion": "Atacante",
     "dorsal": 7,
-    "temporadaPrim": 2022,
+    "temporadaPrim": 2004,
     "temporadaSeg": 2022,
     "grupo": "B"
   },
