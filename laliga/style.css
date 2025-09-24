@@ -25,7 +25,7 @@
 
 .grid-item[href="realmadrid/"] {
         background-color: white;
-        background-image: url("..diagmonds-light.png");
+        background-image: url("../img/diagmonds-light.png");
         color: rgb(218, 156, 0);
         font-weight: bold;
         font-size: 1.75rem;
@@ -66,28 +66,23 @@
         }
 
 .grid-item[href="atleticomadrid/"] {
-        background: repeating-linear-gradient(
-            90deg,
-            #ffffff,
-            #fff 10px,
-            #e1291d 10px,
-            #e1291d 20px
-        );
-        color: #011d6e;
+        background-color: #e1291d;
+        background-image: url("../img/gplay.png");
+        color: #ffffff;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
         background-size: 40px 40px;
         background-position: 0 0;
-            text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
             font-family: 'Roboto Slab', serif;
 
         }
 
         .grid-item[href="atleticomadrid/"]:hover {
         background-position: 40px 40px; 
+        background-color: #ba2419; 
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
-
 .grid-item[href="athleticclub/"] {
         background: repeating-linear-gradient(
             90deg,
@@ -111,9 +106,10 @@
         background-position: 40px 40px; 
         }
 
+
 .grid-item[href="villarreal/"] {
         background-color: #ffee00;
-        background-image: url("..diagmonds-light.png");
+        background-image: url("../img/diagmonds-light.png");
         color: #005187;
         font-weight: bold;
         font-size: 1.75rem;
@@ -156,7 +152,7 @@
 
 .grid-item[href="celta/"] {
         background-color: #8ac3ee;
-        background-image: url("..diagmonds-light.png");
+        background-image: url("../img/diagmonds-light.png");
         color: #000000;
         font-weight: bold;
         font-size: 1.75rem;
@@ -201,7 +197,7 @@
 
 .grid-item[href="osasuna/"] {
         background-color: #bd080f;
-        background-image: url("..gplay.png");
+        background-image: url("../img/gplay.png");
         color: #001247;
         font-weight: bold;
         font-size: 1.75rem;
@@ -219,31 +215,29 @@
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
+
 .grid-item[href="realsociedad/"] {
-        background: repeating-linear-gradient(
-            90deg,
-            #01028e,
-            #01028e 10px,
-            #fff 10px,
-            #fff 20px
-        );
-        color: #ffa200;
+        background-color: #01028e;
+        background-image: url("../img/gplay.png");
+        color: #ffffff;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
         background-size: 40px 40px;
-        background-position: 0 0;    
+        background-position: 0 0;
+          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
             font-family: 'Roboto Slab', serif;
 
         }
 
         .grid-item[href="realsociedad/"]:hover {
         background-position: 40px 40px; 
+        background-color: #0000ac; 
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
-
 .grid-item[href="mallorca/"] {
         background-color: #ec1b1e;
-        background-image: url("..gplay.png");
+        background-image: url("../img/gplay.png");
         color: #000;
         font-weight: bold;
         font-size: 1.75rem;
@@ -263,30 +257,27 @@
 
 
 .grid-item[href="valencia/"] {
-        background: repeating-linear-gradient(
-            90deg,
-            #e92527,
-            #e92527 10px,
-            #fadd17 10px,
-            #fadd17 20px
-        );
-        color: #27baff;
+        background-color: white;
+        background-image: url("../img/diagmonds-light.png");
+        color: rgb(0, 0, 0);
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
         background-size: 40px 40px;
-        background-position: 0 0; 
+        background-position: 0 0;
+          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
             font-family: 'Roboto Slab', serif;
 
         }
 
         .grid-item[href="valencia/"]:hover {
         background-position: 40px 40px; 
+        background-color: #b1b0b0; 
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
-
 .grid-item[href="getafe/"] {
         background-color: #0157a0;
-        background-image: url("..gplay.png");
+        background-image: url("../img/gplay.png");
         color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
@@ -303,51 +294,44 @@
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
-
 .grid-item[href="espanyol/"] {
-        background: repeating-linear-gradient(
-            90deg,
-            #1c63b8,
-            #1c63b8 10px,
-            #fff 10px,
-            #fff 20px
-        );
-        color: #000;
+        background-color: #1c63b8;
+        background-image: url("../img/gplay.png");
+        color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
         background-size: 40px 40px;
-        background-position: 0 0;    
+        background-position: 0 0;
             font-family: 'Roboto Slab', serif;
 
         }
 
         .grid-item[href="espanyol/"]:hover {
         background-position: 40px 40px; 
+        background-color: #12509b; 
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
 
+
 .grid-item[href="alaves/"] {
-background: repeating-linear-gradient(
-    90deg,
-    #002791,
-    #002791 10px,
-    #fff 10px,
-    #fff 20px
-);
-color: #000;
-font-weight: bold;
-font-size: 1.75rem;
-transition: background-position 0.5s ease;
-background-size: 40px 40px;
-background-position: 0 0;    
-    font-family: 'Roboto Slab', serif;
+        background-color: #002791;
+        background-image: url("../img/gplay.png");
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+            font-family: 'Roboto Slab', serif;
 
-}
+        }
 
-.grid-item[href="alaves/"]:hover {
-background-position: 40px 40px; 
-}
-
+        .grid-item[href="alaves/"]:hover {
+        background-position: 40px 40px; 
+        background-color: rgb(12, 51, 99); 
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
 .grid-item[href="girona/"] {
         background: repeating-linear-gradient(
             90deg,
@@ -371,9 +355,28 @@ background-position: 40px 40px;
         background-position: 40px 40px; 
         }
 
+.grid-item[href="girona/"] {
+        background-color: #b11b30;
+        background-image: url("../img/gplay.png");
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.75rem;
+        transition: background-position 0.5s ease;
+        background-size: 40px 40px;
+        background-position: 0 0;
+          text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        .grid-item[href="girona/"]:hover {
+        background-position: 40px 40px; 
+        background-color: #d60b26; 
+          text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
 .grid-item[href="sevilla/"] {
         background-color: white;
-        background-image: url("..diagmonds-light.png");
+        background-image: url("../img/diagmonds-light.png");
         color: #eb393a;
         font-weight: bold;
         font-size: 1.75rem;
@@ -415,7 +418,7 @@ background-position: 40px 40px;
 
 .grid-item[href="elche/"] {
         background-color: #0f8b45;
-        background-image: url("..gplay.png");
+        background-image: url("../img/gplay.png");
         color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
@@ -437,7 +440,7 @@ background-position: 40px 40px;
       
 .grid-item[href="oviedo/"] {
         background-color: #0034a1;
-        background-image: url("..gplay.png");
+        background-image: url("../img/gplay.png");
         color: #fff;
         font-weight: bold;
         font-size: 1.75rem;

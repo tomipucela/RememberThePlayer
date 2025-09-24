@@ -53,15 +53,11 @@
         background-position: 40px 40px; 
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
-    .grid-item[href="leganes/"] {
-        background: repeating-linear-gradient(
-            90deg,
-            #000c68,
-            #000c68 10px,
-            white 10px,
-            white 20px
-        );
-        color: #d49a20;
+
+.grid-item[href="leganes/"] {
+        background-color: #000c68;
+        background-image: url("../img/gplay.png");
+        color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
@@ -73,17 +69,14 @@
 
         .grid-item[href="leganes/"]:hover {
         background-position: 40px 40px; 
+        background-color: #001295;
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
+
 .grid-item[href="deportivo/"] {
-        background: repeating-linear-gradient(
-            90deg,
-            #0158a6,
-            #0158a6 10px,
-            white 10px,
-            white 20px
-        );
-        color: #e6b44a;
+        background-color: #0158a6;
+        background-image: url("../img/gplay.png");
+        color: #fff;
         font-weight: bold;
         font-size: 1.75rem;
         transition: background-position 0.5s ease;
@@ -95,5 +88,6 @@
 
         .grid-item[href="deportivo/"]:hover {
         background-position: 40px 40px; 
+        background-color: #004a8a;
           text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         }
